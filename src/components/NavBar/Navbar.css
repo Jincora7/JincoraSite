@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
-    flex-wrap: no-wrap;
+    flex-wrap: wrap;
     height: 80px;
     padding: 0px 150px;
     flex-direction: row;
@@ -28,13 +28,13 @@ a {
     font-weight: 200;
 }
 
-.wrapper .navLink a:nth-child(2){
+.wrapper .navLink a:nth-child(2) {
     display: flex;
     gap: 3px;
     align-items: center;
 }
 
-.wrapper .navLink a.active{
+.wrapper .navLink a.active {
     font-weight: 300;
 }
 
@@ -46,7 +46,7 @@ a {
     color: white;
 }
 
-.search-icon{
+.search-icon {
     cursor: pointer;
 }
 
@@ -63,8 +63,114 @@ a {
     z-index: 1000;
 }
 
-.menu-icons{
+.menu-icons {
     display: none;
+}
+
+/* Search box style */
+
+.container {
+    position: relative;
+    box-sizing: border-box;
+    width: fit-content;
+}
+
+.mainbox {
+    box-sizing: border-box;
+    position: relative;
+    width: 230px;
+    height: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255,0.3);
+    transition: all 0.3s ease;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox:focus {
+    border: none;
+    outline: none;
+}
+
+.checkbox:checked {
+    right: 10px;
+}
+
+.checkbox:checked~.mainbox {
+    width: 0px;
+}
+
+.checkbox:checked~.mainbox .search_input {
+    width: 0;
+    height: 0px;
+}
+
+.checkbox:checked~.mainbox .iconContainer {
+    padding-right: 8px;
+}
+
+.checkbox {
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 17px;
+    top: 10px;
+    z-index: 9;
+    cursor: pointer;
+    appearance: none;
+}
+
+.search_input {
+    box-sizing: border-box;
+    height: 100%;
+    width: 170px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    font-size: 1em;
+    color: white;
+    transition: all 0.3s ease;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.search_input::placeholder {
+    color: rgba(255, 255, 255, 0.776);
+}
+
+.iconContainer {
+    box-sizing: border-box;
+    padding-top: 5px;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+
+.search_icon {
+    box-sizing: border-box;
+    fill: white;
+    font-size: 1.3em;
+}
+
+@media screen and (max-width: 500px) {
+    .mainbox {
+        width: 120px;
+    }
+
+    .checkbox:checked ~ .mainbox {
+        width: 0px;
+    }
+
+    .search_input {
+        width: 80px;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -85,7 +191,7 @@ a {
         cursor: pointer;
     }
 
-    .menu-icons{
+    .menu-icons {
         display: block;
     }
 }

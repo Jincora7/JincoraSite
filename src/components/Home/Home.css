@@ -1,0 +1,79 @@
+.home-wrapper{
+    width: 100%;
+    padding: 2rem 10rem;
+}
+
+.home-wrapper .home-inner-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    gap: 6rem;
+}
+
+.home-wrapper .home-inner-div .bulb{
+    width: 5rem;
+}
+
+.home-wrapper .home-inner-div h1{
+    margin: 1rem;
+    line-height: 1;
+    font-weight: 200;
+    font-size: 5rem;
+}
+
+.home-wrapper .home-inner-div .outlined-heading{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap: 1rem;
+    color: transparent;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-size: 5rem;
+}
+
+.home-wrapper .home-image{
+    width: 35rem;
+    height: 35rem;
+}
+
+.home-wrapper .home-inner-div .get-started{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    justify-content: space-between;
+}
+
+.home-wrapper .home-inner-div .get-started p{
+    font-size: 1rem;
+    word-spacing: 2px;
+    font-weight: 200;
+}
+
+.home-wrapper .home-inner-div .get-started button{
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #705DCF;
+    border-radius: 2rem;
+}
+
+.home-wrapper .home-bottom-heading p{
+    text-align: center;
+    width:max-content;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    word-spacing: 0.1rem;
+    font-weight: 200;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background: #9190DC75;
+}

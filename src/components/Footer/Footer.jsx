@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import logo from"../../assets/logo.png"
+import logo from "../../assets/logo.png"
 import { IoLogoInstagram } from "react-icons/io";
 import { FaPinterest } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -14,7 +14,9 @@ function Footer() {
   return (
     <div className="footer-wrapper">
       <div className='footer-first'>
-        <NavLink to="/"> <img src={logo} alt="" /> </NavLink>
+        <div>
+          <NavLink className="footer-logo" to="/"> <img src={logo} alt="" /> </NavLink>
+        </div>
 
         <div>
           <h5>Services</h5>
@@ -53,11 +55,11 @@ function Footer() {
             <p>Our expertise, as well as our passion for web design, <br /> sets us apart from other agencies. </p>
 
             <div className='footer-icons'>
-              <IoLogoInstagram size={30}/>
-              <FaPinterest size={30}/>
-              <FaLinkedin size={30}/>
-              <FaXTwitter size={30}/>
-              <FaFacebook size={30}/>
+              <IoLogoInstagram size={30} />
+              <FaPinterest size={30} />
+              <FaLinkedin size={30} />
+              <FaXTwitter size={30} />
+              <FaFacebook size={30} />
 
             </div>
           </div>
