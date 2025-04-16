@@ -1,0 +1,214 @@
+/* .consultation-section {
+    padding: 4rem 2rem;
+    background: radial-gradient(circle at top left, #0f0c29, #302b63, #24243e);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+  }
+  
+  .small-heading {
+    text-transform: uppercase;
+    color: #fcbf49;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .main-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.3;
+    max-width: 700px;
+  }
+  
+  .main-heading span {
+    display: block;
+    margin-top: 0.3rem;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .form-box {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.07));
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+  
+  .form-box h2 {
+    color: #fca311;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+  }
+  
+  .form-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-box input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 0.75rem 0;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-box input::placeholder {
+    color: #bbb;
+  }
+  
+  .form-box input:focus {
+    border-bottom: 1px solid #fca311;
+  }
+  
+  .form-box button {
+    background: linear-gradient(to right, #fca311, #ff7f50);
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+  }
+  
+  .form-box button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #ff7f50, #fca311);
+  }
+  
+  .form-image img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 15px;
+  }
+   */
+
+
+
+
+   .contact {
+    padding: 4rem 2rem;
+    background: radial-gradient(circle at top left, #0f0c29, #302b63, #24243e);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+  }
+  
+  .contact__subheading {
+    text-transform: uppercase;
+    color: #fcbf49;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact__heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.3;
+    max-width: 700px;
+  }
+  
+  .contact__highlight {
+    display: block;
+    margin-top: 0.3rem;
+  }
+  
+  .contact__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .contact__form-box {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.07));
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contact__form-title {
+    color: #fca311;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+  }
+  
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact__input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 0.75rem 0;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact__input::placeholder {
+    color: #bbb;
+  }
+  
+  .contact__input:focus {
+    border-bottom: 1px solid #fca311;
+  }
+  
+  .contact__submit-btn {
+    background: linear-gradient(to right, #fca311, #ff7f50);
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+  }
+  
+  .contact__submit-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #ff7f50, #fca311);
+  }
+  
+  .contact__image-box {
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .contact__image {
+    width: 100%;
+    border-radius: 15px;
+  }
+  
