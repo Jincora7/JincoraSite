@@ -1,39 +1,19 @@
 import React from 'react'
-import other07 from "../../assets/other07.png"
-import bulb from "../../assets/bulb.png"
-
-
-
-import "./Home.css"
+import Page1 from "./Page1/Page1.jsx"
+import Page2 from './Page2/Page2.jsx'
+import Page3 from './Page3/Page3.jsx'
+import Page4 from './Page4/Page4.jsx'
+import Page5 from './Page5/Page5.jsx'
 
 function Home() {
   return (
-    <div className="home-wrapper">
-
-      <div className='home-inner-div'>
-        <div>
-          <div className='headings'>
-            <h1>HIGH END</h1>
-            <h1 className="outlined-heading"> <img className='bulb' src={bulb} alt="Lightbulb symbolizing creative idea" /> CREATIVE </h1>
-            <h1>FIRM</h1>
-          </div>
-
-          <div className='get-started'>
-            <p>Transforming Digital Potential <br />into Powerful Reality.</p>
-            <button>Get Started</button>
-          </div>
-        </div>
-
-        <div>
-          <img className='home-image' src={other07} alt="" />
-        </div>
-      </div>
-
-      <div className='home-bottom-heading'>
-        <p>"Innovate. Create. Elevate – Your Success, Our Commitment."</p>
-      </div>
-
-    </div>
+    <>
+      <Page1/>
+      <Page2/>
+      <Page3/>
+      <Page4/>
+      <Page5 />
+    </>
   )
 }
 

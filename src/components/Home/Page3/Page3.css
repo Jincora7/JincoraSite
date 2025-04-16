@@ -1,0 +1,52 @@
+.page3-wrapper{
+    width: 100%;
+    padding: 3rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page3-wrapper .page3-heading{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.page3-heading-tagline{
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.page3-para-wrap{
+    width: 70rem;
+}
+
+.page3-para{
+    margin-top: 2rem;
+    font-weight: 200;
+}
+
+.page3-para .page3-para-subheading{
+    font-weight: 500;
+}
+
+.page3-second-para{
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.page3-pillars-wrapper{
+    margin-top: 3rem;
+}
+
+.page3-wrapper .page3-pillars-wrapper{
+    /* background: #000; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}

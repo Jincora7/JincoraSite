@@ -1,9 +1,9 @@
-.home-wrapper{
+.page1-wrapper{
     width: 100%;
     padding: 2rem 10rem;
 }
 
-.home-wrapper .home-inner-div{
+.page1-wrapper .page1-inner-div{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -12,18 +12,18 @@
     gap: 6rem;
 }
 
-.home-wrapper .home-inner-div .bulb{
+.page1-wrapper .page1-inner-div .bulb{
     width: 5rem;
 }
 
-.home-wrapper .home-inner-div h1{
+.page1-wrapper .page1-inner-div h1{
     margin: 1rem;
     line-height: 1;
     font-weight: 200;
     font-size: 5rem;
 }
 
-.home-wrapper .home-inner-div .outlined-heading{
+.page1-wrapper .page1-inner-div .outlined-heading{
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -35,25 +35,25 @@
     font-size: 5rem;
 }
 
-.home-wrapper .home-image{
+.page1-wrapper .page1-image{
     width: 35rem;
     height: 35rem;
 }
 
-.home-wrapper .home-inner-div .get-started{
+.page1-wrapper .page1-inner-div .get-started{
     display: flex;
     align-items: center;
     margin-left: 1rem;
     justify-content: space-between;
 }
 
-.home-wrapper .home-inner-div .get-started p{
+.page1-wrapper .page1-inner-div .get-started p{
     font-size: 1rem;
     word-spacing: 2px;
     font-weight: 200;
 }
 
-.home-wrapper .home-inner-div .get-started button{
+.page1-wrapper .page1-inner-div .get-started button{
     font-size: 1rem;
     padding: 1rem 2rem;
     outline: none;
@@ -64,7 +64,7 @@
     border-radius: 2rem;
 }
 
-.home-wrapper .home-bottom-heading p{
+.page1-wrapper .page1-bottom-heading p{
     text-align: center;
     width:max-content;
     font-size: 1.1rem;

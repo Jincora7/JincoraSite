@@ -1,0 +1,25 @@
+.page4-wrapper{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5rem 12rem;
+}
+
+.page4-yellow-heading{
+    color: #EE7F02;
+    font-weight: 300;
+    margin-left: 1rem;
+    text-transform: uppercase;
+}
+
+.page4-heading{
+    text-transform: uppercase;
+    margin-left: 2rem;
+}
+
+.page4-services-wrap{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1rem 4rem;
+}

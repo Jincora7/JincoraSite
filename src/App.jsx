@@ -1,4 +1,3 @@
-import "./App.css"
 import Layout from './Layout.jsx'
 
 // components 
@@ -24,9 +23,7 @@ const router = createBrowserRouter(
 function App() {
 
   return (
-    <div className="main">
       <RouterProvider router={router}/>
-    </div>
   )
 }
 
