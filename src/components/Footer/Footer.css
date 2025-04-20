@@ -151,6 +151,7 @@
   
   .subscribe {
     max-width: 300px;
+    margin-bottom: 30px;
   }
   
   .inner-sub h3 {

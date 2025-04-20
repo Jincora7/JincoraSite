@@ -1,6 +1,6 @@
 .page1-wrapper{
     width: 100%;
-    padding: 2rem 10rem;
+    padding: 2rem 2rem;
 }
 
 .page1-wrapper .page1-inner-div{
@@ -8,7 +8,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     gap: 6rem;
 }
 
@@ -36,8 +36,7 @@
 }
 
 .page1-wrapper .page1-image{
-    width: 35rem;
-    height: 35rem;
+    max-width: 35rem;
 }
 
 .page1-wrapper .page1-inner-div .get-started{
