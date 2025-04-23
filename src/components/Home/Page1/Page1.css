@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 6rem;
+    gap: 3rem;
 }
 
 .page1-wrapper .page1-inner-div .bulb{
@@ -35,8 +35,13 @@
     font-size: 5rem;
 }
 
-.page1-wrapper .page1-image{
+.page1-wrapper .page1-img-wrapper{
     max-width: 35rem;
+    min-width: 10rem;
+}
+
+.page1-wrapper .page1-image{
+    width: 100%;
 }
 
 .page1-wrapper .page1-inner-div .get-started{

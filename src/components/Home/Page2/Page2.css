@@ -2,8 +2,9 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 3rem 15rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3rem 5rem;
 }
 
 .page2-wrapper .page2-left h4{
@@ -50,6 +51,11 @@
     font-weight: 300;
 }
 
+.page2-wrapper .page2-image-wrap{
+    max-width: 35rem;
+    min-width: 20rem;
+}
+
 .page2-wrapper .page2-img{
-    width: 35em;
+    width: 100%;
 }

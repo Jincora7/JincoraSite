@@ -24,7 +24,7 @@ function Home() {
           </div>
         </div>
 
-        <div>
+        <div className='page1-img-wrapper'>
           <img className='page1-image' src={other07} alt="" />
         </div>
       </div>

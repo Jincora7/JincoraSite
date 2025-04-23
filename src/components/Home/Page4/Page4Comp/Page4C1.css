@@ -46,6 +46,6 @@
 
 
 .pg-c1-img {
-  width: 22rem;
+  max-width: 24rem;
   object-fit: cover;
 }
