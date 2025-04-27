@@ -1,0 +1,151 @@
+.services-page-background-wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+/* Ellipse */
+
+.svc-ellipse-1{
+    position: absolute;
+    top: -5rem;
+    right: -3rem;
+    width: 300px;
+    height: 300px;
+    background-color: #8BD1D2;
+    border-radius: 50%;
+    filter: blur(150px);
+}
+
+.svc-ellipse-2{
+    position: absolute;
+    top: 20rem;
+    left: -3rem;
+    width: 300px;
+    height: 300px;
+    background-color: #A5027D;
+    border-radius: 50%;
+    filter: blur(150px);
+}
+
+.svc-ellipse-3{
+    position: absolute;
+    top: 55rem;
+    left: 20rem;
+    width: 100px;
+    height: 100px;
+    background-color: #FF8400;
+    border-radius: 50%;
+    filter: blur(60px);
+}
+
+.svc-ellipse-4{
+    position: absolute;
+    top: 55rem;
+    right: -10rem;
+    width: 500px;
+    height: 500px;
+    background-color: #8BD1D2;
+    border-radius: 50%;
+    filter: blur(250px);
+}
+
+.svc-ellipse-5{
+    position: absolute;
+    top: 75rem;
+    left: -10rem;
+    width: 500px;
+    height: 500px;
+    background-color: #8BD1D2;
+    border-radius: 50%;
+    filter: blur(250px);
+}
+
+.svc-ellipse-6{
+    position: absolute;
+    top: 115rem;
+    right: -10rem;
+    width: 500px;
+    height: 500px;
+    background-color:#A5027D;
+    border-radius: 50%;
+    filter: blur(200px);
+}
+
+.svc-ellipse-7{
+    position: absolute;
+    top: 115rem;
+    right: 15rem;
+    width: 90px;
+    height: 90px;
+    background-color:#FF8400;
+    border-radius: 50%;
+    filter: blur(50px);
+}
+
+.svc-ellipse-8{
+    position: absolute;
+    top: 115rem;
+    right: 45rem;
+    width: 90px;
+    height: 90px;
+    background-color:#FF8400;
+    border-radius: 50%;
+    filter: blur(40px);
+}
+
+.svc-ellipse-9{
+    position: absolute;
+    top: 135rem;
+    right: 25rem;
+    width: 90px;
+    height: 90px;
+    background-color:#0098A1;
+    border-radius: 50%;
+    filter: blur(40px);
+}
+
+.svc-ellipse-10{
+    position: absolute;
+    top: 135rem;
+    left: -5rem;
+    width: 350px;
+    height: 350px;
+    background-color:#8BD1D2;
+    border-radius: 50%;
+    filter: blur(200px);
+}
+
+.svc-ellipse-11{
+    position: absolute;
+    top: 165rem;
+    left: -5rem;
+    width: 600px;
+    height: 500px;
+    background-color:#A5027D;
+    border-radius: 50%;
+    filter: blur(250px);
+}
+
+/* rectangle */
+
+.svc-rectangle-1{
+    position: absolute;
+    top: 10rem;
+    left: 15rem;
+    width: 900px;
+    height: 200px;
+    filter: blur(80px);
+    transform: rotate(25deg);
+    background-color: #FF840026;
+}
+
+.svc-rectangle-2{
+    position: absolute;
+    top: 60rem;
+    left: 15rem;
+    width: 900px;
+    height: 200px;
+    filter: blur(80px);
+    transform: rotate(25deg);
+    background-color: #FF840026;
+}

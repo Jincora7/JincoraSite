@@ -9,5 +9,6 @@ body {
   scroll-behavior: smooth;
   width: 100%;
   height: 100%;
+  background-color: #06013C;
   font-family: 'Poppins', sans-serif;
 }
