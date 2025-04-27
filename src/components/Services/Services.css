@@ -33,6 +33,14 @@
     border-radius: 20px;
     padding: 1rem 1rem;
     font-size: 18px;
+    transition: all;
+    transition-duration: 400ms;
+}
+
+.services-wrapper button:hover{
+    background-color: #FF8400;
+    color: white;
+    border-color: #FF8400;
 }
 
 .services-wrapper .services-page2{

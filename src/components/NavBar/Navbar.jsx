@@ -12,6 +12,13 @@ function Navbar() {
     const [searchOpen, setSearchOpen] = useState(false);
     const [inputBox,setInputBox] = useState("");
 
+    const scrollToContact = () => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <div className="wrapper">
             <img src={logo} alt="Jincora" />
@@ -21,7 +28,7 @@ function Navbar() {
                 <NavLink to="/services">Services<FaAngleDown /></NavLink>
                 <NavLink to="/portfolio">Portfolio</NavLink>
                 <NavLink to="/about">About Us</NavLink>
-                <NavLink to="/contact">Contact Us</NavLink>
+                <NavLink to="#" onClick={scrollToContact}>Contact Us</NavLink>
             </div>
 
             <div className="search">
@@ -49,7 +56,7 @@ function Navbar() {
                     <NavLink to="/services" onClick={() => setMenuOpen(false)}>Services<FaAngleDown /></NavLink>
                     <NavLink to="/portfolio" onClick={() => setMenuOpen(false)}>Portfolio</NavLink>
                     <NavLink to="/about" onClick={() => setMenuOpen(false)}>About Us</NavLink>
-                    <NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact Us</NavLink>
+                    <NavLink to="#" onClick={() => { setMenuOpen(false); scrollToContact(); }}>Contact Us</NavLink>
                 </div>
             )}
         </div>
