@@ -1,4 +1,4 @@
-.page3-wrapper{
+/* .page3-wrapper{
     width: 100%;
     padding: 3rem 10rem;
     display: flex;
@@ -42,11 +42,134 @@
 }
 
 .page3-wrapper .page3-pillars-wrapper{
-    /* background: #000; */
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+} */
+
+
+
+/* ----------------------------------------------------------- */
+
+
+
+
+.page3-wrapper {
+    width: 100%;
+    padding: 3rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.page3-heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.page3-heading-tagline {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.page3-para-wrap {
+    width: 100%;
+    max-width: 70rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.page3-para {
+    margin-top: 2rem;
+    font-weight: 200;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.page3-para-subheading {
+    font-weight: 500;
+}
+
+.page3-second-para {
+    font-weight: 200;
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.page3-pillars-wrapper {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.page3-pillars-image {
+    width: 12rem;
+    max-width: 90vw;
+    height: auto;
+}
+
+/* ---------- Responsive Styles ---------- */
+
+@media (max-width: 1024px) {
+    .page3-heading {
+        font-size: 2.5rem;
+    }
+
+    .page3-para-wrap {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .page3-wrapper {
+        padding: 2rem 2rem;
+    }
+
+    .page3-heading {
+        font-size: 2rem;
+    }
+
+    .page3-heading-tagline {
+        font-size: 1.1rem;
+    }
+
+    .page3-pillars-image {
+        width: 10rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page3-heading {
+        font-size: 1.7rem;
+    }
+
+    .page3-heading-tagline {
+        font-size: 1rem;
+    }
+
+    .page3-para {
+        font-size: 1rem;
+    }
+
+    .page3-second-para {
+        font-size: 0.95rem;
+    }
+
+    .page3-pillars-image {
+        width: 8rem;
+    }
 }

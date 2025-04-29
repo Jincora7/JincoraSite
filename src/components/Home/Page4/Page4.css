@@ -1,4 +1,4 @@
-.page4-wrapper{
+/* .page4-wrapper{
     width: 100%;
     min-height: 100vh;
     padding: 5rem 12rem;
@@ -22,4 +22,45 @@
     flex-direction: column;
     gap: 3rem;
     padding: 1rem 4rem;
-}
+} */
+
+
+
+/* ------------------------------------------------ */
+
+
+.page4-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+  }
+  
+  .page4-yellow-heading {
+    color: #EE7F02;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-left: 5rem;
+    font-size: 1rem;
+  }
+  
+  .page4-heading {
+    text-transform: uppercase;
+    margin-left: 5rem;
+    font-size: 2rem;
+  }
+  
+  .page4-services-wrap {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1rem;
+  }
+  
+
+  .page4-service-box {
+    width: 80%;
+    margin: 0 auto;
+  }
+  

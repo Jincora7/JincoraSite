@@ -1,4 +1,4 @@
-.pg4-c2-wrapper {
+/* .pg4-c2-wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -48,8 +48,166 @@
   
   .pg-c2-img {
     width: 100%;
-    /* max-width: 20rem; */
+   
     height: auto;
     object-fit: contain;
+  }
+   */
+
+
+   /* ----------------------------------- */
+
+
+/* 
+   .pg4-c2-wrapper {
+    
+    display: flex;
+    flex-wrap: wrap;
+    background: #FF8400;
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .pg-c2-mid {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .pg-c2-img {
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .pg4-c2 {
+    flex: 1;
+    min-width: 280px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .pg4-c2-heading {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .pg4-c2-para {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .pg4-c2-link {
+    color: white;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    width: fit-content;
+  }
+  
+  @media (max-width: 768px) {
+    .pg4-c2-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .pg4-c2, .pg-c2-mid {
+      padding: 1.5rem;
+      align-items: center;
+    }
+  
+    .pg4-c2-heading {
+      font-size: 1.4rem;
+    }
+  }
+   */
+
+
+
+   /* ----------------------------------- */
+
+
+
+   .pg4-c2-wrapper {
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+    background: #FF8400;
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .pg-c2-mid {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .pg-c2-img {
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .pg4-c2 {
+    flex: 1;
+    min-width: 280px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .pg4-c2-heading {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .pg4-c2-para {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .pg4-c2-link {
+    color: white;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    width: fit-content;
+  }
+  
+  @media (max-width: 768px) {
+    .pg4-c2-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .pg4-c2, .pg-c2-mid {
+      padding: 1.5rem;
+      align-items: center;
+    }
+  
+    .pg4-c2-heading {
+      font-size: 1.4rem;
+    }
   }
   
