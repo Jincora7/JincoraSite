@@ -68,8 +68,136 @@
   /* -------------------------------- */
 
 
-
+/* 
   .page4-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+  }
+  
+  .page4-yellow-heading,
+  .page4-heading {
+    margin-left: 5rem;
+  }
+  
+  .page4-yellow-heading {
+    color: #ee7f02;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+  
+  .page4-heading {
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+  
+  .page4-services-wrap {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1rem;
+  }
+  
+  .page4-service-box {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .page4-yellow-heading,
+    .page4-heading {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .page4-heading {
+      font-size: 1.5rem;
+    }
+  
+    .page4-yellow-heading {
+      font-size: 0.875rem;
+    }
+  
+    .page4-service-box {
+      width: 100%;
+      padding: 0 1rem;
+    }
+  } */
+
+
+
+
+
+
+
+  /* Page4Wrapper (Main Container) */
+/* .page4-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+  }
+  
+  .page4-yellow-heading,
+  .page4-heading {
+    margin-left: 5rem;
+  }
+  
+  .page4-yellow-heading {
+    color: #ee7f02;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+  
+  .page4-heading {
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+  
+  .page4-services-wrap {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1rem;
+  }
+  
+  .page4-service-box {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .page4-yellow-heading,
+    .page4-heading {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .page4-heading {
+      font-size: 1.5rem;
+    }
+  
+    .page4-yellow-heading {
+      font-size: 0.875rem;
+    }
+  
+    .page4-service-box {
+      width: 100%;
+      padding: 0 1rem;
+    }
+  } */
+
+
+
+
+
+  /* Page4 Wrapper (Main Container) */
+.page4-wrapper {
     width: 100%;
     min-height: 100vh;
     padding: 4rem 2rem;
