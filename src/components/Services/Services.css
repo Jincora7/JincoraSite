@@ -51,6 +51,7 @@
 
 .services-wrapper .services-page2 span{
     font-size: 20px;
+    margin-left: 4rem;     /*alignment heading */
     font-weight: 200;
     padding: 3px 0;
     border-bottom: 2px solid #FF8400;
@@ -86,6 +87,7 @@
     align-items: center;
     font-size: 17px;
     margin-top: 15px;
+    
     font-weight: 300;
 }
 
@@ -220,6 +222,12 @@
     .services-wrapper .services-page2 .services-page2-btm .services-page2-btm-left h1 {
       font-size: 2.2rem;
     }
+
+
+    .services-wrapper .services-page2 span {
+        font-size: 18px;
+        margin-left: 2rem;
+      }
   }
   
   @media screen and (max-width: 768px) {
@@ -248,9 +256,11 @@
       max-width: 100%;
     }
   
-    .services-page2 span {
-      font-size: 18px;
-    }
+
+    .services-wrapper .services-page2 span {
+        font-size: 17px;
+        margin-left: 1rem;
+      }
   
     .services-wrapper .services-page2 {
       margin-top: 5rem;
@@ -283,6 +293,55 @@
   
     .services-page3 .services-page3-list-container .services-page3-list-item-img-wrap {
       aspect-ratio: 16/9;
+    }
+
+    .services-wrapper .services-page2 span {
+        font-size: 16px;
+        margin-left: 0;
+        text-align: center;
+        display: block;
+      }
+
+
+  }
+  
+
+  @media screen and (max-width: 390px) {
+    .services-wrapper .services-page2 {
+      padding: 0 1rem;
+    }
+  
+    .services-wrapper .services-page2 span {
+      margin-left: 0;
+      display: block;
+      text-align: center;
+      font-size: 16px;
+      padding-bottom: 5px;
+    }
+  
+    .services-wrapper .services-page2 .services-page2-btm {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+  
+    .services-page2-btm-left h1 {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  
+    .services-page2-btm-left p {
+      text-align: center;
+      font-size: 14px;
+      padding: 0 1rem;
+    }
+  
+    .services-page2-btm-right ul li {
+      justify-content: center;
+      font-size: 14px;
+      gap: 0.5rem;
     }
   }
   
