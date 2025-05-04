@@ -310,7 +310,7 @@ function Navbar() {
 
                 <NavLink to="/services">
                     Services
-                    <FaAngleDown />
+                    {/* <FaAngleDown /> */}
                 </NavLink>
                 {/* <NavLink to="/portfolio">Portfolio</NavLink> */}
                 {/* <NavLink to="/about">About Us</NavLink> */}
@@ -335,7 +335,7 @@ function Navbar() {
                 <NavLink to="#" onClick={scrollToAboutUs}>
                     About Us
                 </NavLink>
-                
+
             </div>
 
             <div className="search">
@@ -399,7 +399,7 @@ function Navbar() {
 
                     <NavLink to="/services" onClick={() => setMenuOpen(false)}>
                         Services
-                        <FaAngleDown />
+                        {/* <FaAngleDown /> */}
                     </NavLink>
                     {/* <NavLink to="/portfolio" onClick={() => setMenuOpen(false)}>
                         Portfolio

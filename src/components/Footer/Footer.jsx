@@ -212,7 +212,7 @@ function Footer() {
             <li>About Us</li>
             <li>Book a Call</li>
             <li>Become Our Partner</li>
-            <li>Connect @jincora.com</li>
+            <li>Connect admin@jincora.com</li>
           </ul>
         </div>
 
