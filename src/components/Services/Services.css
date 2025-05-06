@@ -86,9 +86,10 @@
     flex-wrap: nowrap;
     gap: 10px;
     align-items: center;
+    justify-content: left;
     font-size: 17px;
     margin-top: 15px;
-    
+    text-align: left;
     font-weight: 300;
 }
 
