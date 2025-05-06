@@ -6,6 +6,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 2rem 3rem;
+    margin-top: 70px;
 }
 
 .services-wrapper .services-page1{
@@ -179,6 +180,8 @@
 
 .services-page3 .services-page3-list-container .services-page3-list-item .services-page3-list-item-content a{
     font-weight: 500;
+    text-decoration: none;
+    color: white;
 }
 
 
