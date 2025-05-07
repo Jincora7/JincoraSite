@@ -6,7 +6,7 @@ const Policy = () => {
   return (
     <div className="policy-wrapper">
       <div className="policy-section">
-        <h1>Privacy Policy</h1>
+        <h1>Privacy Policy </h1>
 
         <div className="policy-content">
           <p>
