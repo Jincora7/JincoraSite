@@ -174,7 +174,7 @@
 
 
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { IoLogoInstagram } from "react-icons/io";
 import { FaPinterest, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -241,8 +241,8 @@ function Footer() {
       <div className="footer-second">
         <h4>Copyright © 2025 Jincora.com All Rights Reserved</h4>
         <div>
-          <h4>Refund Policy</h4>
-          <h4>Privacy Policy</h4>
+          <Link to="/terms-and-conditions">Terms and Conditions</Link>
+          <Link to="/privacy-policy">Privacy Policy</Link>
         </div>
       </div>
     </div>

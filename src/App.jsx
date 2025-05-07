@@ -42,6 +42,8 @@
   import Contact from './components/Contact/Contact.jsx'
   import Footer from './components/Footer/Footer.jsx'
   import { RouterProvider,Route,createBrowserRouter,createRoutesFromElements } from 'react-router-dom'
+import TermsAndConditions from './components/TermsAndConditions/TermsAndConditions.jsx'
+import Policy from './components/Policy/Policy.jsx'
 
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -49,6 +51,8 @@
         <Route path='/' element={<Home />} />
         <Route path='/services' element={<Services />} />
         <Route path='/portfolio' element={<Portfolio />} />
+        <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
+        <Route path='/privacy-policy' element={<Policy />} />
         {/* <Route path='/about' element={<About />} /> */}
         
       </Route>

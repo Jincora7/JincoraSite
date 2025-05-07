@@ -1,12 +1,14 @@
 import React from 'react'
 import other18 from '../../../assets/other18.png'
 import { FaPlus } from "react-icons/fa6";
+import {useNavigate} from "react-router-dom"
 
 
 
 import "./Page2.css"
 
 function Page2() {
+  const navigate=useNavigate();
   return (
     <div className="page2-wrapper">
       <div className='page2-left'>
@@ -20,7 +22,7 @@ function Page2() {
           <span><FaPlus /> Focus on People</span>
           <span><FaPlus /> High Standards</span>
         </div>
-        <button>Know More</button>
+        <button onClick={()=> navigate("/services")}>Know More</button>
       </div>
 
       <div className='page2-image-wrap'>

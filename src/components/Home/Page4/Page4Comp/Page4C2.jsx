@@ -13,7 +13,7 @@ function Page4C2({image1,image2,heading,para}) {
             <div className='pg4-c2'>
                 <h1 className='pg4-c2-heading'>{heading}</h1>
                 <p className='pg4-c2-para'>{para}</p>
-                <Link className='pg4-c2-link'>Learn More</Link>
+                {/* <Link className='pg4-c2-link'>Learn More</Link> */}
             </div>
 
             <div className='pg-c2-mid'>

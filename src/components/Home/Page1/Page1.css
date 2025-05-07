@@ -58,7 +58,7 @@
     font-weight: 200;
 }
 
-.page1-wrapper .page1-inner-div .get-started button{
+.page1-wrapper .page1-inner-div .get-started a{
     font-size: 1rem;
     padding: 1rem 2rem;
     outline: none;
@@ -67,6 +67,13 @@
     color: white;
     background-color: #705DCF;
     border-radius: 2rem;
+    transition: all;
+    transition-duration: 300ms;
+    text-decoration: none;
+}
+
+.page1-wrapper .page1-inner-div .get-started a:hover{
+  background-color: #FF8400;
 }
 
 /* .page1-wrapper .page1-bottom-heading p{

@@ -49,6 +49,12 @@
     color: white;
     font-size: 1rem;
     font-weight: 300;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.page2-wrapper .page2-left button:hover{
+    background-color: #FF8400;
 }
 
 .page2-wrapper .page2-image-wrap{

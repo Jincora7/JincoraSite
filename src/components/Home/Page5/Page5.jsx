@@ -57,10 +57,10 @@ function Page5() {
                         <input className="page5-input" type="text" name="date" placeholder="Preferred Date & Time" />
                         <div className="page5-button-group">
     <button className="page5-submit-btn">Submit</button>
-    <span className="page5-or-text">or</span>
+    {/* <span className="page5-or-text">or</span>
     <button
         type="button"
-        className="page5-submit-btn"
+        className="page 5-submit-btn"
         onClick={() =>
             window.open(
                 "https://calendly.com/admin-jincora/30min",
@@ -69,7 +69,7 @@ function Page5() {
         }
     >
         Book a Call
-    </button>
+    </button> */}
 </div>
 
                     </form>

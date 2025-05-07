@@ -8,6 +8,7 @@ import Page5 from './components/Home/Page5/Page5.jsx'
 import HomePageBackground from './components/Backgrounds/HomePageBackground/HomePageBackground.jsx'
 import ServicesPageBackground from './components/Backgrounds/ServicesPageBackground/ServicesPageBackground.jsx'
 import AboutUsPageBackground from './components/Backgrounds/AboutUsPageBackground/AboutUsPageBackground.jsx'
+import PrivacyPolicyBackground from './components/Backgrounds/Privacy-Policy/PrivacyPolicyBackground.jsx'
 
 function Layout() {
     const location=useLocation();
@@ -22,9 +23,12 @@ function Layout() {
 
             case "/about":
                 return <AboutUsPageBackground/>
+            
+            case "/privacy-policy":
+                return <PrivacyPolicyBackground/>
         
             default:
-                return <HomePageBackground/>;
+                return <ServicesPageBackground/>;
         }
     }
 

@@ -47,7 +47,7 @@
 import React, { useEffect } from 'react';
 import other07 from "../../../assets/other07.png"
 import bulb from "../../../assets/bulb.png"
-
+import { NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
 
@@ -65,8 +65,15 @@ function Home() {
     }
   }, [location]);
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div id="Home"  className="page1-wrapper">
+    <div id="Home" className="page1-wrapper">
 
       <div className='page1-inner-div'>
         <div>
@@ -78,7 +85,7 @@ function Home() {
 
           <div className='get-started'>
             <p>Transforming Digital Potential <br />into Powerful Reality.</p>
-            <button>Get Started</button>
+            <NavLink to="#" onClick={scrollToContact} >Get Started</NavLink>
           </div>
         </div>
 

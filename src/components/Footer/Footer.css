@@ -190,9 +190,10 @@
     gap: 10px;
   }
   
-  .footer-second h4 {
+  .footer-second a {
     font-size: 14px;
     color: #aaa;
+    text-decoration: none;
   }
   
   .footer-second div {
