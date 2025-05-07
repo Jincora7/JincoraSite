@@ -44,6 +44,8 @@
 @media (max-width:600px){
     .policy-section{
         font-size: 14px;
+        width: 100%;
+        padding: 10px;
     }
 
     .policy-section h1{

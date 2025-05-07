@@ -26,9 +26,13 @@ function Layout() {
             
             case "/privacy-policy":
                 return <PrivacyPolicyBackground/>
+
+            case "/terms-and-conditions":
+                return <PrivacyPolicyBackground/>
         
             default:
-                return <ServicesPageBackground/>;
+                return <PrivacyPolicyBackground/>; 
+                // Using PrivacyPolicyBackground becuase it is smallest background that's cover the page without overflow of background and content.
         }
     }
 
