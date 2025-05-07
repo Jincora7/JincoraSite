@@ -39,3 +39,13 @@
     margin-left: 2%;
     margin-top: 5px;
 }
+
+@media (max-width:600px){
+    .policy-section{
+        font-size: 12px;
+    }
+
+    .policy-section h1{
+        font-size: 28px;
+    }
+}
