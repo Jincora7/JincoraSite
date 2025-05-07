@@ -11,6 +11,7 @@
 
 .policy-section{
     max-width: 70%;
+    /* font-weight: 200; */
 }
 
 .policy-section h1{
@@ -42,7 +43,7 @@
 
 @media (max-width:600px){
     .policy-section{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .policy-section h1{
