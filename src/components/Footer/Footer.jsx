@@ -212,7 +212,7 @@ function Footer() {
             <li>About Us</li>
             <li>Book a Call</li>
             <li>Become Our Partner</li>
-            <li>Connect admin@jincora.com</li>
+            <li>admin@jincora.com</li>
           </ul>
         </div>
 
@@ -222,8 +222,7 @@ function Footer() {
             <h3>Get News & Updates</h3>
             <hr />
             <p>
-              Our expertise, as well as our passion for web design, <br />
-              sets us apart from other agencies.
+              Our expertise, as well as our passion for web design,sets us apart from other agencies.
             </p>
             <div className="footer-icons">
               <IoLogoInstagram size={30} />

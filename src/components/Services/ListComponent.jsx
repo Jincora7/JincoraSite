@@ -17,11 +17,11 @@ function ListComponent({imageUrl,heading,content,linkUrl}) {
                     {content}
                 </p>
 
-                <span>
+                {/* <span>
                     <Link to={linkUrl}>
                         Learn More
                     </Link>
-                </span>
+                </span> */}
             </div>
         </div>
     )
