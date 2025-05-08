@@ -344,6 +344,7 @@
 
     .page5-form {
         align-items: center;
+        
     }
 
     .page5-bottom-form {
@@ -362,3 +363,119 @@
         max-width: 300px;
     }
 }
+
+
+
+/* -------------------------------- */
+@media (max-width: 375px) {
+    .page5-wrapper {
+      padding: 1rem 1rem;
+      align-items: center;
+      margin-left: 0;
+    }
+  
+    .page5-yellow-heading,
+    .page5-heading {
+      width: 100%;
+      margin-left: 0;
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .page5-heading {
+      font-size: 1.1rem;
+    }
+  
+    .page5-bottom {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  
+    .page5-bottom-form {
+      padding: 1rem;
+    }
+  
+    .page5-form-heading {
+      font-size: 1.1rem;
+    }
+  
+    .page5-input {
+      padding: 0.8rem 0;
+      max-width: 100%;
+      font-size: 0.85rem;
+    }
+  
+    .page5-submit-btn {
+      padding: 0.5rem 1.2rem;
+      font-size: 0.9rem;
+    }
+  
+    .page5-bottom-img {
+      max-width: 100%;
+    }
+  
+    .page5-button-group {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .page5-or-text {
+      font-size: 0.9rem;
+    }
+  }
+  
+
+  /* --------------------------- */
+
+  @media (max-width: 414px) {
+    .page5-wrapper {
+      padding: 1.5rem 2rem;
+      align-items: center;
+      margin-left: 0;
+    }
+  
+    .page5-yellow-heading,
+    .page5-heading {
+      width: 100%;
+      margin-left: 0;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  
+    .page5-bottom {
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+  
+    .page5-bottom-form {
+      padding: 1.2rem;
+    }
+  
+    .page5-form-heading {
+      font-size: 1.2rem;
+    }
+  
+    .page5-input {
+      padding: 1rem 0;
+      font-size: 0.9rem;
+    }
+  
+    .page5-submit-btn {
+      padding: 0.6rem 1.8rem;
+      font-size: 1rem;
+    }
+  
+    .page5-bottom-img {
+      max-width: 100%;
+    }
+  
+    .page5-button-group {
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+  
+    .page5-or-text {
+      font-size: 1rem;
+    }
+  }
+  
