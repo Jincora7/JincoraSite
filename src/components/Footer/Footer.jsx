@@ -208,6 +208,8 @@ function Footer() {
           </Link>
         </div>
 
+
+        <div className="footer-services-contacts">
         <div>
           <h5>Services</h5>
           <ul>
@@ -231,6 +233,9 @@ function Footer() {
             <li>admin@jincora.com</li>
           </ul>
         </div>
+        </div>
+        
+
 
         <div className="subscribe">
           <h5>Subscribe</h5>
