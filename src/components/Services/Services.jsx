@@ -9,6 +9,7 @@ import list2 from "../../assets/services-list-2.png"
 import list3 from "../../assets/services-list-3.png"
 import list4 from "../../assets/services-list-4.png"
 import list5 from "../../assets/services-list-5.png"
+import Page5 from "../Home/Page5/Page5.jsx";
 
 function Services() {
 
@@ -46,68 +47,71 @@ function Services() {
   ]
 
   return (
-    <div className="services-wrapper">
-      <div className="services-page1">
-        <p>Your</p>
-        <h1>Ai Automation Agency</h1>
-        <p>Automate your business and workflows effortlessly with our no-code automation solutions. Boost efficiency, drive growth, and cut costs—seamlessly and affordably!</p>
+    <>
+      <div className="services-wrapper">
+        <div className="services-page1">
+          <p>Your</p>
+          <h1>Ai Automation Agency</h1>
+          <p>Automate your business and workflows effortlessly with our no-code automation solutions. Boost efficiency, drive growth, and cut costs—seamlessly and affordably!</p>
 
-        <button>Book a call</button>
-      </div>
+          <button>Book a call</button>
+        </div>
 
-      <div className="services-page2">
-        <span>
-          Automation Of Workflow & Business
-        </span>
+        <div className="services-page2">
+          <span>
+            Automation Of Workflow & Business
+          </span>
 
-        <div className="services-page2-btm">
-          <div className="services-page2-btm-left">
-            <h1>
-              With Jincora ‘s
-            </h1>
-            <h1>
-              Advance Top-Tier
-            </h1>
-            <h1>
-              Solutions
-            </h1>
-            <p>
-              Jincora empowers companies with no-code AI automation solutions, seamlessly integrating advanced features into existing workflows. By leveraging platforms like Jincora, Zapier, Make/Integromat, Jincora, and GMB, Jincora streamlines data management, marketing campaigns, and customer service operations. With a user-friendly interface and seamless interoperability, businesses can harness AI-driven automation effortlessly—enhancing efficiency, reducing complexity, and gaining a competitive edge in today’s fast-paced market.
+          <div className="services-page2-btm">
+            <div className="services-page2-btm-left">
+              <h1>
+                With Jincora ‘s
+              </h1>
+              <h1>
+                Advance Top-Tier
+              </h1>
+              <h1>
+                Solutions
+              </h1>
+              <p>
+                Jincora empowers companies with no-code AI automation solutions, seamlessly integrating advanced features into existing workflows. By leveraging platforms like Jincora, Zapier, Make/Integromat, Jincora, and GMB, Jincora streamlines data management, marketing campaigns, and customer service operations. With a user-friendly interface and seamless interoperability, businesses can harness AI-driven automation effortlessly—enhancing efficiency, reducing complexity, and gaining a competitive edge in today’s fast-paced market.
 
-            </p>
+              </p>
 
-            <button>Contact Now !</button>
+              <button>Contact Now !</button>
+            </div>
+
+            <div className="services-page2-btm-right">
+              <ul>
+                <li><FaPlus className="list-cross" /> E-commerce Development <br />(Shopify, Magento, WordPress)</li>
+                <li><FaPlus className="list-cross" /> Custom Web Development</li>
+                <li><FaPlus className="list-cross" /> E-commerce Consultancy & Strategy</li>
+                <li><FaPlus className="list-cross" /> Website Design & UI/UX Optimization</li>
+                <li><FaPlus className="list-cross" /> Third-Party Integrations & Automation</li>
+                <li><FaPlus className="list-cross" /> Performance & SEO Optimization</li>
+                <li><FaPlus className="list-cross" /> Ongoing Maintenance & Support</li>
+              </ul>
+            </div>
           </div>
+        </div>
 
-          <div className="services-page2-btm-right">
-            <ul>
-              <li><FaPlus className="list-cross" /> E-commerce Development <br />(Shopify, Magento, WordPress)</li>
-              <li><FaPlus className="list-cross" /> Custom Web Development</li>
-              <li><FaPlus className="list-cross" /> E-commerce Consultancy & Strategy</li>
-              <li><FaPlus className="list-cross" /> Website Design & UI/UX Optimization</li>
-              <li><FaPlus className="list-cross" /> Third-Party Integrations & Automation</li>
-              <li><FaPlus className="list-cross" /> Performance & SEO Optimization</li>
-              <li><FaPlus className="list-cross" /> Ongoing Maintenance & Support</li>
-            </ul>
+        <div className="services-page3">
+          <h1>
+            Why Choose Us
+          </h1>
+          <p className="services-page3-para">
+            With our team of experts and deep understanding of AI technologies, we provide cutting-edge AI automation services that transform businesses across industries.
+          </p>
+
+          <div className="services-page3-list-container">
+            {listItems.map((index, key) => (
+              <ListComponent key={key} imageUrl={index.imageUrl} heading={index.heading} content={index.content} linkUrl={index.linkUrl} />
+            ))}
           </div>
         </div>
       </div>
-
-      <div className="services-page3">
-        <h1>
-          Why Choose Us
-        </h1>
-        <p className="services-page3-para">
-          With our team of experts and deep understanding of AI technologies, we provide cutting-edge AI automation services that transform businesses across industries.
-        </p>
-
-        <div className="services-page3-list-container">
-          {listItems.map((index, key) => (
-            <ListComponent key={key} imageUrl={index.imageUrl} heading={index.heading} content={index.content} linkUrl={index.linkUrl} />
-          ))}
-        </div>
-      </div>
-    </div>
+      <Page5 />
+    </>
   )
 }
 

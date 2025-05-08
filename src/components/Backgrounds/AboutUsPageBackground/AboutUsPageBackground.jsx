@@ -15,9 +15,9 @@ function AboutUsPageBackground() {
       <div className="about-circle1"></div>
       <div className="about-circle2"></div>
       <div className="about-circle3"></div>
-      <div className="about-circle4"></div>
-      <div className="about-circle5"></div>
-      <div className="about-circle6"></div>
+      {/* <div className="about-circle4"></div> */}
+      {/* <div className="about-circle5"></div> */}
+      {/* <div className="about-circle6"></div> */}
     </div>
   )
 }

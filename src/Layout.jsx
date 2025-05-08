@@ -45,7 +45,7 @@ function Layout() {
                 <div className="content-wrap">
                     <Navbar />
                     <Outlet/>
-                    <Page5/>
+                    {/* <Page5/> */}
                     <Footer />
                 </div>
             </div>
