@@ -215,68 +215,7 @@
   }
   
 
-  /* --------------------------------- */
-/* 
-  @media (max-width: 375px) {
-    .footer-wrapper {
-      padding: 40px 15px 20px;
-      text-align: center;
-    }
-  
-    .footer-first {
-      flex-direction: column;
-      align-items: center;
-      gap: 30px;
-    }
-  
-    .footer-logo img {
-      width: 150px;
-    }
-  
-    .footer-first h5 {
-      font-size: 16px;
-      margin-bottom: 15px;
-    }
-  
-    .footer-first ul li {
-      font-size: 14px;
-    }
-  
-    .subscribe {
-      max-width: 100%;
-      margin-bottom: 20px;
-    }
-  
-    .inner-sub h3 {
-      font-size: 15px;
-    }
-  
-    .inner-sub p {
-      font-size: 13px;
-    }
-  
-    .footer-icons {
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-  
-    .footer-second {
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-    }
-  
-    .footer-second a {
-      font-size: 13px;
-    }
-  
-    .footer-second div {
-      flex-direction: column;
-      gap: 8px;
-    }
-  }
-   */
+
 
 
    /* For iPhone SE and similar devices (max-width: 375px) */
@@ -413,5 +352,71 @@
 
   .footer-logo img {
     width: 180px;
+  }
+}
+
+
+
+
+.footer-services-contacts {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* On very small screens, stack vertically again */
+@media (max-width: 414px) {
+  .footer-services-contacts {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+
+
+@media only screen and (max-width: 375px) {
+  .footer-services-contacts {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Override for iPhone XR (414px), iPhone 12 Pro (390px), iPhone 14 Pro Max (430px) */
+@media only screen and (max-width: 430px) and (min-width: 376px) {
+  .footer-services-contacts {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .footer-services-contacts {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+  .footer-services-contacts {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer-section {
+    flex: 1;
+    min-width: 120px;
   }
 }

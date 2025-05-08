@@ -173,6 +173,89 @@
 
 
 
+// import React from 'react';
+// import { Link, NavLink } from 'react-router-dom';
+// import { IoLogoInstagram } from "react-icons/io";
+// import { FaPinterest, FaLinkedin, FaFacebook } from "react-icons/fa";
+// import { FaXTwitter } from "react-icons/fa6";
+
+// import logo from "../../assets/logo.png";
+// import "./Footer.css";
+
+// function Footer() {
+//   return (
+//     <div  id="AboutUs" className="footer-wrapper">
+//       <div className="footer-first">
+//         <div>
+//           <NavLink className="footer-logo" to="/">
+//             <img src={logo} alt="Jincora Logo" />
+//           </NavLink>
+//         </div>
+
+//         <div>
+//           <h5>Services</h5>
+//           <ul>
+//             <li>SEO</li>
+//             <li>SMM</li>
+//             <li>Ecommerce</li>
+//             <li>AI Automation</li>
+//             <li>Graphic Design</li>
+//             <li>Web Development</li>
+//           </ul>
+//         </div>
+
+//         <div>
+//           <h5>Contacts</h5>
+//           <ul>
+//             <li>Blog</li>
+//             <li>Portfolio</li>
+//             <li><Link to="/about">About Us</Link></li>
+//             <li>Book a Call</li>
+//             <li>Become Our Partner</li>
+//             <li>admin@jincora.com</li>
+//           </ul>
+//         </div>
+
+//         <div className="subscribe">
+//           <h5>Subscribe</h5>
+//           <div className="inner-sub">
+//             <h3>Get News & Updates</h3>
+//             <hr />
+//             <p>
+//               Our expertise, as well as our passion for web design,sets us apart from other agencies.
+//             </p>
+//             <div className="footer-icons">
+//               <IoLogoInstagram size={30} />
+//               <FaPinterest size={30} />
+//               <FaLinkedin size={30} />
+//               <FaXTwitter size={30} />
+//               <FaFacebook size={30} />
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+
+//       <hr />
+
+//       <div className="footer-second">
+//         <h4>Copyright © 2025 Jincora.com All Rights Reserved</h4>
+//         <div>
+//           <Link to="/terms-and-conditions">Terms and Conditions</Link>
+//           <Link to="/privacy-policy">Privacy Policy</Link>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Footer;
+
+
+
+// ------------------------------------------------
+
+
+
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { IoLogoInstagram } from "react-icons/io";
@@ -184,67 +267,72 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div  id="AboutUs" className="footer-wrapper">
-      <div className="footer-first">
-        <div>
-          <NavLink className="footer-logo" to="/">
-            <img src={logo} alt="Jincora Logo" />
-          </NavLink>
-        </div>
+      <div id="AboutUs" className="footer-wrapper">
+          <div className="footer-first">
+              <div>
+                  <NavLink className="footer-logo" to="/">
+                      <img src={logo} alt="Jincora Logo" />
+                  </NavLink>
+              </div>
 
-        <div>
-          <h5>Services</h5>
-          <ul>
-            <li>SEO</li>
-            <li>SMM</li>
-            <li>Ecommerce</li>
-            <li>AI Automation</li>
-            <li>Graphic Design</li>
-            <li>Web Development</li>
-          </ul>
-        </div>
+              <div className="footer-services-contacts">
+                  <div>
+                      <h5>Services</h5>
+                      <ul>
+                          <li>SEO</li>
+                          <li>SMM</li>
+                          <li>Ecommerce</li>
+                          <li>AI Automation</li>
+                          <li>Graphic Design</li>
+                          <li>Web Development</li>
+                      </ul>
+                  </div>
 
-        <div>
-          <h5>Contacts</h5>
-          <ul>
-            <li>Blog</li>
-            <li>Portfolio</li>
-            <li><Link to="/about">About Us</Link></li>
-            <li>Book a Call</li>
-            <li>Become Our Partner</li>
-            <li>admin@jincora.com</li>
-          </ul>
-        </div>
+                  <div>
+                      <h5>Contacts</h5>
+                      <ul>
+                          <li>Blog</li>
+                          <li>Portfolio</li>
+                          <li>
+                              <Link to="/about">About Us</Link>
+                          </li>
+                          <li>Book a Call</li>
+                          <li>Become Our Partner</li>
+                          <li>admin@jincora.com</li>
+                      </ul>
+                  </div>
+              </div>
 
-        <div className="subscribe">
-          <h5>Subscribe</h5>
-          <div className="inner-sub">
-            <h3>Get News & Updates</h3>
-            <hr />
-            <p>
-              Our expertise, as well as our passion for web design,sets us apart from other agencies.
-            </p>
-            <div className="footer-icons">
-              <IoLogoInstagram size={30} />
-              <FaPinterest size={30} />
-              <FaLinkedin size={30} />
-              <FaXTwitter size={30} />
-              <FaFacebook size={30} />
-            </div>
+              <div className="subscribe">
+                  <h5>Subscribe</h5>
+                  <div className="inner-sub">
+                      <h3>Get News & Updates</h3>
+                      <hr />
+                      <p>
+                          Our expertise, as well as our passion for web
+                          design,sets us apart from other agencies.
+                      </p>
+                      <div className="footer-icons">
+                          <IoLogoInstagram size={30} />
+                          <FaPinterest size={30} />
+                          <FaLinkedin size={30} />
+                          <FaXTwitter size={30} />
+                          <FaFacebook size={30} />
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
-      </div>
 
-      <hr />
+          <hr />
 
-      <div className="footer-second">
-        <h4>Copyright © 2025 Jincora.com All Rights Reserved</h4>
-        <div>
-          <Link to="/terms-and-conditions">Terms and Conditions</Link>
-          <Link to="/privacy-policy">Privacy Policy</Link>
-        </div>
+          <div className="footer-second">
+              <h4>Copyright © 2025 Jincora.com All Rights Reserved</h4>
+              <div>
+                  <Link to="/terms-and-conditions">Terms and Conditions</Link>
+                  <Link to="/privacy-policy">Privacy Policy</Link>
+              </div>
+          </div>
       </div>
-    </div>
   );
 }
 
