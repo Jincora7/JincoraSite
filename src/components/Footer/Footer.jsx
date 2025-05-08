@@ -173,23 +173,39 @@
 
 
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { IoLogoInstagram } from "react-icons/io";
 import { FaPinterest, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { useLocation, useNavigate } from 'react-router-dom';
 
 import logo from "../../assets/logo.png";
 import "./Footer.css";
 
 function Footer() {
+
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const scrollToHome = () => {
+    if (location.pathname === "/") {
+      // Already on home, scroll
+      const section = document.getElementById("Home");
+      section?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // Navigate to home with scroll flag
+      navigate("/", { state: { scrollTo: "Home" } });
+    }
+  }
+  
   return (
-    <div  id="AboutUs" className="footer-wrapper">
+    <div id="AboutUs" className="footer-wrapper">
       <div className="footer-first">
         <div>
-          <NavLink className="footer-logo" to="/">
+          <Link className="footer-logo" to="/" onClick={scrollToHome}>
             <img src={logo} alt="Jincora Logo" />
-          </NavLink>
+          </Link>
         </div>
 
         <div>
@@ -210,7 +226,7 @@ function Footer() {
             <li>Blog</li>
             <li>Portfolio</li>
             <li><Link to="/about">About Us</Link></li>
-            <li>Book a Call</li>
+            <li><Link to="https://calendly.com/admin-jincora/30min" target='_blank'>Book a Call</Link></li>
             <li>Become Our Partner</li>
             <li>admin@jincora.com</li>
           </ul>
@@ -225,11 +241,11 @@ function Footer() {
               Our expertise, as well as our passion for web design,sets us apart from other agencies.
             </p>
             <div className="footer-icons">
-              <IoLogoInstagram size={30} />
-              <FaPinterest size={30} />
-              <FaLinkedin size={30} />
-              <FaXTwitter size={30} />
-              <FaFacebook size={30} />
+              <Link to="https://www.instagram.com/jincora_techsolutions/" target='_blank'><IoLogoInstagram size={30} /></Link>
+              <Link to="#" target='_blank'><FaPinterest size={30} /></Link>
+              <Link to="https://www.linkedin.com/company/jincora/" target='_blank'><FaLinkedin size={30} /></Link>
+              <Link to="https://x.com/jincora_tech?t=4AaCk2vw335gmdpOgU0iiw&s=09" target='_blank'><FaXTwitter size={30} /></Link>
+              <Link to="https://www.facebook.com/share/1AH9TC8zj8/" target='_blank'><FaFacebook size={30} /></Link>
             </div>
           </div>
         </div>

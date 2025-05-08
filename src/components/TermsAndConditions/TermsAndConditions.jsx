@@ -4,7 +4,7 @@ import React from 'react'
 
 const TermsAndConditions = () => {
   return (
-    <div className="terms-wrapper">
+    <div id="TermsAndConditions" className="terms-wrapper">
       <div className="terms-section">
         <h1>Terms and Conditions</h1>
 

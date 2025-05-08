@@ -237,7 +237,7 @@ import React, { useState, useEffect } from "react";
 import logo from "../../assets/logo.png";
 import { FaAngleDown } from "react-icons/fa6";
 import { FiMenu } from "react-icons/fi";
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 import { RxCross2 } from "react-icons/rx";
 
 import { useNavigate, useLocation } from "react-router-dom"; /*changes*/
@@ -298,8 +298,8 @@ function Navbar() {
     }, []);
 
     return (
-        <div className="wrapper">
-            <img src={logo} alt="Jincora" />
+        <div id="Navbar" className="wrapper">
+            <Link to="/" onClick={scrollToHome}><img src={logo} alt="Jincora" /></Link>
 
             <div className="navLink">
                 {/* <NavLink to="/">Home</NavLink> */}
