@@ -144,6 +144,11 @@
     cursor: pointer;
     transition: color 0.3s ease;
   }
+
+  .footer-first ul li a{
+    text-decoration: none;
+    color: #ccc;
+  }
   
   .footer-first ul li:hover {
     color: #fff;

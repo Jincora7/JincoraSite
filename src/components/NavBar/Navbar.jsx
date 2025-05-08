@@ -276,12 +276,12 @@ function Navbar() {
         }
     };
 
-    const scrollToAboutUs = () => {
-        const AboutUsSection = document.getElementById("AboutUs");
-        if (AboutUsSection) {
-            AboutUsSection.scrollIntoView({ behavior: "smooth" });
-        }
-    };
+    // const scrollToAboutUs = () => {
+    //     const AboutUsSection = document.getElementById("AboutUs");
+    //     if (AboutUsSection) {
+    //         AboutUsSection.scrollIntoView({ behavior: "smooth" });
+    //     }
+    // };
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth > 1024) {
@@ -332,7 +332,7 @@ function Navbar() {
                     Contact Us
                 </NavLink>
 
-                <NavLink to="#" onClick={scrollToAboutUs}>
+                <NavLink to="/about">
                     About Us
                 </NavLink>
 

@@ -209,7 +209,7 @@ function Footer() {
           <ul>
             <li>Blog</li>
             <li>Portfolio</li>
-            <li>About Us</li>
+            <li><Link to="/about">About Us</Link></li>
             <li>Book a Call</li>
             <li>Become Our Partner</li>
             <li>admin@jincora.com</li>
