@@ -125,6 +125,7 @@
   .footer-logo img {
     width: 200px;
     height: auto;
+    
   }
   
   .footer-first h5 {
@@ -213,3 +214,204 @@
     }
   }
   
+
+  /* --------------------------------- */
+/* 
+  @media (max-width: 375px) {
+    .footer-wrapper {
+      padding: 40px 15px 20px;
+      text-align: center;
+    }
+  
+    .footer-first {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .footer-logo img {
+      width: 150px;
+    }
+  
+    .footer-first h5 {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  
+    .footer-first ul li {
+      font-size: 14px;
+    }
+  
+    .subscribe {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .inner-sub h3 {
+      font-size: 15px;
+    }
+  
+    .inner-sub p {
+      font-size: 13px;
+    }
+  
+    .footer-icons {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .footer-second {
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+  
+    .footer-second a {
+      font-size: 13px;
+    }
+  
+    .footer-second div {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+   */
+
+
+   /* For iPhone SE and similar devices (max-width: 375px) */
+@media only screen and (max-width: 375px) {
+  .footer-first {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-logo img {
+    width: 140px;
+  }
+
+  .footer-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-second div {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .footer-second a {
+    font-size: 12px;
+  }
+
+  .subscribe {
+    max-width: 100%;
+  }
+
+  .inner-sub p {
+    font-size: 13px;
+  }
+}
+
+/* For iPhone 12 Pro (max-width: 390px) */
+@media only screen and (max-width: 390px) {
+  .footer-logo img {
+    width: 150px;
+  }
+
+  .footer-first {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .footer-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-second div {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .footer-second a {
+    font-size: 13px;
+  }
+}
+
+/* For iPhone XR and similar devices (max-width: 414px) */
+@media only screen and (max-width: 414px) {
+  .footer-logo img {
+    width: 160px;
+  }
+
+  .footer-first {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .footer-second div {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .footer-second a {
+    font-size: 13.5px;
+  }
+}
+
+/* For tablets (e.g., iPads, 600px–768px) */
+@media only screen and (max-width: 768px) {
+  .footer-first {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .footer-logo img {
+    width: 170px;
+  }
+
+  .footer-second {
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .footer-second div {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* Optional: Slight compression for small laptops (up to 1024px) */
+@media only screen and (max-width: 1024px) {
+  .footer-wrapper {
+    padding: 40px 20px 20px;
+  }
+
+  .footer-logo img {
+    width: 180px;
+  }
+}

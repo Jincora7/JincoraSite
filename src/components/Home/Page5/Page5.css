@@ -479,3 +479,57 @@
     }
   }
   
+
+  /* ------------ */
+  @media (max-width: 430px) {
+    .page5-wrapper {
+      padding: 1rem 1.5rem;
+      align-items: center;
+      margin-left: 0;
+    }
+  
+    .page5-yellow-heading,
+    .page5-heading {
+      width: 100%;
+      margin-left: 0;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  
+    .page5-bottom {
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+  
+    .page5-bottom-form {
+      padding: 1.2rem;
+    }
+  
+    .page5-form-heading {
+      font-size: 1.2rem;
+    }
+  
+    .page5-input {
+      padding: 1rem 0;
+      font-size: 0.9rem;
+    }
+  
+    .page5-submit-btn {
+      padding: 0.6rem 1.6rem;
+      font-size: 1rem;
+    }
+  
+    .page5-bottom-img {
+      max-width: 100%;
+    }
+  
+    .page5-button-group {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  
+    .page5-or-text {
+      font-size: 1rem;
+    }
+  }
+  
