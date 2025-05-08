@@ -434,10 +434,10 @@ function Navbar() {
                     </NavLink>
 
                     <NavLink
-                        to="#"
+                        to="/about"
                         onClick={() => {
                             setMenuOpen(false);
-                            scrollToAboutUs();
+                            // scrollToAboutUs();
                         }}
                     >
                         About Us
