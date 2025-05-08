@@ -229,3 +229,55 @@
     padding: 0 1rem;
   }
 }
+
+
+/* ------------------- */
+
+
+@media (max-width: 375px) {
+  .pg4-c1-wrapper {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .pg4-c1,
+  .pg-c1-mid {
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    margin-left: -12px;
+    
+  }
+
+  .pg4-c1-heading {
+    font-size: 1.2rem; /* Slightly smaller heading */
+  }
+
+  .pg4-c1-para {
+    font-size: 0.9rem;
+    line-height: 1.5;
+   
+    
+  }
+
+  .pg4-c1-link {
+    font-size: 0.9rem;
+  }
+
+  .pg-c1-img {
+    max-width: 90%;
+    margin-left: 7px;
+  }
+
+  .page4-heading {
+    font-size: 1.3rem;
+  }
+
+  .page4-yellow-heading {
+    font-size: 0.8rem;
+  }
+
+  .page4-service-box {
+    padding: 0 0.5rem;
+  }
+}
