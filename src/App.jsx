@@ -53,7 +53,7 @@ import Policy from './components/Policy/Policy.jsx'
         <Route path='/portfolio' element={<Portfolio />} />
         <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
         <Route path='/privacy-policy' element={<Policy />} />
-        {/* <Route path='/about' element={<About />} /> */}
+        <Route path='/about' element={<About />} />
         
       </Route>
     )
