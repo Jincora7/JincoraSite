@@ -407,7 +407,7 @@
 @media (max-width: 375px) {
   .pg4-c1-wrapper {
     flex-direction: column;
-    padding: 1rem;
+    padding: 2rem 1rem;
   }
 
   .pg4-c1,
@@ -512,7 +512,7 @@
 @media (max-width: 430px) {
   .pg4-c1-wrapper {
     flex-direction: column;
-    padding: 1rem;
+    padding: 1rem 0rem;
   }
 
   .pg4-c1,
