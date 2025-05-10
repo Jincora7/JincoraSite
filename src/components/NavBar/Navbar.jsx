@@ -589,7 +589,29 @@ function Navbar() {
                     Contact Us
                 </NavLink>
 
-                <NavLink to="/about">About Us</NavLink>
+                {/* <NavLink to="/about">About Us</NavLink> */}
+
+                <NavLink
+                    to="#"
+                    onClick={() => {
+                        setMenuOpen(false);
+                        if (location.pathname === "/about") {
+                            const topOfAbout =
+                                document.getElementById("top-of-about");
+                            if (topOfAbout) {
+                                topOfAbout.scrollIntoView({
+                                    behavior: "smooth",
+                                });
+                            }
+                        } else {
+                            navigate("/about", {
+                                state: { scrollToTop: true },
+                            });
+                        }
+                    }}
+                >
+                    About Us
+                </NavLink>
             </div>
 
             <div className="search">
