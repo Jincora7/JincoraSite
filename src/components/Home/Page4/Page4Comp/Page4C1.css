@@ -125,18 +125,18 @@
 
 
 
-/* --------------------------------- */
+/* ---------------working------------------ */
 
 
 /* Page4C1 (Component 1) */
-.pg4-c1-wrapper {
+/* .pg4-c1-wrapper {
   display: flex;
   flex-wrap: wrap;
   background: #FF8400;
   color: white;
   border-radius: 12px;
   overflow: hidden;
-  margin-bottom: 2rem; /* Added spacing between sections */
+  margin-bottom: 2rem; 
 }
 
 .pg4-c1 {
@@ -185,9 +185,9 @@
   width: fit-content;
 }
 
-@media (max-width: 390px) { /* Specific fix for iPhone 12 Pro */
+@media (max-width: 390px) { 
   .page4-wrapper {
-    padding: 2rem 1rem; /* Reduce padding for smaller screens */
+    padding: 2rem 1rem; 
   }
 
   .page4-yellow-heading,
@@ -197,11 +197,11 @@
   }
 
   .page4-heading {
-    font-size: 1.4rem; /* Reduce font size */
+    font-size: 1.4rem; 
   }
 
   .page4-yellow-heading {
-    font-size: 0.85rem; /* Reduce font size */
+    font-size: 0.85rem;
   }
 
   .pg4-c1-wrapper {
@@ -215,7 +215,7 @@
   }
 
   .pg4-c1-heading {
-    font-size: 1.4rem; /* Reduce heading size */
+    font-size: 1.4rem;
   }
 
   .pg-c1-img {
@@ -231,7 +231,7 @@
 }
 
 
-/* ------------------- */
+
 
 
 @media (max-width: 375px) {
@@ -250,7 +250,7 @@
   }
 
   .pg4-c1-heading {
-    font-size: 1.2rem; /* Slightly smaller heading */
+    font-size: 1.2rem;
   }
 
   .pg4-c1-para {
@@ -278,6 +278,281 @@
   }
 
   .page4-service-box {
+    padding: 0 0.5rem;
+  }
+} */
+
+
+/* ---------------workiing-------------------------- */
+
+
+/* Page4C1 (Component 1) */
+ .pg4-c1-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background: #FF8400;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 2rem; 
+}
+
+.pg4-c1 {
+  flex: 1;
+  min-width: 280px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pg-c1-mid {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.pg-c1-img {
+  width: 100%;
+  max-width: 20rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.pg4-c1-heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.pg4-c1-para {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.pg4-c1-link {
+  color: white;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  width: fit-content;
+}
+
+@media (max-width: 400px) {
+  .page4-wrapper {
+    padding: 2rem 1rem; 
+  }
+
+  .page4-yellow-heading,
+  .page4-heading {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .page4-heading {
+    font-size: 1.3rem;
+  }
+
+  .page4-yellow-heading {
+    font-size: 0.8rem;
+  }
+
+  .pg4-c1-wrapper {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .pg4-c1,
+  .pg-c1-mid {
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .pg4-c1-heading {
+    font-size: 1.2rem;
+  }
+
+  .pg4-c1-para {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .pg4-c1-link {
+    font-size: 0.9rem;
+  }
+
+  .pg-c1-img {
+    max-width: 90%;
+    margin-left: 0;
+  }
+
+  .page4-service-box {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 375px) {
+  .pg4-c1-wrapper {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .pg4-c1,
+  .pg-c1-mid {
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    margin-left: -12px;
+    
+  }
+
+  .pg4-c1-heading {
+    font-size: 1.2rem;
+  }
+
+  .pg4-c1-para {
+    font-size: 0.9rem;
+    line-height: 1.5;
+   
+    
+  }
+
+  .pg4-c1-link {
+    font-size: 0.9rem;
+  }
+
+  .pg-c1-img {
+    max-width: 90%;
+    margin-left: 7px;
+  }
+
+  .page4-heading {
+    font-size: 1.3rem;
+  }
+
+  .page4-yellow-heading {
+    font-size: 0.8rem;
+  }
+
+  .page4-service-box {
+    padding: 0 0.5rem;
+  }
+} 
+
+@media (max-width: 414px) {
+  .page4-wrapper {
+    padding: 2rem 1rem;
+  }
+
+  .page4-yellow-heading,
+  .page4-heading {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .page4-heading {
+    font-size: 1.3rem;
+  }
+
+  .page4-yellow-heading {
+    font-size: 0.8rem;
+  }
+
+  .pg4-c1-wrapper {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .pg4-c1,
+  .pg-c1-mid {
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .pg4-c1-heading {
+    font-size: 1.2rem;
+  }
+
+  .pg4-c1-para {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .pg4-c1-link {
+    font-size: 0.9rem;
+  }
+
+  .pg-c1-img {
+    max-width: 90%;
+    margin-left: 0;
+  }
+
+  .page4-service-box {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+}
+
+
+@media (max-width: 430px) {
+  .pg4-c1-wrapper {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .pg4-c1,
+  .pg-c1-mid {
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .pg4-c1-heading {
+    font-size: 1.2rem;
+  }
+
+  .pg4-c1-para {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .pg4-c1-link {
+    font-size: 0.9rem;
+  }
+
+  .pg-c1-img {
+    max-width: 90%;
+    margin-left: 0;
+  }
+
+  .page4-heading {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .page4-yellow-heading {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .page4-service-box {
+    width: 100%;
     padding: 0 0.5rem;
   }
 }

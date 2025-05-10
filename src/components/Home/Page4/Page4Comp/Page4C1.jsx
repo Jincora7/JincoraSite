@@ -8,7 +8,7 @@ function Page4C1({head1,head2,para1,para2,image}) {
             <div className='pg4-c1'>
                 <h1 className='pg4-c1-heading'>{head1}</h1>
                 <p className='pg4-c1-para'>{para1}</p>
-                <Link className='pg4-c1-link'>Learn More</Link>
+                {/* <Link className='pg4-c1-link'>Learn More</Link> */}
             </div>
 
             <div className='pg-c1-mid'>
