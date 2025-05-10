@@ -488,6 +488,9 @@ a {
     z-index: 999;
     flex-wrap: nowrap; /* Important: prevent wrapping */
     gap: 20px; /* Add some gap for spacing */
+
+
+
 }
 
 
@@ -638,11 +641,16 @@ a {
 
 .responsive-nav {
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: 0;
     width: 100%;
     background: #00000075;
-    
+
+
+        background: rgba(0, 0, 0, 0.4); /* translucent dark */
+    backdrop-filter: blur(10px);   /* blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+
   
     display: flex;
     flex-direction: column;
@@ -695,7 +703,7 @@ a {
         transform: translateY(0);
         opacity: 1;
     }
-}
+} 
 
 
 
