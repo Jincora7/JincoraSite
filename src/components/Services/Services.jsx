@@ -189,7 +189,7 @@ function Services() {
 
   return (
     <>
-    <div id="top-of-services" >
+    
     
       <div id="top-of-services" className="services-wrapper">
         
@@ -199,7 +199,20 @@ function Services() {
           <h1>Ai Automation Agency</h1>
           <p>Automate your business and workflows effortlessly with our no-code automation solutions. Boost efficiency, drive growth, and cut costs—seamlessly and affordably!</p>
 
-          <button>Book a call</button>
+          {/* <button>Book a call</button> */}
+
+                <button
+                    className="calendly-button"
+                    onClick={() =>
+                        window.open(
+                            "https://calendly.com/admin-jincora/30min",
+                            "_blank"
+                        )
+                    }
+                >
+                    Book a Call
+                </button>
+
         </div>
 
         <div className="services-page2">
@@ -256,10 +269,16 @@ function Services() {
         </div>
       </div>
       <Page5 />
-      </div>
+      
       
     </>
   )
 }
 
 export default Services
+
+
+
+
+// ---------------------------------
+

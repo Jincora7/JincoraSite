@@ -186,6 +186,10 @@
 }
 
 
+#top-of-services {
+  scroll-margin-top: 100px; /* adjust based on navbar height */
+}
+
 
 
 
