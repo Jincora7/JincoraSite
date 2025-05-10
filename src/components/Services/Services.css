@@ -234,7 +234,10 @@
 
     .services-wrapper .services-page2 span {
         font-size: 18px;
-        margin-left: 2rem;
+        /* margin-left: 2rem; */
+                margin-left: 0;
+        text-align: center;
+        display: block;
       }
   }
   
@@ -267,7 +270,11 @@
 
     .services-wrapper .services-page2 span {
         font-size: 17px;
-        margin-left: 1rem;
+        /* margin-left: 1rem; */
+
+        margin-left: 0;
+        text-align: center;
+        display: block;
       }
   
     .services-wrapper .services-page2 {
