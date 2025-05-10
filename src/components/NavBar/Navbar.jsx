@@ -718,11 +718,33 @@ function Navbar() {
                         Contact Us
                     </NavLink>
 
-                    <NavLink
+                    {/* <NavLink
                         to="/about"
                         onClick={() => {
                             setMenuOpen(false);
-                            // scrollToAboutUs();
+                            
+                        }}
+                    >
+                        About Us
+                    </NavLink> */}
+
+                    <NavLink
+                        to="#"
+                        onClick={() => {
+                            setMenuOpen(false);
+                            if (location.pathname === "/about") {
+                                const topEl =
+                                    document.getElementById("top-of-about");
+                                if (topEl) {
+                                    topEl.scrollIntoView({
+                                        behavior: "smooth",
+                                    });
+                                }
+                            } else {
+                                navigate("/about", {
+                                    state: { scrollToTop: true },
+                                });
+                            }
                         }}
                     >
                         About Us
