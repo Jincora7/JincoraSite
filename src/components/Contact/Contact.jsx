@@ -1,48 +1,49 @@
-// import React from 'react'
-
-// function Contact() {
-//   return (
-//     <div>Contact hello</div>
-//   )
-// }
-
-// export default Contact
+import "./Contact.css"
+import React from 'react'
+import imgLast from "../../assets/home-page-last-image.png"
 
 
+function Contact() {
+    return (
+        <div id="contact" className="contact-wrapper">
+            <h4 className='contact-yellow-heading'>CONSULT BEFORE YOU START</h4>
+            <h1 className='contact-heading'>Want to discuss Your Project</h1>
+            <h1 className='contact-heading'>Schedule Your Free Consultation!!</h1>
 
+            <div className="contact-bottom">
+                <div className="contact-bottom-form">
+                    <h3 className="contact-form-heading">Reserve Your Spot – Let’s Talk!</h3>
+                    <form className="contact-form" action="">
+                        <input className="contact-input" type="text" name="name" placeholder="Your Name" />
+                        <input className="contact-input" type="email" name="email" placeholder="Email" />
+                        <input className="contact-input" type="text" name="description" placeholder="Project Description" />
+                        <input className="contact-input" type="text" name="date" placeholder="Preferred Date & Time" />
+                        <div className="contact-button-group">
+                            <button className="contact-submit-btn">Submit</button>
+                            {/* <span className="contact-or-text">or</span>
+    <button
+        type="button"
+        className="page 5-submit-btn"
+        onClick={() =>
+            window.open(
+                "https://calendly.com/admin-jincora/30min",
+                "_blank"
+            )
+        }
+    >
+        Book a Call
+    </button> */}
+                        </div>
 
+                    </form>
+                </div>
 
-
-import React from 'react';
-import './Contact.css';
-import contact from '../../assets/contact.png' // Replace with your actual image
-
-const Contact = () => {
-  return (
-    <div className="contact">
-      <p className="contact__subheading">CONSULT BEFORE YOU START</p>
-      <h1 className="contact__heading">
-        Want to discuss Your Project<br />
-        <span className="contact__highlight">Schedule Your Free Consultation!!</span>
-      </h1>
-
-      <div className="contact__content">
-        <div className="contact__form-box">
-          <h2 className="contact__form-title">Reserve Your Spot – Let’s Talk!</h2>
-          <form className="contact__form">
-            <input type="text" className="contact__input" placeholder="Your Name" required />
-            <input type="email" className="contact__input" placeholder="Email" required />
-            <input type="text" className="contact__input" placeholder="Project Description" required />
-            <input type="text" className="contact__input" placeholder="Preferred Date & Time" required />
-            <button type="submit" className="contact__submit-btn">Submit</button>
-          </form>
+                <div className="contact-bottom-image">
+                    <img className="contact-bottom-img" src={imgLast} alt="" />
+                </div>
+            </div>
         </div>
-        <div className="contact__image-box">
-          <img src={contact} alt="Contact Illustration" className="contact__image" />
-        </div>
-      </div>
-    </div>
-  );
-};
+    )
+}
 
-export default Contact;
+export default Contact
