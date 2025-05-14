@@ -11,7 +11,6 @@ import list2 from "../../assets/services-list-2.png"
 import list3 from "../../assets/services-list-3.png"
 import list4 from "../../assets/services-list-4.png"
 import list5 from "../../assets/services-list-5.png"
-import Contact from "../Contact/Contact.jsx"
 
 function Services() {
 
@@ -143,9 +142,7 @@ function Services() {
             ))}
           </div>
         </div>
-      </div>
-      <Contact />
-      
+      </div>  
       
     </>
   )

@@ -18,7 +18,6 @@ const router = createBrowserRouter(
       <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
       <Route path='/privacy-policy' element={<Policy />} />
       <Route path='/about' element={<About />} />
-
     </Route>
   )
 )
