@@ -1,18 +1,12 @@
 import React from 'react'
-// import Page1 from "./Page1/Page1.jsx"
-// import Page2 from './Page2/Page2.jsx'
-// import Page3 from './Page3/Page3.jsx'
-// import Page4 from './Page4/Page4.jsx'
+import HomeCards from './Home-Cards/HomeCards.jsx'
+import cardImage from "../../assets/website-development.png"
 
 function Home() {
   return (
-    <>
-      {/* <Page1/>
-      <Page2/>
-      <Page3/>
-      <Page4/> */}
-      {/* <Contact /> */}
-    </>
+    <div className="home-wrapper">
+      <HomeCards bgColor="#2C0E4A" image={cardImage} heading="Website Design and Development" para="Jincora crafts stunning, functional websites tailored to your business, combining cutting-edge design with seamless functionality to elevate your online presence." />
+    </div>
   )
 }
 
