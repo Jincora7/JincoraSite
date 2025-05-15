@@ -2,7 +2,7 @@ import "./HeroSection.css"
 
 import React from 'react'
 import bulb from "../../../assets/bulb.png"
-import maskGrp from "../../../assets/Mask_group.png"
+import maskGrp from "../../../assets/mask-grp.png"
 
 const HeroSection = () => {
     return (
@@ -26,7 +26,7 @@ const HeroSection = () => {
 
 
             <div className="hero-section-right">
-                <img className="hero-section-right-image" src={maskGrp} alt="" />
+                <img className="hero-section-right-image" src={maskGrp} alt="Creative" />
             </div>
         </div>
     )
