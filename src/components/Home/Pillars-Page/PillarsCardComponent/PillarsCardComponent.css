@@ -1,0 +1,31 @@
+.pillars-card-component{
+  width: 100%;
+  max-width: 300px;
+  background-color: whitesmoke;
+  color: #4B4B4B;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.pillars-card-component .pillars-card-comp-img{
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.pillars-card-component.pillars-card-comp-img img{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.pillars-card-component h4{
+  margin-top: 5px;
+  font-size: 20px;
+  color: #1A0B2E;
+}
+
+.pillars-card-component .pillar-card-comp-para{
+  font-size: 16px;
+  margin-top: 5px;
+}
