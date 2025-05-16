@@ -67,13 +67,13 @@ export default function Contact() {
             alt="Support Agent"
             className="contact-image"
           />
-          <div className="support-box">
+          {/* <div className="support-box">
             <div className="support-text">
               <p className="support-title">Support</p>
               <p className="support-subtitle">Drop Us a Line Anytime!</p>
             </div>
             <div className="support-247">24/7</div>
-          </div>
+          </div> */}
         </div>
 
         {/* Right - Contact Form */}
