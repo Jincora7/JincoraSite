@@ -349,3 +349,15 @@
   color: #fff;
   transform: translateY(-2px);
 }
+
+
+@media (max-width: 640px) {
+  .demo-title {
+    font-size: 20px;
+  }
+
+  .demo-button {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
