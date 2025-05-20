@@ -15,3 +15,31 @@ body {
   font-family: "Space Grotesk", sans-serif;
   /* background: linear-gradient(341.69deg, rgba(59, 24, 112, 0) 21.43%, rgba(21, 11, 37, 0.5) 50%, #2C0E4A 78.57%); */
 }
+
+h1{
+  font-size: 58px;
+}
+
+h2{
+  font-size: 40px;
+}
+
+h3{
+  font-size: 32px;
+}
+
+h4{
+  font-size: 24px;
+}
+
+h5{
+  font-size: 20px;
+}
+
+h6{
+  font-size: 18px;
+}
+
+p{
+  font-size: 16px;
+}

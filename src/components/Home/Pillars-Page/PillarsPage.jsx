@@ -37,27 +37,36 @@ const PillarsPage = () => {
 
                 <PrimaryBtn content="Connect with Sales" />
             </div>
+            
             <div className="pillars-card-bottom">
-                <div className="pilllars-card-btm-left">
+                <div className="pillars-card-btm-left">
                     <h3>The Pillars of Jincora</h3>
                     <p>Our Four Pillars define who we are — driving innovation, empowering talent, delivering excellence, and fostering lasting partnerships.</p>
                 </div>
-                <div className="pilllars-card-btm-right">
+                <div className="pillars-card-btm-right">
                     <div className="pillars-card-btm-list">
-                        <img src={pillar1} alt="" />
-                        <p>Growing stronger together with trust</p>
+                        <div className="pillars-card-btm-list-content">
+                            <img src={pillar1} alt="" />
+                            <p>Growing stronger together with trust</p>
+                        </div>
                     </div>
                     <div className="pillars-card-btm-list">
-                        <img src={pillar2} alt="" />
-                        <p>Empowering talent to build better</p>
+                        <div className="pillars-card-btm-list-content">
+                            <img src={pillar2} alt="" />
+                            <p>Empowering talent to build better</p>
+                        </div>
                     </div>
                     <div className="pillars-card-btm-list">
-                        <img src={pillar3} alt="" />
-                        <p>Delivering results that exceed expectations</p>
+                        <div className="pillars-card-btm-list-content">
+                            <img src={pillar3} alt="" />
+                            <p>Delivering results that exceed expectations</p>
+                        </div>
                     </div>
                     <div className="pillars-card-btm-list">
-                        <img src={pillar4} alt="" />
-                        <p>Growing stronger together with trust</p>
+                        <div className="pillars-card-btm-list-content">
+                            <img src={pillar4} alt="" />
+                            <p>Growing stronger together with trust</p>
+                        </div>
                     </div>
                 </div>
             </div>
