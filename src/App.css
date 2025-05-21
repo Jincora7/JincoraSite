@@ -1,5 +1,6 @@
 .main {
   width: 100%;
-  min-height:100vh;
-  color:white;
+  min-height: 100vh;
+  color: white;
+  background: linear-gradient(341.69deg, #3B187000 21.43%, #150B2580 50%, #2C0E4A 78.57%);
 }

@@ -1,7 +1,6 @@
 .pillars-wrap {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(to bottom right, #2C0E4A, #150B2580);
     padding: 0 1rem;
 }
 
@@ -92,17 +91,14 @@
     max-width: 170px;
     height: 200px;
     padding: 5px 20px;
+    transition-duration: 300ms;
+    transition-timing-function:ease-in-out;
 }
 
 .pillars-card-btm-list p{
     text-align: left;
     font-size: 14px;
 }
-
-
-/* .pillars-card-btm-list-content {
-
-} */
 
 .pillars-card-btm-list img {
     width: 100%;
@@ -112,7 +108,7 @@
     border-radius: 8px;
 }
 
-.pillars-card-btm-list:nth-child(4){
+.pillars-card-btm-list:hover{
     background-color: #1A0B2E;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;

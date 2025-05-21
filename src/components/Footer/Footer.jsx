@@ -199,7 +199,7 @@ function Footer() {
       <hr />
 
       <div className="footer-second">
-        <h4>Copyright © 2025 Jincora.com All Rights Reserved</h4>
+        <p>Copyright © 2025 Jincora.com All Rights Reserved</p>
         <div>
           <Link to="/terms-and-conditions">Terms and Conditions</Link>
           <Link to="/privacy-policy">Privacy Policy</Link>
