@@ -1,6 +1,5 @@
 .pillars-wrap {
     width: 100%;
-    min-height: 100vh;
     padding: 0 1rem;
 }
 
@@ -115,7 +114,7 @@
 }
 
 
-@media (min-width:768px) {
+@media (min-width:1024px) {
     .pillars-wrap {
         padding: 5rem 5rem;
     }
