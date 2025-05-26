@@ -148,3 +148,214 @@
     padding: 0 10px;
   }
 }
+
+
+
+/* iPhone 14 Pro Max (430px) */
+@media (max-width: 430px) {
+  .growth-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .growth-text h2 {
+    font-size: 20px;
+  }
+
+  .growth-text ul {
+  list-style: none;
+  padding: 10px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+    font-size: 13px;
+  font-weight: 300;
+  
+    display: flex;
+  flex-direction: column;
+  gap: 8px; /* adjust spacing */
+  text-align: left;
+  }
+
+  .growth-btn {
+    font-size: 12px;
+    padding: 10px 25px;
+  }
+
+  .growth-chart img {
+    max-width: 90%;
+  }
+
+  .faq-section h3 {
+    font-size: 20px;
+  }
+
+  .faq-item summary {
+    font-size: 14px;
+  }
+
+  .faq-item p {
+    font-size: 12px;
+  }
+}
+
+/* iPhone XR (414px) */
+@media (max-width: 414px) {
+  .growth-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .growth-text h2 {
+    font-size: 20px;
+  }
+
+  /* .growth-text ul {
+    font-size: 14px;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+  } */
+     .growth-text ul {
+  list-style: none;
+  padding: 10px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+    font-size: 13px;
+  font-weight: 300;
+  
+    display: flex;
+  flex-direction: column;
+  gap: 8px; /* adjust spacing */
+  text-align: left;
+  }
+
+  .growth-btn {
+    font-size: 12px;
+    padding: 10px 25px;
+  }
+
+  .growth-chart img {
+    max-width: 90%;
+  }
+
+  .faq-section h3 {
+    font-size: 20px;
+  }
+
+  .faq-item summary {
+    font-size: 14px;
+  }
+
+  .faq-item p {
+    font-size: 12px;
+  }
+}
+
+/* iPhone 12 Pro (390px) */
+@media (max-width: 390px) {
+  .growth-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .growth-text h2 {
+    font-size: 19px;
+  }
+
+  .growth-text ul {
+  list-style: none;
+  padding: 10px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+    font-size: 13px;
+  font-weight: 300;
+  
+    display: flex;
+  flex-direction: column;
+  gap: 8px; /* adjust spacing */
+  text-align: left;
+  }
+
+  .growth-btn {
+    font-size: 11px;
+    padding: 10px 22px;
+  }
+
+  .growth-chart img {
+    max-width: 90%;
+  }
+
+  .faq-section h3 {
+    font-size: 18px;
+  }
+
+  .faq-item summary {
+    font-size: 13.5px;
+  }
+
+  .faq-item p {
+    font-size: 11px;
+  }
+}
+
+/* iPhone SE (375px) */
+@media (max-width: 375px) {
+  .growth-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .growth-text h2 {
+    font-size: 18px;
+  }
+
+  /* .growth-text ul {
+    font-size: 13px;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+  } */
+
+  .growth-text ul {
+  list-style: none;
+  padding: 10px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+    font-size: 13px;
+  font-weight: 300;
+  
+    display: flex;
+  flex-direction: column;
+  gap: 8px; /* adjust spacing */
+  text-align: left;
+  }
+
+  .growth-btn {
+    font-size: 10px;
+    padding: 10px 20px;
+  }
+
+  .growth-chart img {
+    max-width: 90%;
+  }
+
+  .faq-section h3 {
+    font-size: 18px;
+  }
+
+  .faq-item summary {
+    font-size: 13px;
+  }
+
+  .faq-item p {
+    font-size: 11px;
+  }
+}
