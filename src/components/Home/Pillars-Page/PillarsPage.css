@@ -150,3 +150,142 @@
 
 
 }
+
+
+/* Desktop and large tablets */
+@media (min-width: 1024px) {
+  .pillars-wrap {
+    padding: 5rem 5rem;
+  }
+
+  .pillars-wrap .pillar-heading h3 {
+    font-size: 2rem;
+    margin-top: 30px;
+    padding: 10px 8rem;
+  }
+
+  .pillars-wrap .pillars-card .pillars-card-para {
+    font-size: 2rem;
+  }
+
+  .pillars-card-bottom {
+    padding: 0 2rem;
+    justify-content: space-around;
+    height: 350px;
+  }
+
+  .pillars-card-btm-right {
+    gap: 1rem;
+    margin-top: -50px;
+  }
+
+  .pillars-card-btm-list {
+    height: 300px;
+  }
+
+  .pillars-card-btm-list-content {
+    margin-top: 3.9rem;
+  }
+}
+
+/* Responsive for tablets and smaller */
+@media (max-width: 1023px) {
+  .pillars-wrap {
+    padding: 2rem 1rem;
+  }
+
+  .pillars-wrap .pillar-heading h3 {
+    font-size: 1.5rem;
+    padding: 10px 3rem;
+  }
+
+  .pillars-wrap .pillars-card .pillars-card-para {
+    font-size: 1.3rem;
+  }
+
+  .pillars-card-bottom {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    height: auto;
+    gap: 1.5rem;
+  }
+
+  .pillars-card-btm-left,
+  .pillars-card-btm-right {
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .pillars-card-btm-list {
+    max-width: 150px;
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  .pillars-card-btm-list p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .pillars-card-btm-list img {
+    max-width: 100%;
+  }
+}
+
+/* Mobile phones (iPhone SE, iPhone 12 Pro, iPhone 14 Pro Max, iPhone XR) */
+/* @media (max-width: 480px) {
+  .pillars-wrap {
+    padding: 1rem 0.5rem;
+  }
+
+  .pillars-wrap .pillar-heading h3 {
+    font-size: 1.2rem;
+    padding: 6px 1.5rem;
+    margin-top: 15px;
+  }
+
+  .pillars-wrap .pillars-card .pillars-card-para {
+    font-size: 1rem;
+    padding: 0 5px;
+  }
+
+  .pillars-card-btm-list {
+    max-width: 140px;
+    padding: 5px 10px;
+  }
+
+  .pillars-card-btm-list p {
+    font-size: 11px;
+  }
+} */
+
+
+/* Mobile phones (iPhone SE, iPhone 12 Pro, iPhone 14 Pro Max, iPhone XR) */
+@media (max-width: 480px) {
+  .pillars-wrap {
+    padding: 1rem 0.5rem;
+  }
+
+  .pillars-wrap .pillar-heading h3 {
+    font-size: 1rem; /* reduced from 1.2rem */
+    padding: 4px 1rem; /* tighter padding */
+    margin-top: 10px;  /* reduced margin */
+    margin-bottom: 10px; /* add this to control space below heading */
+  }
+
+  .pillars-wrap .pillars-card .pillars-card-para {
+    font-size: 0.9rem; /* slightly smaller */
+    padding: 0 5px;
+    margin-top: 0; /* remove any top margin */
+  }
+
+  .pillars-card-btm-list {
+    max-width: 140px;
+    padding: 5px 10px;
+  }
+
+  .pillars-card-btm-list p {
+    font-size: 11px;
+  }
+}
