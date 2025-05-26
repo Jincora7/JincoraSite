@@ -153,8 +153,8 @@ function Footer() {
         <div>
           <h5>Services</h5>
           <ul>
-            <li>SEO</li>
-            <li>SMM</li>
+            <li>Search Engine Optimization</li>
+            <li>Social Media Marketing</li>
             <li>Ecommerce</li>
             <li>AI Automation</li>
             <li>Graphic Design</li>
