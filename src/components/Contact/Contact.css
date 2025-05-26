@@ -751,7 +751,7 @@ label {
 
 @media (max-width: 640px) {
   .contact-container {
-    padding: 20px;
+    padding: 0px;
   }
 
   .contact-title {
@@ -767,14 +767,26 @@ label {
     left: 0;
     bottom: 0;
     margin-top: 20px;
+
+  }
+
+      .contact-right {
+    margin-top: 30px;
+    padding: 30px;
   }
 }
 
 /* ========== iPhone 14 Pro Max (430px width) ========== */
 @media (max-width: 430px) {
-  .contact-right {
-    margin-top: 40px;
-    padding: 0 10px;
+
+
+    .contact-container {
+    padding: 0px;
+  }
+
+    .contact-right {
+    margin-top: 30px;
+    padding: 30px;
   }
 
   .contact-title {
@@ -798,11 +810,20 @@ label {
 
   .contact-image {
     max-height: 60vh;
+    
+    
   }
 }
 
 /* ========== iPhone XR (414px width) ========== */
 @media (max-width: 414px) {
+
+
+    .contact-container {
+    padding: 0px;
+  }
+
+
   .contact-title {
     font-size: 21px;
   }
@@ -823,7 +844,10 @@ label {
 
   .contact-right {
     margin-top: 30px;
+    padding: 30px;
   }
+
+  
 
   .contact-image {
     max-height: 60vh;
@@ -832,6 +856,13 @@ label {
 
 /* ========== iPhone 12 Pro (390px width) ========== */
 @media (max-width: 390px) {
+
+
+  .contact-container {
+    padding: 0px;
+  }
+
+
   .contact-title {
     font-size: 20px;
   }
@@ -846,8 +877,9 @@ label {
     width: 100%;
   }
 
-  .contact-right {
-    margin-top: 40px;
+    .contact-right {
+    margin-top: 30px;
+    padding: 30px;
   }
 
   .contact-image {
@@ -858,8 +890,10 @@ label {
 /* ========== iPhone SE (375px width) ========== */
 @media (max-width: 375px) {
   .contact-container {
-    padding: 10px;
+    padding: 0px;
   }
+
+
 
   .contact-title {
     font-size: 18px;
@@ -881,12 +915,18 @@ label {
     width: 100%;
   }
 
-  .contact-right {
+  /* .contact-right {
     margin-top: 70px;
-    padding: 0 5px;
+    padding: 0 10px;
+  } */
+
+    .contact-right {
+    margin-top: 30px;
+    padding: 30px;
   }
 
   .contact-image {
     max-height: 50vh;
+  
   }
 }

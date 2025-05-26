@@ -91,7 +91,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
+    margin-top: 30px;
+    
+
+
   }
 
   .home-card-right img {
@@ -133,7 +137,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0;
+    margin-top: 30px;
+    
+   
   }
 
   .home-card-right img {
@@ -175,7 +181,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0;
+  margin-top: 30px;
   }
 
   .home-card-right img {
@@ -216,7 +222,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0;
+   margin-top: 30px;
   }
 
   .home-card-right img {

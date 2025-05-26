@@ -233,32 +233,6 @@
   }
 }
 
-/* Mobile phones (iPhone SE, iPhone 12 Pro, iPhone 14 Pro Max, iPhone XR) */
-/* @media (max-width: 480px) {
-  .pillars-wrap {
-    padding: 1rem 0.5rem;
-  }
-
-  .pillars-wrap .pillar-heading h3 {
-    font-size: 1.2rem;
-    padding: 6px 1.5rem;
-    margin-top: 15px;
-  }
-
-  .pillars-wrap .pillars-card .pillars-card-para {
-    font-size: 1rem;
-    padding: 0 5px;
-  }
-
-  .pillars-card-btm-list {
-    max-width: 140px;
-    padding: 5px 10px;
-  }
-
-  .pillars-card-btm-list p {
-    font-size: 11px;
-  }
-} */
 
 
 /* Mobile phones (iPhone SE, iPhone 12 Pro, iPhone 14 Pro Max, iPhone XR) */
@@ -268,16 +242,16 @@
   }
 
   .pillars-wrap .pillar-heading h3 {
-    font-size: 1rem; /* reduced from 1.2rem */
-    padding: 4px 1rem; /* tighter padding */
-    margin-top: 10px;  /* reduced margin */
-    margin-bottom: 10px; /* add this to control space below heading */
+    font-size: 1rem; 
+    padding: 4px 1rem; 
+    margin-top: 10px;  
+    margin-bottom: 10px; 
   }
 
   .pillars-wrap .pillars-card .pillars-card-para {
-    font-size: 0.9rem; /* slightly smaller */
+    font-size: 0.9rem; 
     padding: 0 5px;
-    margin-top: 0; /* remove any top margin */
+    margin-top: 0; 
   }
 
   .pillars-card-btm-list {
@@ -289,3 +263,4 @@
     font-size: 11px;
   }
 }
+
