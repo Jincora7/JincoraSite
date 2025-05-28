@@ -96,13 +96,19 @@
     display: flex;
     gap: 20px;
   }
+
+    .footer-second p{
+       font-size: 12px;
+           display: flex;
+    flex-direction: column;
+    }
   
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     .footer-second {
       flex-direction: row;
       justify-content: space-between;
     }
-  }
+  } */
   
 
 
@@ -314,50 +320,80 @@
 
 /* ----------------------- */
 
-.demo-section {
-  background-color: #4a1d75;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
+
+
+.footer-left {
+  max-width: 300px;
+  margin-left: 60px;
+}
+
+.footer-description {
+  margin: 20px 0;
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-services-contacts {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 50px; 
+  flex-wrap: wrap;
+  margin-right: 80px;
+  margin-top: 30px;
+}
+
+.footer-section {
+  min-width: 160px;
+}
+
+
+.footer-top-sections {
+  display: flex;
+  gap: 130px;
+  flex-wrap: wrap;
   justify-content: center;
 }
+.footer-services-contacts{
+    display: flex;
+  gap: 130px;
+  flex-wrap: wrap;
+  justify-content: center;
 
-.demo-title {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 30px;
-  line-height: 1.4;
-}
-
-.demo-button {
-  background-color: #c29cff;
-  color: black;
-  font-weight: 600;
-  padding: 14px 30px;
-  font-size: 16px;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.demo-button:hover {
-  background-color: #a367ff;
-  color: #fff;
-  transform: translateY(-2px);
 }
 
 
-@media (max-width: 640px) {
-  .demo-title {
-    font-size: 20px;
+@media only screen and (max-width: 430px) {
+  .footer-top-sections {
+    flex-direction: row;
+    
+    justify-content: center;
+    gap: 10px;
   }
 
-  .demo-button {
-    padding: 12px 24px;
-    font-size: 14px;
+    .footer-left {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .footer-services-contacts {
+  display: flex;
+  gap: 50px; 
+  flex-wrap: wrap;
+  margin-right: 0px;
+  margin-top: 0px;
+}
+
+  .footer-top-sections .footer-section {
+    flex: 0 0 45%;
+    min-width: 160px;
+    text-align: center;
+  }
+
+  .services-alone {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
   }
 }
+
+
