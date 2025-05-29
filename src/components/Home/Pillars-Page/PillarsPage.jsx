@@ -17,16 +17,16 @@ const PillarsPage = () => {
     return (
         <div className="pillars-wrap">
             <div className="pillar-heading">
-                <h3>Innovate. Create. Elevate – Your Success, Our Commitment.</h3>
+                <h3>Innovate. Create. Elevate – Where Your Vision Becomes Reality.</h3>
             </div>
 
             <div className="pillars-card">
                 <p className="pillars-card-para">
-                    Powerful Solutions Built to Grow Your Business
+                    Tailored Digital Tools to Fuel Your Success
                 </p>
 
                 <div className="pillars-card-wrap">
-                    <PillarsCardComponent image={pillarImage1} heading="Custom Store Design" para="We create stunning, brand-focused Shopify and WordPress stores designed to engage and convert customers." />
+                    <PillarsCardComponent image={pillarImage1} heading="Personalized Store Design" para="We create stunning, brand-focused Shopify and WordPress stores designed to engage and convert customers." />
 
                     <PillarsCardComponent image={pillarImage2} heading="Seamless Development" para="From setup to launch, we build fast, responsive, and scalable websites that perform flawlessly across all devices." />
 
@@ -40,8 +40,8 @@ const PillarsPage = () => {
             
             <div className="pillars-card-bottom">
                 <div className="pillars-card-btm-left">
-                    <h3>The Pillars of Jincora</h3>
-                    <p>Our Four Pillars define who we are — driving innovation, empowering talent, delivering excellence, and fostering lasting partnerships.</p>
+                    <h3>Innovation Powered By Purpose</h3>
+                    <p>Driving meaningful innovation to empower teams, deliver excellence, and build enduring partnerships.</p>
                 </div>
                 <div className="pillars-card-btm-right">
                     <div className="pillars-card-btm-list">

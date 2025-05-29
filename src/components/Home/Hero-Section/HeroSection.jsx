@@ -20,7 +20,7 @@ const HeroSection = () => {
 
                     <hr />
 
-                    <p>Transforming Digital Potential into Powerful Reality.</p>
+                    <p>Driven by creativity, powered by technology, focused on results.</p>
                 </div>
             </div>
 

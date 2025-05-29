@@ -7,7 +7,7 @@ export default function GrowthSection() {
     <div className="growth-section">
       <div className="growth-content">
         <div className="growth-text">
-          <h2>Unlock Revenue Growth for Your Business</h2>
+          <h2>Unleash New Revenue Opportunities</h2>
           <ul>
             <li>Custom stores built to convert</li>
             <li>Optimized design for higher sales</li>
