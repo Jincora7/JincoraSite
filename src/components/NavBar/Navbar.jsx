@@ -4,6 +4,8 @@ import { FaAngleDown } from "react-icons/fa6";
 import { FiMenu } from "react-icons/fi";
 import { NavLink,Link } from "react-router-dom";
 import { RxCross2 } from "react-icons/rx";
+// import PrimaryBtn from '../../../reusableComponents/PrimaryBtn/PrimaryBtn'
+import PrimaryBtn from "../../reusableComponents/PrimaryBtn/PrimaryBtn";
 
 import { useNavigate, useLocation } from "react-router-dom"; /*changes*/
 
@@ -110,9 +112,11 @@ function Navbar() {
                     Services
                 </NavLink>
 
+                
+
                 {/* <NavLink to="/portfolio">Portfolio</NavLink> */}
                 {/* <NavLink to="/about">About Us</NavLink> */}
-
+{/* 
                 <button
                     className="calendly-button"
                     onClick={() =>
@@ -123,7 +127,7 @@ function Navbar() {
                     }
                 >
                     Book a Call
-                </button>
+                </button> */}
 
                 <NavLink to="#" onClick={scrollToContact}>
                     Contact Us
@@ -152,8 +156,9 @@ function Navbar() {
                 >
                     About Us
                 </NavLink>
+                
             </div>
-
+            {/* 
             <div className="search">
                 <span className="search-icon">
                     <div className="container">
@@ -179,6 +184,40 @@ function Navbar() {
                         </div>
                     </div>
                 </span>
+
+                {!menuOpen ? (
+                    <span
+                        className="menu-icons"
+                        onClick={() => setMenuOpen(true)}
+                    >
+                        <FiMenu size={24} />
+                    </span>
+                ) : (
+                    <span
+                        className="menu-icons"
+                        onClick={() => setMenuOpen(false)}
+                    >
+                        <RxCross2 size={24} />
+                    </span>
+                )}
+            </div> */}
+
+            
+            <div className="search">
+                <button
+                    // className="calendly-button"
+                    className="primary-btn"
+
+                    onClick={() =>
+                        window.open(
+                            "https://calendly.com/admin-jincora/30min",
+                            "_blank"
+                        )
+                    }
+                    
+                >
+                    Book a Call
+                </button>
 
                 {!menuOpen ? (
                     <span

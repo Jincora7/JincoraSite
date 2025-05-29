@@ -102,7 +102,7 @@
     align-items: center;
     gap: 10px;
     flex-shrink: 1;
-    min-width: 0; /* Crucial to allow shrinking inside flex */
+    min-width: 0; 
 }
 
 
