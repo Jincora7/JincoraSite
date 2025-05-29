@@ -262,5 +262,11 @@
   .pillars-card-btm-list p {
     font-size: 11px;
   }
+
+    .pillars-card-btm-left h3{
+    max-width: 1000%;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
