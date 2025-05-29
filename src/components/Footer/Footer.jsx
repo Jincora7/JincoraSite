@@ -242,76 +242,122 @@ function Footer() {
   }
 
   return (
-    <>
-      <div className="footer-wrapper">
-        <div className="footer-first">
-          {/* Left Section */}
-          <div className="footer-left">
-            <Link className="footer-logo" to="/" onClick={scrollToHome}>
-              <img src={logo} alt="Jincora Logo" />
-            </Link>
-            <p className="footer-description">
-              From launch to growth — Jincora builds eCommerce success, one store at a time.
-            </p>
-            <div className="footer-icons">
-              <Link to="https://www.linkedin.com/company/jincora/" target="_blank"><FaLinkedin size={24} /></Link>
-              <Link to="https://www.instagram.com/jincora_techsolutions/" target="_blank"><IoLogoInstagram size={24} /></Link>
-              <Link to="#" target="_blank"><FaPinterest size={24} /></Link>
-              <Link to="https://www.facebook.com/share/1AH9TC8zj8/" target="_blank"><FaFacebook size={24} /></Link>
-              <Link to="https://x.com/jincora_tech?t=4AaCk2vw335gmdpOgU0iiw&s=09" target="_blank"><FaXTwitter size={24} /></Link>
-            </div>
+      <>
+          <div className="demo-section">
+              <h2 className="demo-title">
+                  Looking to transform your eCommerce presence
+                  <br />
+                  into a premium brand experience?
+              </h2>
+              <button className="demo-button">Book A Free Demo →</button>
           </div>
 
-          {/* Right Columns */}
-          <div className="footer-services-contacts">
-            {/* Grouped Resources + Support */}
-            <div className="footer-top-sections">
-              {/* Resources */}
-              <div className="footer-section">
-                <h5>Resources</h5>
-                <ul>
-                  <li>Help Guide</li>
-                  <li>FAQ</li>
-                  <li>Portfolio</li>
-                  <li>Partner</li>
-                  <li>Blogs</li>
-                </ul>
+          <div className="footer-wrapper">
+              <div className="footer-first">
+                  {/* Left Section */}
+                  <div className="footer-left">
+                      <Link
+                          className="footer-logo"
+                          to="/"
+                          onClick={scrollToHome}
+                      >
+                          <img src={logo} alt="Jincora Logo" />
+                      </Link>
+                      <p className="footer-description">
+                          From launch to growth — Jincora builds eCommerce
+                          success, one store at a time.
+                      </p>
+                      <div className="footer-icons">
+                          <Link
+                              to="https://www.linkedin.com/company/jincora/"
+                              target="_blank"
+                          >
+                              <FaLinkedin size={24} />
+                          </Link>
+                          <Link
+                              to="https://www.instagram.com/jincora_techsolutions/"
+                              target="_blank"
+                          >
+                              <IoLogoInstagram size={24} />
+                          </Link>
+                          <Link to="#" target="_blank">
+                              <FaPinterest size={24} />
+                          </Link>
+                          <Link
+                              to="https://www.facebook.com/share/1AH9TC8zj8/"
+                              target="_blank"
+                          >
+                              <FaFacebook size={24} />
+                          </Link>
+                          <Link
+                              to="https://x.com/jincora_tech?t=4AaCk2vw335gmdpOgU0iiw&s=09"
+                              target="_blank"
+                          >
+                              <FaXTwitter size={24} />
+                          </Link>
+                      </div>
+                  </div>
+
+                  {/* Right Columns */}
+                  <div className="footer-services-contacts">
+                      {/* Grouped Resources + Support */}
+                      <div className="footer-top-sections">
+                          {/* Resources */}
+                          <div className="footer-section">
+                              <h5>Resources</h5>
+                              <ul>
+                                  <li>Help Guide</li>
+                                  <li>FAQ</li>
+                                  <li>Portfolio</li>
+                                  <li>Partner</li>
+                                  <li>Blogs</li>
+                              </ul>
+                          </div>
+
+                          {/* Support */}
+                          <div className="footer-section">
+                              <h5>Support</h5>
+                              <ul>
+                                  <li>Contact Us</li>
+                                  <li>Email Us</li>
+                                  <li>
+                                      <Link to="/about">About Us</Link>
+                                  </li>
+                                  <li>
+                                      <Link to="/privacy-policy">
+                                          Privacy Policy
+                                      </Link>
+                                  </li>
+                                  <li>
+                                      <Link to="/terms-and-conditions">
+                                          Terms and Conditions
+                                      </Link>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+
+                      {/* Services (separate for layout stacking) */}
+                      <div className="footer-section services-alone">
+                          <h5>Services</h5>
+                          <ul>
+                              <li>Ecommerce</li>
+                              <li>Graphic Design</li>
+                              <li>Web Development</li>
+                              <li>Search Engine Optimization</li>
+                              <li>Social Media Marketing</li>
+                          </ul>
+                      </div>
+                  </div>
               </div>
 
-              {/* Support */}
-              <div className="footer-section">
-                <h5>Support</h5>
-                <ul>
-                  <li>Contact Us</li>
-                  <li>Email Us</li>
-                  <li><Link to="/about">About Us</Link></li>
-                  <li><Link to="/privacy-policy">Privacy Policy</Link></li>
-                   <li><Link to="/terms-and-conditions">Terms and Conditions</Link></li>
-                </ul>
-              </div>
-            </div>
+              <hr />
 
-            {/* Services (separate for layout stacking) */}
-            <div className="footer-section services-alone">
-              <h5>Services</h5>
-              <ul>
-                <li>Ecommerce</li>
-                <li>Graphic Design</li>
-                <li>Web Development</li>
-                <li>Search Engine Optimization</li>
-                <li>Social Media Marketing</li>
-              </ul>
-            </div>
+              <div className="footer-second">
+                  <p>Copyright © 2025 Jincora.com All Rights Reserved</p>
+              </div>
           </div>
-        </div>
-
-        <hr />
-
-        <div className="footer-second">
-          <p>Copyright © 2025 Jincora.com All Rights Reserved</p>
-        </div>
-      </div>
-    </>
+      </>
   );
 }
 
