@@ -1,0 +1,136 @@
+.pricing-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #10002b, #240046);
+  color: white;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.pricing-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #b3b3b3;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.offer-banner {
+  background: #9f58ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 1rem auto 2rem;
+  font-weight: 600;
+  border-radius: 10px;
+  max-width: 700px;
+  font-size: 0.85rem;
+}
+
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.plan-card {
+  background: #1a0b2e;
+  border: 2px solid #5e2cb4;
+  border-radius: 1rem;
+  width: 320px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.plan-card .highlight {
+  position: absolute;
+  top: -1rem;
+  background: #5e2cb4;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.75rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.plan-card h3 {
+  font-size: 1.5rem;
+  margin: 1.2rem 0 0.5rem;
+}
+
+.plan-card .price {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.plan-card .yearly {
+  font-size: 0.85rem;
+  color: #999;
+  margin: 0.2rem 0;
+}
+
+.plan-card .save {
+  color: #80ffdb;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.plan-card hr {
+  border: 1px solid #3f1f5f;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.plan-card h4 {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  color: #b982ff;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.plan-card ul li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.plan-card ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #9f58ff;
+}
+
+.subscribe-btn {
+  background: #a362ff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background: #7f3fff;
+}
+
+@media (max-width: 768px) {
+  .plans {
+    flex-direction: column;
+    align-items: center;
+  }
+}

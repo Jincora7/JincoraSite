@@ -1,362 +1,272 @@
-.services-wrapper{
+.pillars-wrap {
     width: 100%;
-    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+.pillars-wrap .pillar-heading {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.pillars-wrap .pillar-heading h3 {
+    /* max-width: fit-content; */
+    padding: 0 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: #7F3FFF;
+    border-radius: 20px;
+}
+
+.pillars-wrap .pillars-card {
+    margin-top: 55px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 2rem 3rem;
-    margin-top: 70px;
+    gap: 50px;
+    padding: 5px 15px;
 }
 
-.services-wrapper .services-page1{
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    font-size: 15px;
-    text-align: center;
-    border: 2px solid white;
-    border-radius: 20px;
-    max-width: 45rem;
-    padding: 2rem 3rem ;
-}
-
-.services-wrapper .services-page1 h1{
-    font-size: 35px;
-}
-
-
-.services-wrapper button{
-    color:#888888CC;
-    margin-top: 1.5rem;
-    background-color: transparent;
-    outline: none;
-    border: 2px solid white;
-    border-radius: 20px;
-    padding: 1rem 1rem;
-    font-size: 18px;
-    transition: all;
-    transition-duration: 400ms;
-}
-
-.services-wrapper button:hover{
-    background-color: #FF8400;
-    color: white;
-    border-color: #FF8400;
-}
-
-.services-wrapper .services-page2{
-    width: 100%;
-    margin-top: 10rem;
-    padding: 0 2rem;
-}
-
-.services-wrapper .services-page2 span{
+.pillars-wrap .pillars-card .pillars-card-para {
+    padding: 0 10px;
     font-size: 20px;
-    margin-left: 4rem;     /*alignment heading */
-    font-weight: 200;
-    padding: 3px 0;
-    border-bottom: 2px solid #FF8400;
-}
-
-.services-wrapper .services-page2 .services-page2-btm{
-    margin-top: 3rem;
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    gap:2rem;
-}
-
-.services-wrapper .services-page2 .services-page2-btm .services-page2-btm-left h1{
-    margin: 0;
-    line-height: 1;
-    font-size: 3rem;
-    font-weight: 600;
-}
-.services-wrapper .services-page2 .services-page2-btm .services-page2-btm-left p{
-    margin-top: 10px;
-    max-width:40rem;
-    font-size: 15px;
-}
-
-.services-wrapper .services-page2 .services-page2-btm .services-page2-btm-right ul li{
-    list-style: none;
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 10px;
-    align-items: center;
-    justify-content: left;
-    font-size: 17px;
-    margin-top: 15px;
-    text-align: left;
-    font-weight: 300;
-}
-
-.services-wrapper .services-page2 .services-page2-btm .services-page2-btm-right .list-cross{
-    color: #FF8400;
-}
-
-.services-page3{
-    margin-top: 8rem;
     text-align: center;
 }
 
-.services-page3 h1{
-    font-weight: 500;
-}
-
-/* .services-page3-para{
-    margin-top: 1rem;
-    font-weight: 300;
-    font-size: medium;
-    margin-left: 50%;
-    transform: translate(-50%);
-} */
-
-.services-page3-para {
-    margin-top: 1rem;
-    font-weight: 300;
-    font-size: 1rem;
-    text-align: center;
-    max-width: 50rem;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-.services-page3 .services-page3-list-container{
-    margin-top: 5rem;
-}
-
-/* Services paeg list item */
-
-.services-page3 .services-page3-list-container .services-page3-list-item{
+.pillars-wrap .pillars-card .pillars-card-wrap {
+    width: 100%;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 3rem;
-    width: 100%;
-    max-width: 90rem;
-    overflow: hidden;
-    margin-top: 4rem;
-}
-.services-page3 .services-page3-list-container .services-page3-list-item .services-page3-list-item-img-wrap{
-    max-width: 30rem;
-    width: 100%;
-    overflow: hidden;
-    /* max-height: 15rem; */
-    aspect-ratio:22/9;
-    border-radius: 10px;
-    flex-shrink: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.services-page3 .services-page3-list-container .services-page3-list-item .services-page3-list-item-img-wrap img{
+.pillars-card-bottom {
+    border-radius: 20px;
     width: 100%;
-    height: 100%;
+    /* height: auto; */
+    background-color: #2c0e4a;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.pillars-card-bottom h3 {
+    text-align: left;
+}
+
+.pillars-card-btm-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    flex-direction: column;
+    max-width: 300px;
+    text-align: left;
+}
+
+.pillars-card-btm-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.pillars-card-btm-list {
+    max-width: 170px;
+    height: 200px;
+    padding: 5px 20px;
+    transition-duration: 300ms;
+    transition-timing-function:ease-in-out;
+}
+
+.pillars-card-btm-list p{
+    text-align: left;
+    font-size: 14px;
+}
+
+.pillars-card-btm-list img {
+    width: 100%;
+    max-width: 200px;
     object-fit: cover;
     object-position: center;
-    display: block;
+    border-radius: 8px;
 }
 
-.services-page3 .services-page3-list-container .services-page3-list-item .services-page3-list-item-content{
-    text-align: left;
+.pillars-card-btm-list:hover{
+    background-color: #1A0B2E;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.services-page3 .services-page3-list-container .services-page3-list-item .services-page3-list-item-content h3{
-    font-size: 25px;
-    width: 30rem;
+
+@media (min-width:1024px) {
+    .pillars-wrap {
+        padding: 5rem 5rem;
+    }
+
+    .pillars-wrap .pillar-heading h3 {
+        font-size: 2rem;
+        margin-top: 30px;
+        padding: 10px 8rem;
+    }
+
+    .pillars-wrap .pillars-card .pillars-card-para {
+        font-size: 2rem;
+    }
+
+    .pillars-card-bottom {
+        padding: 0 2rem;
+        justify-content: space-around;
+        height: 350px;
+    }
+
+    .pillars-card-btm-right {
+        gap: 1rem;
+        margin-top: -50px;
+    }
+
+    .pillars-card-btm-list {
+        height: 300px;
+    }
+
+    .pillars-card-btm-list-content {
+        margin-top: 3.9rem;
+    }
+
+
 }
 
-.services-page3-list-item-content p{
+
+/* Desktop and large tablets */
+@media (min-width: 1024px) {
+  .pillars-wrap {
+    padding: 5rem 5rem;
+  }
+
+  .pillars-wrap .pillar-heading h3 {
+    font-size: 2rem;
+    margin-top: 30px;
+    padding: 10px 8rem;
+  }
+
+  .pillars-wrap .pillars-card .pillars-card-para {
+    font-size: 2rem;
+  }
+
+  .pillars-card-bottom {
+    padding: 0 2rem;
+    justify-content: space-around;
+    height: 350px;
+  }
+
+  .pillars-card-btm-right {
+    gap: 1rem;
+    margin-top: -50px;
+  }
+
+  .pillars-card-btm-list {
+    height: 300px;
+  }
+
+  .pillars-card-btm-list-content {
+    margin-top: 3.9rem;
+  }
+}
+
+/* Responsive for tablets and smaller */
+@media (max-width: 1023px) {
+  .pillars-wrap {
+    padding: 2rem 1rem;
+  }
+
+  .pillars-wrap .pillar-heading h3 {
+    font-size: 1.5rem;
+    padding: 10px 3rem;
+  }
+
+  .pillars-wrap .pillars-card .pillars-card-para {
+    font-size: 1.3rem;
+  }
+
+  .pillars-card-bottom {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    height: auto;
+    gap: 1.5rem;
+  }
+
+  .pillars-card-btm-left,
+  .pillars-card-btm-right {
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .pillars-card-btm-list {
+    max-width: 150px;
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  .pillars-card-btm-list p {
     font-size: 13px;
-    font-weight: 300;
-    max-width: 25rem;
-}
+    text-align: center;
+  }
 
-.services-page3 .services-page3-list-container .services-page3-list-item .services-page3-list-item-content span{
-    border-bottom: 2px solid #FF8400;
-}
-
-.services-page3 .services-page3-list-container .services-page3-list-item .services-page3-list-item-content a{
-    font-weight: 500;
-    text-decoration: none;
-    color: white;
-}
-
-
-#top-of-services {
-  scroll-margin-top: 100px; /* adjust based on navbar height */
+  .pillars-card-btm-list img {
+    max-width: 100%;
+  }
 }
 
 
 
-
-/* ------------------- */
-
-
-
-@media screen and (max-width: 1024px) {
-    .services-wrapper {
-      padding: 2rem 1.5rem;
-    }
-  
-    .services-page3 .services-page3-list-container .services-page3-list-item {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 2rem;
-    }
-  
-    .services-page3 .services-page3-list-container .services-page3-list-item .services-page3-list-item-content {
-      text-align: center;
-      align-items: center;
-    }
-  
-    .services-page2-btm {
-      flex-direction: column;
-    }
-  
-    .services-page2-btm-left,
-    .services-page2-btm-right {
-      text-align: center;
-    }
-  
-    .services-page2-btm-right ul li {
-      justify-content: center;
-      font-size: 16px;
-    }
-  
-    .services-wrapper .services-page2 .services-page2-btm .services-page2-btm-left h1 {
-      font-size: 2.2rem;
-    }
-
-
-    .services-wrapper .services-page2 span {
-        font-size: 18px;
-        /* margin-left: 2rem; */
-                margin-left: 0;
-        text-align: center;
-        display: block;
-      }
+/* Mobile phones (iPhone SE, iPhone 12 Pro, iPhone 14 Pro Max, iPhone XR) */
+@media (max-width: 480px) {
+  .pillars-wrap {
+    padding: 1rem 0.5rem;
   }
-  
-  @media screen and (max-width: 768px) {
-    .services-wrapper .services-page1 h1 {
-      font-size: 28px;
-    }
-  
-    .services-wrapper button {
-      padding: 0.8rem 1rem;
-      font-size: 16px;
-    }
-  
-    .services-page3-para {
-      width: 90%;
-      margin: auto;
-      font-size: 14px;
-    }
-  
-    .services-page3 .services-page3-list-container .services-page3-list-item .services-page3-list-item-content h3 {
-      font-size: 20px;
-      width: auto;
-    }
-  
-    .services-page3-list-item-content p {
-      font-size: 12px;
-      max-width: 100%;
-    }
-  
 
-    .services-wrapper .services-page2 span {
-        font-size: 17px;
-        /* margin-left: 1rem; */
-
-        margin-left: 0;
-        text-align: center;
-        display: block;
-      }
-  
-    .services-wrapper .services-page2 {
-      margin-top: 5rem;
-      padding: 0 1rem;
-    }
-  
-    .services-page2-btm-left p {
-      font-size: 14px;
-      max-width: 100%;
-    }
+  .pillars-wrap .pillar-heading h3 {
+    font-size: 1rem; 
+    padding: 4px 1rem; 
+    margin-top: 10px;  
+    margin-bottom: 10px; 
   }
-  
-  @media screen and (max-width: 480px) {
-    .services-wrapper .services-page1 {
-      padding: 1.5rem;
-    }
-  
-    .services-wrapper .services-page1 h1 {
-      font-size: 24px;
-    }
-  
-    .services-page2-btm-right ul li {
-      font-size: 14px;
-    }
-  
-    .services-wrapper button {
-      font-size: 15px;
-      padding: 0.6rem 1rem;
-    }
-  
-    .services-page3 .services-page3-list-container .services-page3-list-item-img-wrap {
-      aspect-ratio: 16/9;
-    }
 
-    .services-wrapper .services-page2 span {
-        font-size: 16px;
-        margin-left: 0;
-        text-align: center;
-        display: block;
-      }
-
-
+  .pillars-wrap .pillars-card .pillars-card-para {
+    font-size: 0.9rem; 
+    padding: 0 5px;
+    margin-top: 0; 
   }
-  
 
-  @media screen and (max-width: 390px) {
-    .services-wrapper .services-page2 {
-      padding: 0 1rem;
-    }
-  
-    .services-wrapper .services-page2 span {
-      margin-left: 0;
-      display: block;
-      text-align: center;
-      font-size: 16px;
-      padding-bottom: 5px;
-    }
-  
-    .services-wrapper .services-page2 .services-page2-btm {
-      flex-direction: column;
-      gap: 2rem;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem 0;
-    }
-  
-    .services-page2-btm-left h1 {
-      font-size: 1.8rem;
-      text-align: center;
-    }
-  
-    .services-page2-btm-left p {
-      text-align: center;
-      font-size: 14px;
-      padding: 0 1rem;
-    }
-  
-    .services-page2-btm-right ul li {
-      justify-content: center;
-      font-size: 14px;
-      gap: 0.5rem;
-    }
+  .pillars-card-btm-list {
+    max-width: 140px;
+    padding: 5px 10px;
   }
-  
+
+  .pillars-card-btm-list p {
+    font-size: 11px;
+  }
+
+    .pillars-card-btm-left h3{
+    max-width: 1000%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
