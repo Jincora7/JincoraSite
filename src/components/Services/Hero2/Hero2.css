@@ -105,3 +105,65 @@
     justify-content: center;
   }
 }
+
+
+
+/* -----------------------------------------
+   📱 Responsive CSS for iPhones (SE, XR, 12 Pro, 14 Pro Max)
+------------------------------------------ */
+
+/* iPhone SE (375px width) */
+@media screen and (max-width: 375px) {
+  .hero2-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero2-right h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero2-right p {
+    font-size: 0.8rem;
+  }
+
+  .hero2-left img {
+    max-width: 100%;
+  }
+
+  .hero2-buttons {
+    justify-content: center;
+  }
+}
+
+/* iPhone XR, 12 Pro, 14 Pro Max (~390px to 430px) */
+@media screen and (max-width: 430px) {
+  .hero2-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero2-right h1 {
+    font-size: 1.22rem;
+  }
+
+  .hero2-right p {
+    font-size: 0.85rem;
+  }
+
+  .hero2-left img {
+    max-width: 95%;
+  }
+
+  .hero2-buttons {
+    justify-content: center;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+}
