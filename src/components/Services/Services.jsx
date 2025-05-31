@@ -198,13 +198,13 @@ function Services() {
                 </p>
 
                 <div className="pillars-card-wrap">
-                    <PillarsCardComponent image={pillarImage1} heading="Custom Shopify Development" para="We create stunning, brand-focused Shopify and WordPress stores designed to engage and convert customers." />
+                    <PillarsCardComponent image={pillarImage1} heading="Custom Shopify Development" para="We build tailored, conversion-focused Shopify stores that align with your brand and business goals." />
 
-                    <PillarsCardComponent image={pillarImage2} heading="Seamless Development" para="From setup to launch, we build fast, responsive, and scalable websites that perform flawlessly across all devices." />
+                    <PillarsCardComponent image={pillarImage2} heading="Platform Migration Services" para="Seamlessly move from WooCommerce, Magento, or legacy platforms to Shopify — with zero downtime or data loss." />
 
-                    <PillarsCardComponent image={pillarImage3} heading="Sales Optimization" para="We implement proven strategies and features to turn your website visitors into loyal, paying customers." />
+                    <PillarsCardComponent image={pillarImage3} heading="Performance Optimization" para="From speed tuning to UX enhancements, we improve your store’s performance to drive sales and retention." />
 
-                    <PillarsCardComponent image={pillarImage4} heading="Ongoing Support" para="Our team is here post-launch to help with updates, improvements, and expert advice as your business grows." />
+                    <PillarsCardComponent image={pillarImage4} heading="Ongoing Support & Scaling" para="We don’t just launch — we help you grow. Get continuous support, feature upgrades, and strategic scaling." />
                 </div>
 
                
