@@ -2,12 +2,13 @@
   /* background: #13002C; */
     background: #1A0B2E;
   
-  padding: 6rem 4rem;
+  padding: 1rem 4rem;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
    width: 100%;
+   margin-top: 30px;
    
      /* padding: 0 20px; */
 }
@@ -28,6 +29,7 @@
   width: 100%;
   max-width: 650px;
   height: auto;
+  margin-top: 50px;
 }
 
 .hero2-right {
