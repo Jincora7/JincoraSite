@@ -1,7 +1,7 @@
 .wrapper {
 
     width: 100%;
-    height: 80px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,8 +24,10 @@
 
 
 .wrapper img {
-    width: 150px;
+    width: 120px;
     height: auto;
+    padding:5px;
+    margin-top: 10px;
 }
 
 
