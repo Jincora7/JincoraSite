@@ -570,7 +570,7 @@ label {
 
 
 .contact-container {
-  background: linear-gradient(180deg, #2b0a49, #000);
+  /* background: linear-gradient(180deg, #2b0a49, #000); */
   /* background-color: transparent; */
   min-height: 100%;
   position: relative;
