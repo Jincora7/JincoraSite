@@ -7,6 +7,7 @@
     flex: 1;
     padding: 0 20px;
     background-color: #1A0B2E;
+    margin-top: 5rem;
 }
 
 .hero-section-left {
@@ -45,7 +46,7 @@
 
 .hero-section-right-image {
     width: 120%;
-    max-width: 700px;
+    max-width: 550px;
     height: auto;
     margin-bottom: 0;
     object-fit: cover;
@@ -81,3 +82,16 @@
 
 
 }
+
+
+@media (max-width: 480px) {
+        .hero-section-wrap {
+            margin-top: 3rem;
+ 
+    }
+
+}
+
+
+
+
