@@ -18,12 +18,7 @@ function Navbar() {
 
     const navigate = useNavigate();
     const location = useLocation();
-    // const scrollToHome = () => {
-    //     const HomeSection = document.getElementById("Home");
-    //     if (HomeSection) {
-    //         HomeSection.scrollIntoView({ behavior: "smooth" });
-    //     }
-    // };
+
 
     const scrollToHome = () => {
         if (location.pathname === "/") {

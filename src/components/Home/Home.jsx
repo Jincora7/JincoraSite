@@ -4,6 +4,7 @@ import cardImage from "../../assets/website-development.png"
 import HeroSection from './Hero-Section/HeroSection.jsx'
 import PillarsPage from './Pillars-Page/PillarsPage.jsx'
 import GrowthSection from './GrowthSection/GrowthSection.jsx'
+import Contact from '../Contact/Contact.jsx'
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <PillarsPage/>
       <HomeCards bgColor="#2C0E4A" image={cardImage} heading="Website Design and Development" para="Jincora crafts stunning, functional websites tailored to your business, combining cutting-edge design with seamless functionality to elevate your online presence." />
       <GrowthSection/>
+      <Contact/>
     </div>
   )
 }

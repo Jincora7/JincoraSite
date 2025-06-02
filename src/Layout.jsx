@@ -12,7 +12,7 @@ function Layout() {
         <div className="main">
             <Navbar />
             <Outlet />
-            <Contact/>
+            {/* <Contact/> */}
             <Footer />
         </div>
     )
