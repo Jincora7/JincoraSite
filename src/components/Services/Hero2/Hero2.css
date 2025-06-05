@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
   gap: 8rem;
   align-items: center;
@@ -27,18 +27,19 @@
 
 .hero2-left img {
   width: 100%;
-  max-width: 650px;
+  max-width: 710px;
   height: auto;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .hero2-right {
-  flex: 1;
+  /* flex: 1; */
 }
 
 .hero2-right h1 {
-  font-size: 2rem;
-  line-height: 1.4;
+  /* font-size: 2rem; */
+   font-size: 2.4rem;
+  /* line-height: 1.4; */
   font-weight: bold;
   margin-bottom: 1rem;
   color: #fff;
@@ -49,7 +50,7 @@
 }
 
 .hero2-right p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   margin-bottom: 2rem;
   color: #E0D7F8;
@@ -125,6 +126,7 @@
   }
 
   .hero2-right h1 {
+    
     font-size: 1.5rem;
   }
 
@@ -134,6 +136,7 @@
 
   .hero2-left img {
     max-width: 100%;
+    margin-top: 60px;
   }
 
   .hero2-buttons {
@@ -159,6 +162,7 @@
 
   .hero2-left img {
     max-width: 95%;
+    margin-top: 60px;
   }
 
   .hero2-buttons {
