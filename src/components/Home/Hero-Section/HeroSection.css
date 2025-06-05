@@ -46,11 +46,12 @@
 
 .hero-section-right-image {
     width: 120%;
-    max-width: 550px;
+    max-width: 580px;
     height: auto;
     margin-bottom: 0;
     object-fit: cover;
     object-position: center;
+    margin-top: 55px;
 }
 
 
@@ -87,7 +88,13 @@
 @media (max-width: 480px) {
         .hero-section-wrap {
             margin-top: 3rem;
+
+
  
+    }
+
+    .hero-section-right-image{
+         margin-top: 40px;
     }
 
 }
