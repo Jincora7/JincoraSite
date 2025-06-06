@@ -39,7 +39,7 @@
   background: #1a0b2e;
   border: 2px solid #5e2cb4;
   border-radius: 1rem;
-  width: 320px;
+  width: 340px;
   padding: 0.5rem 1rem;
   display: flex;
   flex-direction: column;
@@ -122,6 +122,7 @@
   border-radius: 0.5rem;
   cursor: pointer;
   transition: background 0.3s ease;
+  margin-bottom: 20px;
 }
 
 .subscribe-btn:hover {

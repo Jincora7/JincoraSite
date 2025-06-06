@@ -190,9 +190,10 @@ function Services() {
 
   return (
     <>
+    <div id="top-of-services"></div>
       <Hero2 />
 
-    <div className="pillars-wrap">
+    <div id="top-of-services" className="pillars-wrap">
                 <div className="pillars-card">
                 <p className="pillars-card-para">
                     Why Jincora Is Your Store’s Trusted Growth Partner
