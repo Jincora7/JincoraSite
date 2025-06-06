@@ -124,7 +124,7 @@ function Navbar() {
                     Book a Call
                 </button> */}
 
-                <NavLink to="#" onClick={scrollToContact}>
+                <NavLink to="/contact" onClick={scrollToContact}>
                     Contact Us
                 </NavLink>
 

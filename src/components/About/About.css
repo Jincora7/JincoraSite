@@ -1,4 +1,4 @@
-.about-wrapper{
+/* .about-wrapper{
     width: 100%;
     min-height: 100vh;
     
@@ -20,8 +20,7 @@
     text-align: center;
     font-weight: 400;
     font-size: 24px;
-    /* text-decoration: underline;
-    text-decoration-color: #FF8400; */
+
     margin-bottom: 50px;
 }
 
@@ -45,7 +44,7 @@
 
 
 #top-of-about {
-  scroll-margin-top: 100px; /* adjust based on navbar height */
+  scroll-margin-top: 100px; 
 }
 
 
@@ -58,7 +57,7 @@
     .about-section h1{
         font-size: 3rem;
     }
-}
+} */
 
 
 /* ye new css */
@@ -82,19 +81,22 @@
 
 
 /* About.css - JINCORA Design Match */
-
+/* Base Wrapper */
 .about-wrapper {
+  width: 100%;
   min-height: 100vh;
-  /* background: linear-gradient(135deg, #2D1B69 0%, #1A0E3A 50%, #0F0620 100%); */
   color: white;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
 }
 
 /* Hero Section */
 .hero-section {
-  padding: 180px 20px 60px;
+  padding: 160px 20px 60px;
   text-align: center;
-  /* background: linear-gradient(135deg, #2D1B69 0%, #1A0E3A 100%); */
 }
 
 .hero-content {
@@ -103,93 +105,76 @@
 }
 
 .hero-subtitle {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 400;
   color: #B8A9FF;
-  display: block;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .hero-title {
   font-size: 46px;
   font-weight: 700;
   color: #FFFFFF;
-  margin: 0;
   line-height: 1.2;
 }
 
-/* Main Content Section */
+/* Main Content */
 .main-content-section {
-  padding: 80px 20px;
- 
+  width: 100%;
+  padding: 60px 20px;
 }
 
 .content-container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
-/* Overview Section with Image */
-/* Outer Container */
-/* Outer Container */
-/* Outer Container */
-/* Outer Container */
+/* Overview */
 .overview-container {
-  width: 100%;
-  max-width: 2920px;
-  height: 732px;
-  padding: 0 40px; /* Reduced from 200px to 40px */
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 40px;
+  margin-bottom: 60px;
 }
 
-/* Mid Container */
 .overview-inner {
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
   width: 100%;
-  max-width: 1519px;
-  height: 572px;
-  align-items: center;
-  box-sizing: border-box;
+  max-width: 1400px;
 }
 
-/* Text Box */
 .overview-text {
-  width: 739.5px;
-  height: 327px;
+  flex: 1;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  color: #FFFFFF;
   justify-content: center;
+  gap: 20px;
 }
 
 .overview-text h3 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 500;
   font-size: 32px;
-  line-height: 1;
+  font-weight: 600;
   margin: 0;
 }
 
 .overview-text h6 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 500;
   font-size: 18px;
-  line-height: 1.4;
-  margin: 0;
+  font-weight: 400;
   color: #C7C7C7;
+  margin: 0;
+  line-height: 1.6;
 }
 
-/* Image Box */
 .overview-image {
-  width: 739.5px;
-  height: 572px;
-  border-radius: 20px;
+  flex: 1;
+  min-width: 300px;
+  max-height: 500px;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .overview-image img {
@@ -199,204 +184,132 @@
   border-radius: 20px;
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 1600px) {
-  .overview-container {
-    padding: 0 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .overview-container {
-    padding: 0 16px;
-    height: auto;
-  }
-  
-  .overview-inner {
-    flex-direction: column;
-    height: auto;
-    gap: 30px;
-  }
-  
-  .overview-text,
-  .overview-image {
-    width: 100%;
-  }
-  
-  .overview-image {
-    height: 400px;
-  }
-}
-
-
 /* Value Section */
-/* .value-section {
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-.section-title {
-  font-size: 40px;
-  font-weight: 700;
-  color: #FFFFFF;
-  margin-bottom: 32px;
-  line-height: 1.2;
-}
-
-.section-description {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #C7C7C7;
-  max-width: 900px;
-  margin: 0 auto 24px;
-} */
-
-
 .value-section {
   text-align: center;
-  margin-bottom: 80px;
-  width: 100%;
-  max-width: 1360px;
-  padding: 0 20px; /* Responsive padding */
-  height: 345px;
+  padding: 40px 20px;
+  max-width: 1200px;
   margin: 0 auto;
-  
 }
 
 .section-title {
   font-size: 32px;
   font-weight: 700;
-  color: #FFFFFF;
-  margin-bottom: 32px;
-  line-height: 1.2;
+  margin-bottom: 24px;
 }
 
 .section-description {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.4;
-  letter-spacing: 0%;
-  color: #C7C7C7;
-  max-width: 1100px;
-  margin: 0 auto;
   text-align: left;
-}
-
-
-/* CTA Section */
-.cta-section {
-  
-  padding: 60px 20px;
-  text-align: center;
-  margin-top: 80px;
-}
-
-.cta-content {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.cta-content h2 {
-  font-size: 32px;
-  font-weight: 600;
-  color: #FFFFFF;
-  margin-bottom: 16px;
-  line-height: 1.2;
-}
-
-.cta-content p {
   font-size: 18px;
   color: #C7C7C7;
-  margin-bottom: 32px;
+  line-height: 1.6;
 }
 
-.cta-button {
+/* Responsive Queries */
 
-  color: white;
-  border: none;
-  padding: 16px 32px;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-}
-
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
+/* iPhone SE and very small phones */
+@media (max-width: 380px) {
   .hero-title {
-    font-size: 36px;
-  }
-  
-  .overview-section {
-    flex-direction: column;
-    gap: 40px;
-  }
-  
-  .overview-text {
-    min-width: auto;
-  }
-  
-  .overview-images {
-    min-width: auto;
-    height: 300px;
-  }
-  
-  .main-team-image {
-    width: 280px;
-    height: 200px;
-  }
-  
-  .secondary-image {
-    width: 160px;
-    height: 120px;
-  }
-  
-  .overview-text h2 {
     font-size: 28px;
   }
-  
+
+  .overview-container{
+
+    margin-top: -50px;
+    margin-left: -20px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+   
+  }
+
+  .hero-section{
+    margin-top: -40px;
+
+  }
+
+  .overview-text h3 {
+    font-size: 20px;
+  }
+
+  .overview-text h6 {
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .section-description {
+    font-size: 14px;
+  }
+
+  .overview-image {
+    height: 250px;
+  }
+}
+
+/* iPhone XR, 12 Pro, 14 Pro Max */
+@media (max-width: 450px) {
+  .hero-title {
+    font-size: 32px;
+  }
+
+    .overview-container{
+
+    margin-top: -50px;
+    margin-left: -20px;
+  }
+
+  .hero-subtitle {
+    
+    font-size: 18px;
+  }
+
+  .overview-text h3 {
+    font-size: 24px;
+  }
+
+  .overview-text h6 {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-description {
+    font-size: 16px;
+  }
+
+  .overview-image {
+    height: 300px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .overview-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+    .overview-container{
+
+    margin-top: -50px;
+    margin-left: -20px;
+  }
+
+  .overview-image {
+    max-height: 400px;
+  }
+
   .section-title {
     font-size: 28px;
   }
-  
-  .cta-content h2 {
-    font-size: 28px;
-  }
-}
 
-@media (max-width: 480px) {
-  .hero-section {
-    padding: 60px 15px 40px;
-  }
-  
-  .main-content-section {
-    padding: 60px 15px;
-  }
-  
-  .cta-section {
-    padding: 40px 15px;
-  }
-  
-  .hero-title {
-    font-size: 30px;
-  }
-  
-  .overview-images {
-    height: 250px;
-  }
-  
-  .main-team-image {
-    width: 240px;
-    height: 180px;
-  }
-  
-  .secondary-image {
-    width: 140px;
-    height: 100px;
+  .section-description {
+    font-size: 16px;
   }
 }
