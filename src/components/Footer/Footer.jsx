@@ -225,6 +225,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import logo from "../../assets/logo.png";
+import ScrollToTop from '../common/ScrollToTop';
 import "./Footer.css";
 
 function Footer() {
@@ -243,6 +244,7 @@ function Footer() {
 
   return (
       <>
+      <ScrollToTop/>
           <div className="demo-section">
               <h2 className="demo-title">
                   Looking to transform your eCommerce presence

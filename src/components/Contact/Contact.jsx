@@ -55,9 +55,12 @@
 import React from 'react';
 import './Contact.css';
 import contactpage from '../.././assets/contactpage.png'
+import ScrollToTop from '../common/ScrollToTop'; 
 
 export default function Contact() {
   return (
+    <>
+    <ScrollToTop /> 
     <div className="contact-container">
       <div className="contact-wrapper">
         {/* Left - Image and Support Box */}
@@ -137,5 +140,6 @@ export default function Contact() {
         </div>
       </div>
     </div>
+    </>
   );
 }
