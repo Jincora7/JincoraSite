@@ -55,7 +55,7 @@ const StickycardsSections = () => {
                         <h2 className="content__title"><i>The</i> Website Design and Development</h2>
                         <p className="content__text  text-meta">Jincora crafts stunning, functional websites tailored to your business, combining cutting-edge design with seamless functionality to elevate your online presence.</p>
                     </div>
-                    <img className="content__img" src="src/public/stickyImg/Sticky1.png" alt="The Algorithm" />
+                    <img className="content__img" src="/stickyImg/Sticky1.png" alt="The Algorithm" />
                 </div>
                 <div ref={addToContentRefs} className="content content--sticky content--img-left  content--grid bg-2">
                     <div className="content-box">
