@@ -55,7 +55,7 @@ const StickycardsSections = () => {
                         <h2 className="content__title"><i>The</i> Website Design and Development</h2>
                         <p className="content__text  text-meta">Jincora crafts stunning, functional websites tailored to your business, combining cutting-edge design with seamless functionality to elevate your online presence.</p>
                     </div>
-                    <img className="content__img" src="src/assets/stickyImg/Sticky1.png" alt="The Algorithm" />
+                    <img className="content__img" src="src/public/stickyImg/Sticky1.png" alt="The Algorithm" />
                 </div>
                 <div ref={addToContentRefs} className="content content--sticky content--img-left  content--grid bg-2">
                     <div className="content-box">
@@ -63,7 +63,7 @@ const StickycardsSections = () => {
                         <h2 className="content__title"><i>The</i> Ecommerce All In One</h2>
                         <p className="content__text  text-meta">Jincora builds powerful eCommerce solutions, combining sleek design and seamless functionality to drive sales and enhance your online shopping experience.</p>
                     </div>
-                    <img className="content__img " src="src/assets/stickyImg/Sticky2.png" alt="The Dogma" />
+                    <img className="content__img " src="src/public/stickyImg/Sticky2.png" alt="The Dogma" />
                 </div>
                 <div ref={addToContentRefs} className="content content--sticky content--grid bg-3">
                    
@@ -72,7 +72,7 @@ const StickycardsSections = () => {
                         <p className="content__text  text-meta">Jincora creates stunning visuals with expert graphic design services, bringing your brand to life through impactful and memorable designs.</p>
                     </div>
                     
-                    <img className="content__img  content__img3" src="src/assets/stickyImg/Sticky3.png" alt="The Architects" />
+                    <img className="content__img  content__img3" src="src/public/stickyImg/Sticky3.png" alt="The Architects" />
                 </div>
                 <div ref={addToContentRefs} className="content content--sticky content--img-left content--grid bg-4">
                     <div className="content-box">
@@ -80,7 +80,7 @@ const StickycardsSections = () => {
                         <h2 className="content__title"><i>The</i>Social Media Management</h2>
                         <p className="content__text content__text--left text-meta">Jincora transforms your online presence with expert social media management, driving engagement, growth, and seamless brand connections.</p>
                     </div>
-                    <img className="content__img content__img4" src="src/assets/stickyImg/Sticky4.png" alt="The Wasteland" />
+                    <img className="content__img content__img4" src="src/public/stickyImg/Sticky4.png" alt="The Wasteland" />
                 </div>
                 <div ref={addToContentRefs} className="content content--sticky content--grid bg-5">
                     <div className="content-box">
@@ -88,7 +88,7 @@ const StickycardsSections = () => {
                         <h2 className="content__title"><i>The</i>Branding & Strategy</h2>
                         <p className="content__text content__text--left text-meta">Build a powerful brand identity that connects with your audience on a deeper level. We work with you to define your brand’s values, voice, and vision, creating strategies that position your business for success in a competitive market.</p>
                     </div>
-                    <img className="content__img  content__img--right" src="src/assets/stickyImg/Sticky5.png" alt="The Narrative" />
+                    <img className="content__img  content__img--right" src="src/public/stickyImg/Sticky5.png" alt="The Narrative" />
                 </div>
 
             </div>
