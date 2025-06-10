@@ -24,7 +24,7 @@
 }
 
 .pillars-card-component h4{
-  margin-top: 5px;
+  margin-top: 20px;
   font-size: 20px;
   color: #B083FF;
 }
@@ -32,5 +32,5 @@
 .pillars-card-component .pillar-card-comp-para{
   
   font-size: 14px;
-  margin-top: 5px;
+  margin-top: 15px;
 }
