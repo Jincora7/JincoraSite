@@ -5,6 +5,7 @@ import GrowthSection from './GrowthSection/GrowthSection.jsx'
 import Contact from '../Contact/Contact.jsx'
 import ScrollToTop from '../common/ScrollToTop.jsx' 
 import StickycardsSections from './Home-Cards/StickycardsSection.jsx'
+import PurplePage from './PurplePageHome/PurplePageHome.jsx'
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <StickycardsSections/>
       <GrowthSection/>
       <Contact/>
+      <PurplePage/>
     </div>
   )
 }

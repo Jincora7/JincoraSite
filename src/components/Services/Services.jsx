@@ -167,6 +167,7 @@ import pillarImage3 from "../../assets/pillar-3.png"
 import pillarImage4 from "../../assets/pillar-4.png"
 import PrimaryBtn from '../../reusableComponents/PrimaryBtn/PrimaryBtn'
 import IgniteGrowth from "./IgniteGrowth/IgniteGrowth.jsx";
+import PurplePageServices from "./PurplePageServices/PurplePageServices.jsx";
 // import pillar1 from "../../../assets/1.png"
 // import pillar2 from "../../../assets/2.png"
 // import pillar3 from "../../../assets/3.png"
@@ -216,6 +217,8 @@ function Services() {
     <PricingPlans />
 
     <IgniteGrowth/>
+
+    <PurplePageServices/>
 
 
     

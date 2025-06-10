@@ -245,14 +245,14 @@ function Footer() {
   return (
       <>
       <ScrollToTop/>
-          <div className="demo-section">
+          {/* <div className="demo-section">
               <h2 className="demo-title">
                   Looking to transform your eCommerce presence
                   <br />
                   into a premium brand experience?
               </h2>
               <button className="demo-button">Book A Free Demo →</button>
-          </div>
+          </div> */}
 
           <div className="footer-wrapper">
               <div className="footer-first">
