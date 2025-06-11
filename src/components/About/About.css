@@ -1,102 +1,29 @@
-/* .about-wrapper{
-    width: 100%;
-    min-height: 100vh;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 200px;
+/* Base Reset & Global Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+ 
+  color: white;
+
 }
 
-.about-section{
-    margin-top: 150px;
-    max-width: 80%;
-    font-size: 14px;
-    font-weight: 300;
-}
-
-.about-section h1{
-    text-align: center;
-    font-weight: 400;
-    font-size: 24px;
-
-    margin-bottom: 50px;
-}
-
-.about-wrapper .about-section .about-content-list{
-    margin-top: 30px;
-}
-
-.about-wrapper .about-section .about-content-list ul{
-    margin-top: 10px;
-}
-
-.about-wrapper .about-section .about-content-list li{
-    margin-top: 10px;
-    margin-left: 4%;
-}
-
-.about-wrapper .about-section .about-content-list p{
-    margin-left: 2%;
-    margin-top: 5px;
-}
-
-
-#top-of-about {
-  scroll-margin-top: 100px; 
-}
-
-
-@media (min-width:600px){
-    .about-section{
-        font-size: 16px;
-        width: 70%;
-    }
-
-    .about-section h1{
-        font-size: 3rem;
-    }
-} */
-
-
-/* ye new css */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* About.css - JINCORA Design Match */
-/* Base Wrapper */
 .about-wrapper {
   width: 100%;
   min-height: 100vh;
-  color: white;
-  font-family: 'Space Grotesk', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 120px;
+  
 }
 
-/* Hero Section */
+/* HERO SECTION */
 .hero-section {
-  padding: 160px 20px 60px;
+  padding: 160px 20px 30px;
   text-align: center;
+  
 }
 
 .hero-content {
@@ -114,14 +41,15 @@
 .hero-title {
   font-size: 46px;
   font-weight: 700;
-  color: #FFFFFF;
   line-height: 1.2;
+  color: #FFFFFF;
 }
 
-/* Main Content */
+/* MAIN SECTION */
 .main-content-section {
   width: 100%;
   padding: 60px 20px;
+  
 }
 
 .content-container {
@@ -129,7 +57,7 @@
   margin: 0 auto;
 }
 
-/* Overview */
+/* OVERVIEW SECTION */
 .overview-container {
   display: flex;
   justify-content: center;
@@ -184,7 +112,7 @@
   border-radius: 20px;
 }
 
-/* Value Section */
+/* VALUE SECTION */
 .value-section {
   text-align: center;
   padding: 40px 20px;
@@ -205,100 +133,81 @@
   line-height: 1.6;
 }
 
-/* Responsive Queries */
-
-/* iPhone SE and very small phones */
-@media (max-width: 380px) {
-  .hero-title {
-    font-size: 28px;
-  }
-
-  .overview-container{
-
-    margin-top: -50px;
-    margin-left: -20px;
-  }
-
-  .hero-subtitle {
-    font-size: 16px;
-   
-  }
-
-  .hero-section{
-    margin-top: -40px;
-
-  }
-
-  .overview-text h3 {
-    font-size: 20px;
-  }
-
-  .overview-text h6 {
-    font-size: 14px;
-  }
-
-  .section-title {
-    font-size: 22px;
-  }
-
-  .section-description {
-    font-size: 14px;
-  }
-
-  .overview-image {
-    height: 250px;
-  }
+/* IMAGE + TEXT SECTIONS */
+.section-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin-top: -80px;
 }
 
-/* iPhone XR, 12 Pro, 14 Pro Max */
-@media (max-width: 450px) {
-  .hero-title {
-    font-size: 32px;
-  }
-
-    .overview-container{
-
-    margin-top: -50px;
-    margin-left: -20px;
-  }
-
-  .hero-subtitle {
-    
-    font-size: 18px;
-  }
-
-  .overview-text h3 {
-    font-size: 24px;
-  }
-
-  .overview-text h6 {
-    font-size: 16px;
-  }
-
-  .section-title {
-    font-size: 24px;
-  }
-
-  .section-description {
-    font-size: 16px;
-  }
-
-  .overview-image {
-    height: 300px;
-  }
+.section-block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 120px 0;
+  gap: 4rem;
 }
 
-/* Tablets */
-@media (max-width: 768px) {
-  .overview-inner {
+.section-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.section-image {
+  width: 400px;
+  height: 400px;
+  border-radius: 12px;
+  background-color: #140A24;
+  margin: 10px;
+}
+
+.section-text {
+  max-width: 600px;
+  padding: 10px 20px;
+}
+
+.section-text h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #f0f0f0;
+  font-weight: normal;
+}
+
+.section-text p {
+  font-size: 16px;
+  color: #d1d1d1;
+  line-height: 1.6;
+}
+
+/* ---------------- RESPONSIVE BREAKPOINTS ---------------- */
+
+@media (max-width: 1024px) {
+  .overview-inner,
+  .section-block {
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
   }
 
-    .overview-container{
+  .section-image {
+    width: 90%;
+    height: auto;
+  }
 
-    margin-top: -50px;
-    margin-left: -20px;
+  .section-text {
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
   }
 
   .overview-image {
@@ -311,5 +220,118 @@
 
   .section-description {
     font-size: 16px;
+  }
+
+  .section-block {
+    margin: 80px 0;
+  }
+}
+
+@media (max-width: 480px) {
+
+
+  .hero-section {
+  padding: 130px 20px 10px;
+  text-align: center;
+  
+}
+
+.section-wrapper{
+  margin-top: -160px;
+}
+.main-content-section {
+  width: 100%;
+
+  margin-right: 35px;
+}
+
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .overview-text h3 {
+    font-size: 22px;
+  }
+
+  .overview-text h6 {
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 22px;
+    display: flex;
+    text-align: center;
+
+    
+  }
+
+  .section-description {
+    font-size: 14px;
+  }
+
+  .overview-image {
+    height: 250px;
+  }
+
+  .section-image {
+    width: 100%;
+    height: auto;
+    
+  }
+
+
+
+  .section-text h3 {
+    font-size: 22px;
+  }
+
+  .section-text p {
+    font-size: 14px;
+  }
+}
+
+
+/* === Responsive Layout Adjustments === */
+
+/* For overview section */
+@media (max-width: 768px) {
+  .overview-inner {
+    flex-direction: column;
+  }
+
+  .overview-image {
+    order: -1; /* Move image to top */
+    width: 100%;
+    max-height: 400px;
+  }
+
+  .overview-text {
+    order: 1;
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+/* For section-block layout */
+@media (max-width: 768px) {
+  .section-block,
+  .section-block.reverse {
+    flex-direction: column !important;
+  }
+
+  .section-image {
+    order: -1; /* Show image first */
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .section-text {
+    text-align: center;
+    padding: 0 15px;
   }
 }
