@@ -311,7 +311,7 @@ function Footer() {
                                   <li>Help Guide</li>
                                   <li>FAQ</li>
                                   <li>Portfolio</li>
-                                  <li>Partner</li>
+                                  <li><Link to="/partner">Partner</Link></li>
                                   <li>Blogs</li>
                               </ul>
                           </div>
