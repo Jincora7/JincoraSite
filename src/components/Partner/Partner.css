@@ -197,7 +197,7 @@
     transition: border-color 0.3s;
 } */
 
-
+.form input, 
 .form select {
     padding: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
