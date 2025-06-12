@@ -124,6 +124,9 @@ html, body {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 24px;
+      display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .section-description {
