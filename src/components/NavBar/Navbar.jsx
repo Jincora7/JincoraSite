@@ -23,11 +23,11 @@ function Navbar() {
     const scrollToHome = () => {
         if (location.pathname === "/") {
             // Already on home, scroll
-            const section = document.getElementById("Home");
+            const section = document.getElementById("top-of-home");
             section?.scrollIntoView({ behavior: "smooth" });
         } else {
             // Navigate to home with scroll flag
-            navigate("/", { state: { scrollTo: "Home" } });
+            navigate("/", { state: { scrollTo: "home" } });
         }
     };
 
@@ -39,18 +39,7 @@ function Navbar() {
     };
 
 
-//     const scrollToServices = () => {
-//     if (location.pathname === "/services") {
-//         const topElement = document.getElementById("top-of-services");
-//         if (topElement) {
-//             topElement.scrollIntoView({ behavior: "smooth" });
-//         } else {
-//             window.scrollTo({ top: 0, behavior: "smooth" });
-//         }
-//     } else {
-//         navigate("/services", { state: { scrollToTop: true } });
-//     }
-// };
+
 
     const scrollToServices = () => {
         if (location.pathname === "/services") {
@@ -64,12 +53,6 @@ function Navbar() {
     };
 
 
-    // const scrollToAboutUs = () => {
-    //     const AboutUsSection = document.getElementById("AboutUs");
-    //     if (AboutUsSection) {
-    //         AboutUsSection.scrollIntoView({ behavior: "smooth" });
-    //     }
-    // };
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth > 1024) {
