@@ -242,6 +242,17 @@ function Footer() {
     }
   }
 
+    const scrollToPartner = () => {
+        if (location.pathname === "/partner") {
+            // Already on home, scroll
+            const section = document.getElementById("top-of-partner");
+            section?.scrollIntoView({ behavior: "smooth" });
+        } else {
+            // Navigate to home with scroll flag
+            navigate("/partner", { state: { scrollTo: "top-of-partner" } });
+        }
+    };
+
   return (
       <>
       <ScrollToTop/>
@@ -311,7 +322,7 @@ function Footer() {
                                   <li>Help Guide</li>
                                   <li>FAQ</li>
                                   <li>Portfolio</li>
-                                  <li><Link to="/partner">Partner</Link></li>
+                                  <li><Link to="#" onClick={scrollToPartner} >Partner</Link></li>
                                   <li>Blogs</li>
                               </ul>
                           </div>

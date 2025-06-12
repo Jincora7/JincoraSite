@@ -126,6 +126,10 @@
 import React, { useState } from 'react';
 import './Partner.css';
 
+
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 const Partner = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
@@ -138,7 +142,23 @@ const Partner = () => {
     alert('Form submitted successfully!');
   };
 
+
+      const location = useLocation();
+
+
+    useEffect(() => {
+        if (location.state?.scrollTo === "top-of-partner") {
+          const section = document.getElementById("top-of-partner");
+          section?.scrollIntoView({ behavior: "smooth" });
+        }
+      }, [location]);
+
+
+
+
   return (
+    <>
+    <div id='top-of-partner'></div>
     <div className="partner-page">
       {/* Hero Section */}
       <section className="partner-hero">
@@ -234,6 +254,7 @@ const Partner = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 
