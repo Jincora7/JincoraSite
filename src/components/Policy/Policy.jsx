@@ -2,8 +2,29 @@ import "./Policy.css"
 
 import React from 'react'
 
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 const Policy = () => {
+
+
+
+
+        const location = useLocation();
+
+
+    useEffect(() => {
+        if (location.state?.scrollTo === "top-of-privacy-policy") {
+          const section = document.getElementById("top-of-privacy-policy");
+          section?.scrollIntoView({ behavior: "smooth" });
+        }
+      }, [location]);
+
+
+
   return (
+    <>
+    <div id="top-of-privacy-policy"></div>
     <div className="policy-wrapper">
       <div className="policy-section">
         <h1>Privacy Policy </h1>
@@ -127,6 +148,7 @@ const Policy = () => {
       </div>
       
     </div>
+    </>
   )
 }
 

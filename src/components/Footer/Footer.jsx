@@ -264,6 +264,17 @@ function Footer() {
         }
     };
 
+            const scrollToPrivacyPolicy = () => {
+        if (location.pathname === "/privacy-policy") {
+            // Already on home, scroll
+            const section = document.getElementById("top-of-privacy-policy");
+            section?.scrollIntoView({ behavior: "smooth" });
+        } else {
+            // Navigate to home with scroll flag
+            navigate("/privacy-policy", { state: { scrollTo: "top-of-privacy-policy" } });
+        }
+    };
+
   return (
       <>
       <ScrollToTop/>
@@ -348,7 +359,7 @@ function Footer() {
                                       <Link to="/about">About Us</Link>
                                   </li>
                                   <li>
-                                      <Link to="/privacy-policy">
+                                      <Link to="#" onClick={scrollToPrivacyPolicy}>
                                           Privacy Policy
                                       </Link>
                                   </li>
