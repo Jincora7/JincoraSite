@@ -9,6 +9,7 @@ import PurplePage from './PurplePageHome/PurplePageHome.jsx'
 
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import './Home.css';
 
 function Home() {
 
@@ -26,11 +27,12 @@ function Home() {
 
   return (
     <>
-    
+    <div id="top-of-home" />
     <div className="home-wrapper">
-      <div id="top-of-home" />
+      
       <ScrollToTop />
       <HeroSection/>
+      
       <PillarsPage/>
       <StickycardsSections/>
       <GrowthSection/>

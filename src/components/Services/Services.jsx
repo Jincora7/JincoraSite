@@ -191,10 +191,10 @@ function Services() {
 
   return (
     <>
-    <div id="top-of-services"></div>
+    <div id="top-of-services">
       <Hero2 />
 
-    <div id="top-of-services" className="pillars-wrap">
+    <div className="pillars-wrap">
                 <div className="pillars-card">
                 <p className="pillars-card-para">
                     Why Jincora Is Your Store’s Trusted Growth Partner
@@ -221,7 +221,7 @@ function Services() {
     <PurplePageServices/>
 
 
-    
+    </div>
       
     </>
   )
