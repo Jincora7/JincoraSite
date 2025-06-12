@@ -253,6 +253,17 @@ function Footer() {
         }
     };
 
+        const scrollToTermsAndConditions = () => {
+        if (location.pathname === "/terms-and-conditions") {
+            // Already on home, scroll
+            const section = document.getElementById("top-of-TermsAndConditions");
+            section?.scrollIntoView({ behavior: "smooth" });
+        } else {
+            // Navigate to home with scroll flag
+            navigate("/terms-and-conditions", { state: { scrollTo: "top-of-TermsAndConditions" } });
+        }
+    };
+
   return (
       <>
       <ScrollToTop/>
@@ -342,7 +353,7 @@ function Footer() {
                                       </Link>
                                   </li>
                                   <li>
-                                      <Link to="/terms-and-conditions">
+                                      <Link to="#" onClick={scrollToTermsAndConditions}>
                                           Terms and Conditions
                                       </Link>
                                   </li>

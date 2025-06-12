@@ -2,8 +2,29 @@ import "./TermsAndConditions.css"
 
 import React from 'react'
 
+
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 const TermsAndConditions = () => {
+
+
+
+        const location = useLocation();
+
+
+    useEffect(() => {
+        if (location.state?.scrollTo === "top-of-TermsAndConditions") {
+          const section = document.getElementById("top-of-TermsAndConditions");
+          section?.scrollIntoView({ behavior: "smooth" });
+        }
+      }, [location]);
+
+
+
   return (
+    <>
+    <div id="top-of-TermsAndConditions"></div>
     <div id="TermsAndConditions" className="terms-wrapper">
       <div className="terms-section">
         <h1>Terms and Conditions</h1>
@@ -108,6 +129,7 @@ const TermsAndConditions = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
