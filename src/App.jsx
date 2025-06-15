@@ -10,6 +10,7 @@ import TermsAndConditions from './components/TermsAndConditions/TermsAndConditio
 import Policy from './components/Policy/Policy.jsx'
 import Contact from './components/Contact/Contact.jsx'
 import Partner from './components/Partner/Partner.jsx'
+import Blogs from './components/Blogs/Blogs.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +23,10 @@ const router = createBrowserRouter(
       <Route path='/about' element={<About />} />
       <Route path='/contact' element={<Contact />}/>
       <Route path='/partner' element={<Partner />}/>
+      <Route path='/blogs' element={<Blogs />}/>
+
+      
+
       
     </Route>
   )
