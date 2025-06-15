@@ -86,12 +86,12 @@
 
 
 @media (max-width: 480px) {
-        .hero-section-wrap {
+        /* .hero-section-wrap {
             margin-top: 3rem;
 
 
  
-    }
+    } */
 
     .hero-section-right-image{
          margin-top: 40px;

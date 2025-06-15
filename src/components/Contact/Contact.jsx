@@ -108,7 +108,7 @@ export default function Contact() {
 
     const formData = new FormData(e.target);
 
-    fetch("https://formsubmit.co/jincoratechsolutions@gmail.com", {
+    fetch("https://formsubmit.co/admin@jincora.com", {
       method: "POST",
       body: formData,
     })
