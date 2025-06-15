@@ -1,9 +1,10 @@
 .primary-btn{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
-    flex-wrap: nowrap;
+    width: clamp(8rem, 15vw, 15rem);;
     background-color: #7F3FFF;
     padding: 7px 20px;
     font-size: 0.9rem;
@@ -11,11 +12,63 @@
     border-radius: 25px;
     border: none;
     outline: none;
+   
+     background: linear-gradient(120deg, #7F3FFF, #B083FF);
+  border: 1px solid transparent;
+  border-radius: 25px;
+
+  outline: none;
+  cursor: pointer;
+
+  box-shadow: 0 2px 6px rgba(127, 63, 255, 0.2);
+  transition: background 0.4s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-@media (min-width:768px) {
-    .primary-btn{
-        font-size: 16px;
-        padding: 10px 25px;
-    }
+
+/* On hover: just a little lift and deeper shadow */
+.primary-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(127, 63, 255, 0.3);
+}
+
+/* Color Themes */
+.primary-btn.primary {
+  background-color: #7F3FFF;
+}
+
+.primary-btn.primary:hover {
+  background-color: #B083FF;
+}
+
+.primary-btn.secondary {
+  background-color: #B083FF ;
+}
+
+.primary-btn.secondary:hover {
+  background-color: #7F3FFF;
+}
+
+.primary-btn.Tertiary {
+  background-color: #dc3545;
+}
+
+.primary-btn.Tertiary:hover {
+  background-color: #c82333;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .primary-btn {
+    font-size: 0.8rem;
+    padding: 6px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .primary-btn {
+    font-size: 0.75rem;
+    padding: 5px 12px;
+  }
 }
