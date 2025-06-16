@@ -21,9 +21,9 @@ const PillarsPage = () => {
             </div>
 
             <div className="pillars-card">
-                <p className="pillars-card-para">
+                <h3> 
                     Tailored Digital Tools to Fuel Your Success
-                </p>
+                </h3>
 
                 <div className="pillars-card-wrap">
                     <PillarsCardComponent image={pillarImage1} heading="Personalized Store Design" para="We create stunning, brand-focused Shopify and WordPress stores designed to engage and convert customers." />

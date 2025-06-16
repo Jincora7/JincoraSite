@@ -66,6 +66,7 @@
 .pillars-card-bottom h3 {
   
     text-align: left;
+    margin-top: 40px;
 }
 
 .pillars-card-btm-left {
@@ -91,6 +92,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5px;
+    /* margin-top: 30px; */
 }
 
 .pillars-card-btm-list {
@@ -99,6 +101,7 @@
     padding: 5px 20px;
     transition-duration: 300ms;
     transition-timing-function:ease-in-out;
+    margin-top: 40px;
 }
 
 .pillars-card-btm-list p{
@@ -277,6 +280,7 @@
     max-width: 1000%;
     justify-content: center;
     text-align: center;
+    margin-top: 0px;
   }
 }
 
