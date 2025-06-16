@@ -100,12 +100,12 @@
   font-weight: 500;
   margin-bottom: 30px;
   color: #ffffff;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .FAQs{
-  font-size: 10px;
-  font-weight: lighter;
+  font-size: 26px;
+  font-weight: bold;
   color: #cfc1f8;
 
 
@@ -206,6 +206,7 @@
   .faq-section h3 {
     font-size: 20px;
   }
+  
 
   .faq-item summary {
     font-size: 14px;

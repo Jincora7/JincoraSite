@@ -23,7 +23,7 @@ export default function GrowthSection() {
       </div>
 
       <div className="faq-section">
-        <h6 className="FAQs">FAQ's</h6>
+        <h2 className="FAQs">FAQ's</h2>
         <h3>From services to support — everything you need to know, right here.</h3>
         <div className="faq-item">
           <details>
