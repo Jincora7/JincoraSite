@@ -4,7 +4,7 @@ import './PurplePageServices.css'
 function PurplePageServices() {
   return (
  <div className="demo-section">
-              <h2 className="demo-title">
+              <h2 className="demo-title2">
                   Ready to Boost Your eCommerce Brand?
                   <br />
                  Turn your online store into a standout premium experience.

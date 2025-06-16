@@ -28,31 +28,36 @@ export default function GrowthSection() {
         <div className="faq-item">
           <details>
             <summary>What platforms do you specialize in?</summary>
-            <p>We specialize in Shopify and WordPress, including WooCommerce and custom development solutions.</p>
+            <p>We focus on Shopify and WordPress, including WooCommerce, to deliver tailored, scalable eCommerce and business websites.
+ Our team also supports third-party integrations and custom functionalities as needed.</p>
           </details>
         </div>
         <div className="faq-item">
           <details>
             <summary>How long does a typical project take?</summary>
-            <p>It depends on project complexity. Most projects take between 2–6 weeks.</p>
+            <p>Most websites are completed within 1 to 3 weeks depending on your project’s size, content, and requirements.
+ Urgent timelines can be accommodated with express delivery options.</p>
           </details>
         </div>
         <div className="faq-item">
           <details>
             <summary>Do you offer post-launch support?</summary>
-            <p>Yes, we provide ongoing support and maintenance to ensure long-term success.</p>
+            <p>Yes, we provide flexible support plans for updates, troubleshooting, training, and continuous improvements after launch.
+ Our goal is to keep your site running smoothly as your business evolves.</p>
           </details>
         </div>
          <div className="faq-item">
           <details>
             <summary>Can you migrate my current website?</summary>
-            <p>Yes, we provide ongoing support and maintenance to ensure long-term success.</p>
+            <p>Absolutely. We handle full-site migrations, preserving your content, design elements, and SEO performance wherever possible.
+Our process ensures a smooth, secure transition with minimal downtime.</p>
           </details>
         </div>
          <div className="faq-item">
           <details>
             <summary>Will my wesite be mobile-frineldy and SEO-ready?</summary>
-            <p>es, we provide ongoing support and maintenance to ensure long-term success.</p>
+            <p>Yes, all our websites are responsive across devices and optimized for fast loading and search engine visibility.
+ We follow SEO best practices from day one for better rankings.</p>
           </details>
         </div>
       </div>
