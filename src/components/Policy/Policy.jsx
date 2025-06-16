@@ -35,7 +35,7 @@ const Policy = () => {
           </p>
 
           <div className="policy-content-list">
-            <h3>1. Information We Collect</h3>
+            <h4>1. Information We Collect</h4>
 
             <p>
               We may collect and process the following types of personal data:
@@ -51,8 +51,8 @@ const Policy = () => {
 
 
           <div className="policy-content-list">
-            <h3>2. How We Use Your Information
-            </h3>
+            <h4>2. How We Use Your Information
+            </h4>
 
             <p>
               We use your information to:
@@ -67,7 +67,7 @@ const Policy = () => {
           </div>
 
           <div className="policy-content-list">
-            <h3>3. Legal Basis for Processing (GDPR)</h3>
+            <h4>3. Legal Basis for Processing (GDPR)</h4>
 
             <p>
               We process your data on the following bases:
@@ -82,7 +82,7 @@ const Policy = () => {
           </div>
 
           <div className="policy-content-list">
-            <h3>4. Data Retention</h3>
+            <h4>4. Data Retention</h4>
 
             <p>
               We retain personal data only as long as necessary for the purposes outlined above or to comply with legal obligations.
@@ -90,7 +90,7 @@ const Policy = () => {
           </div>
 
           <div className="policy-content-list">
-            <h3>5. Data Sharing and Security</h3>
+            <h4>5. Data Sharing and Security</h4>
 
             <p>
               We do not sell or rent your data. We may share it with:
@@ -110,7 +110,7 @@ const Policy = () => {
           </div>
 
           <div className="policy-content-list">
-            <h3>6. Your Rights (Under GDPR)</h3>
+            <h4>6. Your Rights (Under GDPR)</h4>
 
             <p>
               You have the right to:
@@ -136,7 +136,7 @@ const Policy = () => {
           </div>
 
           <div className="policy-content-list">
-            <h3>7. Cookies</h3>
+            <h4>7. Cookies</h4>
 
             <p>
               We use cookies for essential website functionality, performance tracking, and user experience enhancement. You can manage your cookie preferences through your browser settings.
