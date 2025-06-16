@@ -196,9 +196,9 @@ function Services() {
 
     <div className="pillars-wrap">
                 <div className="pillars-card">
-                <p className="pillars-card-para">
+                <h3 className="pillars-card-para">
                     Why Jincora Is Your Store’s Trusted Growth Partner
-                </p>
+                </h3>
 
                 <div className="pillars-card-wrap">
                     <PillarsCardComponent image={servicelist1} heading="Custom Shopify Development" para="We build tailored, conversion-focused Shopify stores that align with your brand and business goals." />

@@ -129,6 +129,17 @@
   background: #7f3fff;
 }
 
+.plan-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.spacer {
+  margin-top: auto;
+}
+
+
 @media (max-width: 768px) {
   .plans {
     flex-direction: column;
