@@ -1,0 +1,238 @@
+.contactus-fullscreen {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom right, #180028, #240045);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  margin-top: 80px;
+}
+
+.contactus-form-wrapper {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.contactus-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contactus-subtext {
+  font-size: 16px;
+  color: #cfc1f8;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contactus-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactus-form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contactus-form-col {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-size: 14px;
+  color: #cfc1f8;
+}
+
+.contactus-input,
+.contactus-textarea {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #c29cff;
+  padding: 12px 16px;
+  border-radius: 25px;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contactus-input:hover,
+.contactus-input:focus,
+.contactus-textarea:hover,
+.contactus-textarea:focus {
+  border-color: #a367ff;
+}
+
+.contactus-textarea {
+  border-radius: 15px;
+  resize: none;
+  min-height: 120px;
+}
+
+.contactus-button {
+  background-color: #c29cff;
+  color: #000;
+  font-weight: 600;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  margin-top: 5px;
+  align-self: flex-start;
+}
+
+.contactus-button:hover {
+  background-color: #a367ff;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.contactus-success-message {
+  font-size: 16px;
+  color: #a8cbff;
+  /* background-color: #222; */
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+
+/* Wrapper for form/success message */
+ .contactus-form-area {
+
+  min-height: 300px;
+}
+
+/* Success message styling centered in area */
+.contactus-success-message-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contactus-success-message {
+  font-size: 16px;
+  color: #f9f9f9;
+  /* background-color: #2c0e4a; */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .contactus-form-row {
+    flex-direction: column;
+  }
+
+  .contactus-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ========== iPhone 14 Pro Max (430px width) ========== */
+@media (max-width: 430px) {
+  .contactus-title {
+    font-size: 22px;
+  }
+
+  .contactus-subtext {
+    font-size: 14px;
+  }
+
+  .contactus-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contactus-input,
+  .contactus-textarea {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+}
+
+/* ========== iPhone XR (414px width) ========== */
+@media (max-width: 414px) {
+  .contactus-title {
+    font-size: 21px;
+  }
+
+  .contactus-subtext {
+    font-size: 13.5px;
+  }
+
+  .contactus-button {
+    font-size: 15px;
+    padding: 10px 22px;
+  }
+
+  .contactus-input,
+  .contactus-textarea {
+    padding: 10px 14px;
+  }
+}
+
+/* ========== iPhone 12 Pro (390px width) ========== */
+@media (max-width: 390px) {
+  .contactus-title {
+    font-size: 20px;
+  }
+
+  .contactus-subtext {
+    font-size: 13px;
+  }
+
+  .contactus-button {
+    font-size: 14.5px;
+    padding: 10px 20px;
+    width: 100%;
+  }
+}
+
+/* ========== iPhone SE (375px width) ========== */
+@media (max-width: 375px) {
+  .contactus-title {
+    font-size: 18px;
+  }
+
+  .contactus-subtext {
+    font-size: 12.5px;
+  }
+
+  .contactus-input,
+  .contactus-textarea {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .contactus-button {
+    font-size: 13.5px;
+    padding: 10px 18px;
+    width: 100%;
+  }
+}

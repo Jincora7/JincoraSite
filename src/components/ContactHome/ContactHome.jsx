@@ -96,7 +96,7 @@
 
 
 import React, { useState } from 'react';
-import './Contact.css';
+import './ContactHome.css';
 import contactpage from '../.././assets/contactpage.png';
 import ScrollToTop from '../common/ScrollToTop';
 

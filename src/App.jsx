@@ -8,9 +8,10 @@ import About from './components/About/About.jsx'
 import { RouterProvider, Route, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import TermsAndConditions from './components/TermsAndConditions/TermsAndConditions.jsx'
 import Policy from './components/Policy/Policy.jsx'
-import Contact from './components/Contact/Contact.jsx'
+import ContactHome from './components/ContactHome/ContactHome.jsx'
 import Partner from './components/Partner/Partner.jsx'
 import Blogs from './components/Blogs/Blogs.jsx'
+import ContactUsPage from './components/ContactUsPage/ContactUsPage.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,9 +22,11 @@ const router = createBrowserRouter(
       <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
       <Route path='/privacy-policy' element={<Policy />} />
       <Route path='/about' element={<About />} />
-      <Route path='/contact' element={<Contact />}/>
+      <Route path='/ContactHome' element={<ContactHome />}/>
       <Route path='/partner' element={<Partner />}/>
       <Route path='/blogs' element={<Blogs />}/>
+      <Route path='/ContactUsPage' element={<ContactUsPage />}/>
+
 
       
 
