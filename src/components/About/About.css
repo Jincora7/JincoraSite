@@ -242,6 +242,23 @@ html, body {
   
 }
 
+.about-wrapper {
+  margin-top: 10px;
+}
+
+.main-content-section {
+  margin-top: 10px;
+  
+}
+
+
+
+.hero-subtitle {
+  font-size: 38px;
+  font-weight: 800;
+  
+}
+
 .section-wrapper{
   margin-top: -160px;
 }
@@ -255,9 +272,7 @@ html, body {
     font-size: 28px;
   }
 
-  .hero-subtitle {
-    font-size: 16px;
-  }
+  
 
   .overview-text h3 {
     font-size: 22px;
