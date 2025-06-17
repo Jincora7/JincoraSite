@@ -11,7 +11,7 @@
 }
 
 .terms-section{
-    margin-top: 150px;
+    margin-top: 180px;
     max-width: 80%;
     font-size: 14px;
     font-weight: 300;
@@ -19,11 +19,16 @@
 
 .terms-section h1{
     text-align: center;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 24px;
     /* text-decoration: underline;
     text-decoration-color: #FF8400; */
     margin-bottom: 50px;
+}
+.terms-section p{
+    margin-top: 80px;
+    font-size: 22px;
+
 }
 
 .terms-wrapper .terms-section .terms-content-list{
