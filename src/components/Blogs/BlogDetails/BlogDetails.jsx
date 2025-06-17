@@ -1,10 +1,10 @@
 import React from "react";
-import "./Blogs.css";
+import "./BlogDetails.css";
 
-import BlogDetailsImg1 from '../../assets/BlogDetailsImg1.png'
-import BlogDetailsImg2 from '../../assets/BlogDetailsImg2.png'
-import BlogDetailsImg3 from '../../assets/BlogDetailsImg3.png'
-import BlogDetailsImg4 from '../../assets/BlogDetailsImg4.png'
+import BlogDetailsImg1 from '../../../assets/BlogDetailsImg1.png'
+import BlogDetailsImg2 from '../../../assets/BlogDetailsImg2.png'
+import BlogDetailsImg3 from '../../../assets/BlogDetailsImg3.png'
+import BlogDetailsImg4 from '../../../assets/BlogDetailsImg4.png'
 
 const BlogPage = () => {
   return (

@@ -10,7 +10,8 @@ import TermsAndConditions from './components/TermsAndConditions/TermsAndConditio
 import Policy from './components/Policy/Policy.jsx'
 import ContactHome from './components/ContactHome/ContactHome.jsx'
 import Partner from './components/Partner/Partner.jsx'
-import Blogs from './components/Blogs/Blogs.jsx'
+import BlogDetails from './components/Blogs/BlogDetails/BlogDetails.jsx'
+import BlogListing from './components/Blogs/BlogListings/BlogListing.jsx'
 import ContactUsPage from './components/ContactUsPage/ContactUsPage.jsx'
 
 const router = createBrowserRouter(
@@ -24,7 +25,9 @@ const router = createBrowserRouter(
       <Route path='/about' element={<About />} />
       <Route path='/ContactHome' element={<ContactHome />}/>
       <Route path='/partner' element={<Partner />}/>
-      <Route path='/blogs' element={<Blogs />}/>
+      <Route path='/BlogDetails' element={<BlogDetails />}/>
+      <Route path='/BlogListing' element={<BlogListing />}/>
+
       <Route path='/ContactUsPage' element={<ContactUsPage />}/>
 
 
