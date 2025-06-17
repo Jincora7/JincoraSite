@@ -28,12 +28,34 @@
   font-size: 0.85rem;
 }
 
+/* .plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+} */
+
+
 .plans {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  align-items: stretch; /* makes all plan-card items match height */
 }
+
+
+/* .plan-card {
+  background: #1a0b2e;
+  border: 2px solid #5e2cb4;
+  border-radius: 1rem;
+  width: 340px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+} */
 
 .plan-card {
   background: #1a0b2e;
@@ -45,7 +67,9 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  /* height: 100%;  */
 }
+
 
 .plan-card .highlight {
   position: absolute;
@@ -91,6 +115,15 @@
   color: #b982ff;
 }
 
+/* .plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.5;
+} */
+
 .plan-card ul {
   list-style: none;
   padding: 0;
@@ -98,7 +131,10 @@
   text-align: left;
   font-size: 0.9rem;
   line-height: 1.5;
+  margin-left: 32px;
+  flex-grow: 1; /* ensure ul grows in height inside plan-content */
 }
+
 
 .plan-card ul li {
   margin-bottom: 0.5rem;
@@ -128,11 +164,19 @@
 .subscribe-btn:hover {
   background: #7f3fff;
 }
+/* 
+.plan-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+} */
 
 .plan-content {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-between; /* ensures ul and other elements spread nicely */
+  width: 100%;
 }
 
 .spacer {
