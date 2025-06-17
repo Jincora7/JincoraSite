@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import './ContactUsPage.css';
 import ScrollToTop from '../common/ScrollToTop';
 
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
@@ -25,11 +28,23 @@ export default function Contact() {
       .catch(() => alert("Error submitting form"));
   };
 
+
+          const location = useLocation();
+
+
+    useEffect(() => {
+        if (location.state?.scrollTo === "top-of-ContactUsPage") {
+          const section = document.getElementById("top-of-ContactUsPage");
+          section?.scrollIntoView({ behavior: "smooth" });
+        }
+      }, [location]);
+
+
   return (
     <>
       <ScrollToTop />
 {/** inside return() */}
-<div className="contactus-fullscreen">
+<div  id='top-of-ContactUsPage' className="contactus-fullscreen">
   <div className="contactus-form-wrapper">
     <h1 className="contactus-title">Contact Us</h1>
     <p className="contactus-subtext">

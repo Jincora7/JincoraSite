@@ -275,6 +275,17 @@ function Footer() {
         }
     };
 
+            const scrollToContactUsPage = () => {
+        if (location.pathname === "/ContactUsPage") {
+            // Already on home, scroll
+            const section = document.getElementById("top-of-ContactUsPage");
+            section?.scrollIntoView({ behavior: "smooth" });
+        } else {
+            // Navigate to home with scroll flag
+            navigate("/ContactUsPage", { state: { scrollTo: "top-of-ContactUsPage" } });
+        }
+    };
+
   return (
       <>
       <ScrollToTop/>
@@ -353,7 +364,7 @@ function Footer() {
                           <div className="footer-section">
                               <h5>Support</h5>
                               <ul>
-                                  <li>Contact Us</li>
+                                  <li> <Link to="#" onClick={scrollToContactUsPage}>Contact Us</Link></li>
                                   <li>Email Us</li>
                                   <li>
                                       <Link to="/about">About Us</Link>
