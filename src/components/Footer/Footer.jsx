@@ -356,7 +356,8 @@ function Footer() {
                                   <li>FAQ</li>
                                   <li>Portfolio</li>
                                   <li><Link to="#" onClick={scrollToPartner} >Partner</Link></li>
-                                  <li><Link to="/BlogListing">Blogs</Link></li>
+                                  <li><Link to="/BlogListing">BlogListing</Link></li>
+                                  <li><Link to="/BlogDetails">BlogDetails</Link></li>
                               </ul>
                           </div>
 

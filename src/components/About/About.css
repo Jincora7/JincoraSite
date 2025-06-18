@@ -134,6 +134,7 @@ html, body {
       display: flex;
     text-align: center;
     justify-content: center;
+    padding: 0px 10px;
 }
 
 .section-description {
