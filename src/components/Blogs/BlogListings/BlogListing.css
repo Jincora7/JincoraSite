@@ -24,7 +24,7 @@
 }
 
 .blog-hero-container {
-  max-width: 100%; /* Changed from 100% to 95% for balanced width */
+  max-width: 95%; /* Changed from 100% to 95% for balanced width */
   margin: 0 auto;
   display: flex;
   gap: 60px;
