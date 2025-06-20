@@ -1,52 +1,61 @@
+
+
+
 import React, { useState } from 'react';
 import './BlogListing.css';
 import blog1 from '../../../assets/blog-1.jpg';
-import blog2 from '../../../assets/blog-2.jpg';
+import blog2 from '../../../assets/blog-2.png';
 import blog3 from '../../../assets/blog-3.jpg';
 import blog4 from '../../../assets/blog-4.jpg';
 import blog5 from '../../../assets/blog-5.jpg';
 import blog6 from '../../../assets/blog-6.jpg';
 import blog7 from '../../../assets/blog-7.jpg';
 
-const BlogListing = () => {
+const Blog = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const sidebarPosts = [
     {
       id: 7,
-      title: "Boost Your Small Business Online with Shopify CMS—Here’s How",
+      title: "Boost Your Small Business Online with Shopify CMS—Here's How",
       date: "September 6, 2024",
-      image: blog3
+      image: blog3,
+      tags: ["CMS Platforms", "Ecommerce", "Shopify Setup"]
     },
     {
       id: 8,
       title: "How UI/UX Design is Shaping Successful E-commerce Stores in 2025",
       date: "August 27, 2024",
-      image: blog1
+      image: blog1,
+      tags: ["UX Trends", "Conversion", "Conversion Optimization"]
     },
     {
       id: 9,
       title: "Top 5 Reasons to Choose Custom Web Development Over Templates",
       date: "August 20, 2024",
-      image: blog2
+      image: blog2,
+      tags: ["Ecommerce App", "Ecommerce", "Shopify Setup"]
     },
     {
       id: 10,
       title: "Unlocking Growth: Top Email and SMS Marketing Strategies for Shopify Stores in 2025",
       date: "August 15, 2024",
-      image: blog4
+      image: blog4,
+      tags: ["Ecommerce ", "Shopify Setup" ,"Custom Ecommerce"] 
     },
     {
       id: 11,
       title: "From Idea to Execution: What to Expect During Your Web Development Project",
       date: "August 10, 2024",
-      image: blog7
+      image: blog7,
+      tags: ["CMS Platforms", "Ecommerce", "Shopify Setup"]
     },
     {
       id: 12,
       title: "Boost Your Shopify Store Sales with a Custom Ecommerce App in 2025",
       date: "August 5, 2024",
-      image: blog6
+      image: blog6,
+      tags: ["CMS Platforms", "Ecommerce", "Shopify Setup"]
     }
   ];
 
@@ -64,24 +73,28 @@ const BlogListing = () => {
 
   return (
     <div className="blog-page">
-      {/* Featured Section */}
-      <section className="featured-section">
-        <div className="featured-content">
-          <div className="featured-left">
-            <div className="featured-card">
-              <div className="featured-image">
-                <img src={blog2} alt="Featured post" />
-              </div>
-              <div className="featured-tags">
-                <span className="tag">Web Design</span>
-                <span className="tag">Custom coding</span>
-                <span className="tag">Web Development</span>
-              </div>
+      {/* Hero Section */}
+      <section className="blog-hero-section">
+        <div className="blog-hero-container">
+          <div className="blog-hero-left">
+            <div className="blog-hero-image">
+              <img src={blog2} alt="Web Development Illustration" />
             </div>
           </div>
-          <div className="featured-right">
-            <h1>Top 5 Reasons to Choose Custom Web Development Over Templates</h1>
-            <p>Custom coding allows for unlimited design possibilities and unique functionality.</p>
+
+          <div className="blog-hero-right">
+            <div className="blog-hero-tags">
+              <span className="hero-tag">Shopify Tips</span>
+              <span className="hero-tag">Scalable Websites</span>
+              <span className="hero-tag">Brand Identity</span>
+            </div>
+            
+            <h1 className="blog-hero-main-title">
+              <span className="heading-line">Top 5 Reasons to Choose Custom Web</span>
+              <span className="heading-line">Development Over Templates</span>
+            </h1>
+            
+            <button className="blog-hero-btn">Continue reading →</button>
           </div>
         </div>
       </section>
@@ -135,7 +148,14 @@ const BlogListing = () => {
                     <img src={post.image} alt={post.title} />
                   </div>
                   <div className="blog-content">
-                    <h3>{post.title}</h3>
+                    <div className="blog-tags">
+                      {post.tags?.map((tag, index) => (
+                        <span key={index} className="tag">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    <h7>{post.title}</h7>
                     <div className="blog-meta">
                       <span className="blog-date">{post.date}</span>
                     </div>
@@ -143,6 +163,7 @@ const BlogListing = () => {
                 </article>
               ))}
             </div>
+
 
             {/* Pagination */}
             <div className="pagination">
@@ -163,5 +184,4 @@ const BlogListing = () => {
   );
 };
 
-export default BlogListing ;
-
+export default Blog;
