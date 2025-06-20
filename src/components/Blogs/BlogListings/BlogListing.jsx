@@ -11,6 +11,10 @@ import blog5 from '../../../assets/blog-5.jpg';
 import blog6 from '../../../assets/blog-6.jpg';
 import blog7 from '../../../assets/blog-7.jpg';
 
+
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
+
 const Blog = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -71,8 +75,19 @@ const Blog = () => {
     setCurrentSlide(index);
   };
 
+
+          const location = useLocation();
+
+
+    useEffect(() => {
+        if (location.state?.scrollTo === "top-of-BlogListing") {
+          const section = document.getElementById("top-of-BlogListing");
+          section?.scrollIntoView({ behavior: "smooth" });
+        }
+      }, [location]);
+
   return (
-    <div className="blog-page">
+    <div  id='top-of-BlogListing' className="blog-page">
       {/* Hero Section */}
       <section className="blog-hero-section">
         <div className="blog-hero-container">

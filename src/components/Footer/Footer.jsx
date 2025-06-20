@@ -286,6 +286,19 @@ function Footer() {
         }
     };
 
+
+
+                const scrollToBlogListing = () => {
+        if (location.pathname === "/BlogListing") {
+            // Already on home, scroll
+            const section = document.getElementById("top-of-BlogListing");
+            section?.scrollIntoView({ behavior: "smooth" });
+        } else {
+            // Navigate to home with scroll flag
+            navigate("/BlogListing", { state: { scrollTo: "top-of-BlogListing" } });
+        }
+    };
+
   return (
       <>
       <ScrollToTop/>
@@ -356,7 +369,7 @@ function Footer() {
                                   <li>FAQ</li>
                                   <li>Portfolio</li>
                                   <li><Link to="#" onClick={scrollToPartner} >Partner</Link></li>
-                                  <li><Link to="/BlogListing">BlogListing</Link></li>
+                                  <li><Link to="#" onClick={scrollToBlogListing}>BlogListing</Link></li>
                                   <li><Link to="/BlogDetails">BlogDetails</Link></li>
                               </ul>
                           </div>
