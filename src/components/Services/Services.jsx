@@ -161,10 +161,10 @@ import Hero2 from "./Hero2/Hero2.jsx";
 
 import PricingPlans from "./PricingPlans/PricingPlans.jsx";
 import PillarsCardComponent from "../Home/Pillars-Page/PillarsCardComponent/PillarsCardComponent.jsx";
-import servicelist1 from '../../assets/service-list-1.png'
-import servicelist2 from '../../assets/service-list-2.png'
-import servicelist3 from '../../assets/service-list-3.png'
-import servicelist4 from '../../assets/service-list-4.png'
+import servicelist1 from '/Service/service-list-1.png'
+import servicelist2 from '/Service/service-list-2.png'
+import servicelist3 from '/Service/service-list-3.png'
+import servicelist4 from '/Service/service-list-4.png'
 import PrimaryBtn from '../../reusableComponents/PrimaryBtn/PrimaryBtn'
 import IgniteGrowth from "./IgniteGrowth/IgniteGrowth.jsx";
 import PurplePageServices from "./PurplePageServices/PurplePageServices.jsx";

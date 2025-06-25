@@ -104,6 +104,8 @@ import "./About.css";
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import ScrollToTop from '../common/ScrollToTop';
+
+
 // import AboutUs from "../../assets/Group5830.png";
 
 // import AboutUsList1 from '../../assets/AboutUs-List-1.png'
@@ -127,6 +129,7 @@ const SectionLayout = () => {
 
   return (
     <>
+   
       <div id="top-of-about" className="about-wrapper">
         
         {/* Hero Section */}

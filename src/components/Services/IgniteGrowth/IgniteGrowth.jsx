@@ -6,7 +6,7 @@ const IgniteGrowth = () => {
   return (
     <div className="ignite-section">
       <div className="left-content">
-        <img src={IgniteGrowthImg} alt="Man with Laptop" className="main-image" />
+        <img src="/Service/IgniteGrowthImg.png" alt="Man with Laptop" className="main-image" />
 
 
       </div>
