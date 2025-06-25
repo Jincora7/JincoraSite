@@ -106,7 +106,7 @@ import { useLocation } from 'react-router-dom';
 import ScrollToTop from '../common/ScrollToTop';
 
 
-// import AboutUs from "../../assets/Group5830.png";
+import AboutUs from "/AboutUs/Group5830.png";
 
 // import AboutUsList1 from '../../assets/AboutUs-List-1.png'
 // import AboutUsList2 from '../../assets/AboutUs-List-2.png'
@@ -158,7 +158,7 @@ const SectionLayout = () => {
       </h6>
     </div>
     <div className="overview-image">
-      <img src='AboutUs/Group5830.png' alt="Team collaboration meeting" className="team-meeting-img" />
+      <img src={AboutUs} alt="Team collaboration meeting" className="team-meeting-img" />
     </div>
   </div>
 </div>
