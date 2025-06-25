@@ -104,15 +104,14 @@ import "./About.css";
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import ScrollToTop from '../common/ScrollToTop';
-import AboutUs from "../../assets/Group5830.png";
+// import AboutUs from "../../assets/Group5830.png";
 
-import AboutUsList1 from '../../assets/AboutUs-List-1.png'
-import AboutUsList2 from '../../assets/AboutUs-List-2.png'
-import AboutUsList3 from '../../assets/AboutUs-List-3.png'
-import AboutUsList4 from '../../assets/AboutUs-List-4.png'
+// import AboutUsList1 from '../../assets/AboutUs-List-1.png'
+// import AboutUsList2 from '../../assets/AboutUs-List-2.png'
+// import AboutUsList3 from '../../assets/AboutUs-List-3.png'
+// import AboutUsList4 from '../../assets/AboutUs-List-4.png'
 
-
-
+// AboutUs/AboutUs-List-1.png
 const SectionLayout = () => {
 
 
@@ -156,7 +155,7 @@ const SectionLayout = () => {
       </h6>
     </div>
     <div className="overview-image">
-      <img src={AboutUs} alt="Team collaboration meeting" className="team-meeting-img" />
+      <img src='AboutUs/Group5830.png' alt="Team collaboration meeting" className="team-meeting-img" />
     </div>
   </div>
 </div>
@@ -200,12 +199,12 @@ const SectionLayout = () => {
             meaningful, recurring customer engagement.
           </p>
         </div>
-        <img src={AboutUsList1} alt="VR user 1" className="section-image" />
+        <img src='AboutUs/AboutUs-List-1.png' alt="VR user 1" className="section-image" />
       </div>
 
       {/* Section 2 - Reversed (image on left) */}
       <div className="section-block reversed">
-      <img src={AboutUsList2} alt="UI hand" className="section-image" />
+      <img src='AboutUs/AboutUs-List-2.png' alt="UI hand" className="section-image" />
         <div className="section-text">
           <h3>Creating Personalized Experiences That Keep Customers Coming Back</h3>
           <p>
@@ -232,12 +231,12 @@ const SectionLayout = () => {
            that accelerates over time.
           </p>
         </div>
-        <img src={AboutUsList3} alt="VR user 2" className="section-image" />
+        <img src='AboutUs/AboutUs-List-3.png' alt="VR user 2" className="section-image" />
       </div>
 
       {/* Section 4 - Reversed (image on left) */}
       <div className="section-block reversed">
-        <img src={AboutUsList4} alt="VR user 3" className="section-image" />
+        <img src='AboutUs/AboutUs-List-4.png' alt="VR user 3" className="section-image" />
         <div className="section-text">
           <h3>Aligning Technology with Business Goals for Scalable Success</h3>
           <p>
