@@ -1,6 +1,6 @@
 import React from 'react';
 import './GrowthSection.css';
-import Frame from '../../../assets/Frame.png'; // Replace with your actual image
+import Frame from '/Home/GrowthSection/Frame.png'; // Replace with your actual image
 
 export default function GrowthSection() {
   return (

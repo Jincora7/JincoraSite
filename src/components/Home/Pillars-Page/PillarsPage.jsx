@@ -2,15 +2,15 @@ import "./PillarsPage.css"
 
 import React from 'react'
 import PillarsCardComponent from './PillarsCardComponent/PillarsCardComponent'
-import pillarImage1 from "../../../assets/pillar-1.png"
-import pillarImage2 from "../../../assets/pillar-2.png"
-import pillarImage3 from "../../../assets/pillar-3.png"
-import pillarImage4 from "../../../assets/pillar-4.png"
+import pillarImage1 from "/Home/PillarsPage/pillar-1.png"
+import pillarImage2 from "/Home/PillarsPage/pillar-2.png"
+import pillarImage3 from "/Home/PillarsPage/pillar-3.png"
+import pillarImage4 from "/Home/PillarsPage/pillar-4.png"
 import PrimaryBtn from '../../../reusableComponents/PrimaryBtn/PrimaryBtn'
-import pillar1 from "../../../assets/1.png"
-import pillar2 from "../../../assets/2.png"
-import pillar3 from "../../../assets/3.png"
-import pillar4 from "../../../assets/4.png"
+import pillar1 from "/Home/PillarsPage/1.png"
+import pillar2 from "/Home/PillarsPage/2.png"
+import pillar3 from "/Home/PillarsPage/3.png"
+import pillar4 from "/Home/PillarsPage/4.png"
 
 const PillarsPage = () => {
 
