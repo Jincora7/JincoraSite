@@ -1,14 +1,81 @@
 <!doctype html>
 <html lang="en">
   <head>
+
+    <!-- Schema Code -->
+
+
+<script type="application/ld+json">
+    {
+        "@context": " https://schema.org ",
+        "@type": "Organization",
+        "name": "{{ shop.name }}",
+        "url": "{{ shop.url }}",
+        "description": "{{ shop.description }}",
+        "telephone": "{{ shop.phone }}",
+        "logo": " https://www.jincora.com/assets/logo-BOVWYQXt.png ",
+        "image": " https://www.jincora.com/assets/logo-BOVWYQXt.png  ",
+        "sameAs": [
+              "{{ settings.social_twitter }}",
+              "{{ settings.social_linkedin}}",
+              "{{ settings.social_facebook }}",
+              "{{ settings.social_pinterest }}",
+              "{{ settings.social_instagram}}",
+              "{{ settings.social_tiktok }}",
+              "{{ settings.social_tumblr }}",
+              "{{ settings.social_snapchat }}",
+              "{{ settings.social_youtube }}",
+              "{{ settings.social_vimeo }}"
+            ],
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "{{ shop.address.street }}",
+            "addressLocality": "{{ shop.address.city }}",
+            "addressRegion": "{{ shop.address.province }}",
+            "postalCode": "{{ shop.address.zip }}",
+            "addressCountry": "{{ localization.country.iso_code }}"
+        }
+      }
+    </script>
+
+<!-- Code - website Code -->
+
+    {%- if request.page_type == 'index' -%}
+  {% assign potential_action_target = request.origin | append: routes.search_url | append: "?q={search_term_string}" %}
+  <script type="application/ld+json">
+    {
+      "@context": " http://schema.org ",
+      "@type": "WebSite",
+      "name": {{ shop.name | json }},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {{ potential_action_target | json }},
+        "query-input": "required name=search_term_string"
+      },
+      "url": {{ request.origin | append: page.url | json }}
+    }
+  </script>
+{%- endif -%}
+
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8TJQVMHBCE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-8TJQVMHBCE');
+    </script>
     <meta charset="UTF-8" />
-    <meta name="description" content="Jincora offers AI-driven chatbots, website development, eCommerce solutions, SEO, social media management, and graphic design to help businesses grow, engage customers, and boost their online presence with tailored solutions and seamless performance." />
+    <meta name="description" content="Jincora empowers your business with expert web development, SEO, eCommerce websites, and design services to grow your brand and engage more customers online." />
 	<meta name="keywords" content="AI chatbots, website development, eCommerce, SEO, social media management, graphic design, business growth, branding." />
     <meta name="google-site-verification" content="7vTKeK4MdNvGUTrNwDIxq6jDRoeKaZgM9L2MR0I9x_8" />
 	  <link rel="icon" type="image/svg+xml" href="/src/assets/logo.png" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jincora</title>
+    <title>Scale Your E-commerce Business with Jincora Solutions</title>
   </head>
   <body>
     <div id="root"></div>
