@@ -114,15 +114,15 @@ import React from "react";
 import "./BlogDetails.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-// import BlogDetailsImg1 from '../../BlogDetails/BlogDetailsImg1.png';
-// import BlogDetailsImg2 from '../../../assets/BlogDetailsImg2.png';
-// import BlogDetailsImg3 from '../../../assets/BlogDetailsImg3.png';
-// import BlogDetailsImg4 from '../../../assets/BlogDetailsImg4.png';
+import BlogDetailsImg1 from '/BlogDetails/BlogDetailsImg1.png';
+import BlogDetailsImg2 from '/BlogDetails/BlogDetailsImg2.png';
+import BlogDetailsImg3 from '/BlogDetails/BlogDetailsImg3.png';
+import BlogDetailsImg4 from '/BlogDetails/BlogDetailsImg4.png';
 
 const BlogDetails = () => {
   return (
     <div className="blogpage-wrapper">
-      <img src='/BlogDetails/BlogDetailsImg1.png' alt="Hero" className="blogpage-hero-img" />
+      <img src={BlogDetailsImg1} alt="Hero" className="blogpage-hero-img" />
 
       <div className="blogpage-content">
         <h1 className="blogpage-main-title">
@@ -171,7 +171,7 @@ const BlogDetails = () => {
         </div>
 
         <div className="blogpage-image-cta-section">
-          <img src='/BlogDetails/BlogDetailsImg2.png' alt="Performance" className="blogpage-content-image" />
+          <img src={BlogDetailsImg2} alt="Performance" className="blogpage-content-image" />
         <div className="blogpage-cta-box">
           <h3>
             Prep Your Store for <br />
@@ -200,7 +200,7 @@ const BlogDetails = () => {
 
         <h2 className="blogpage-related-title">You might also like…</h2>
         <div className="blogpage-related-posts">
-          {['/BlogDetails/BlogDetailsImg3.png', '/BlogDetails/BlogDetailsImg4.png'].map((imgSrc, index) => (
+          {[BlogDetailsImg3, BlogDetailsImg4].map((imgSrc, index) => (
             <div className="blogpage-related-card" key={index}>
               <img src={imgSrc} alt={`Related ${index + 1}`}  className="blogpage-related-image-rounded" />
               <div className="blogpage-card-content">
