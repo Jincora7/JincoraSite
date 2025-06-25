@@ -1,8 +1,8 @@
 import "./HeroSection.css"
 
 import React from 'react'
-import bulb from "../../../assets/bulb.png"
-import maskGrp from "../../../assets/mask-grp.png"
+import bulb from "/Home/Hero/bulb.png"
+import maskGrp from "/Home/Hero/mask-grp.png"
 
 const HeroSection = () => {
     return (
