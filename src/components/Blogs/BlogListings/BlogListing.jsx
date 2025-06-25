@@ -3,13 +3,13 @@
 
 import React, { useState } from 'react';
 import './BlogListing.css';
-import blog1 from '../../../assets/blog-1.jpg';
-import blog2 from '../../../assets/blog-2.png';
-import blog3 from '../../../assets/blog-3.jpg';
-import blog4 from '../../../assets/blog-4.jpg';
-import blog5 from '../../../assets/blog-5.jpg';
-import blog6 from '../../../assets/blog-6.jpg';
-import blog7 from '../../../assets/blog-7.jpg';
+import blog1 from '/BlogDetails/blog-1.jpg';
+import blog2 from '/BlogDetails/blog-2.png';
+import blog3 from '/BlogDetails/blog-3.jpg';
+import blog4 from '/BlogDetails/blog-4.jpg';
+import blog5 from '/BlogDetails/blog-5.jpg';
+import blog6 from '/BlogDetails/blog-6.jpg';
+import blog7 from '/BlogDetails/blog-7.jpg';
 
 
 import { useLocation } from "react-router-dom";
