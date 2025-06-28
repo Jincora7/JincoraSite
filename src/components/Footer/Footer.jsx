@@ -377,7 +377,7 @@ function Footer() {
                           <div className="footer-section">
                               <h5>Resources</h5>
                               <ul>
-                                  <li>Help Guide</li>
+                                  {/* <li>Help Guide</li> */}
                                   {/* <li>FAQ</li> */}
                                   <li><Link to="#" onClick={scrollToFAQ}>FAQ</Link></li>
                                   <li>Portfolio</li>

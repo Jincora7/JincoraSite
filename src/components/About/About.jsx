@@ -107,6 +107,7 @@ import ScrollToTop from '../common/ScrollToTop';
 
 
 import AboutUs from "/AboutUs/Group5830.png";
+import PurplePage from "../PurplePage/PurplePage.jsx";
 
 
 
@@ -255,6 +256,7 @@ const SectionLayout = () => {
         </div>
       </div>
     </div>
+    <PurplePage/>
     </>
   );
 };

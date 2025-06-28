@@ -5,7 +5,7 @@ import GrowthSection from './GrowthSection/GrowthSection.jsx'
 import ContactHome from '../ContactHome/ContactHome.jsx'
 import ScrollToTop from '../common/ScrollToTop.jsx' 
 import StickycardsSections from './Home-Cards/StickycardsSection.jsx'
-import PurplePage from './PurplePageHome/PurplePageHome.jsx'
+import PurplePage from '../PurplePage/PurplePage.jsx'
 
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";

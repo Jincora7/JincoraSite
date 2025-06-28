@@ -99,6 +99,7 @@ import React, { useState } from 'react';
 import './ContactHome.css';
 import contactpage from '/Home/ContactUs/contactpage.png';
 import ScrollToTop from '../common/ScrollToTop';
+import PurplePage from '../PurplePage/PurplePage';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -181,6 +182,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
     </>
   );
 }

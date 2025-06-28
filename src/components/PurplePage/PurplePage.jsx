@@ -1,7 +1,7 @@
 import React from 'react'
-import './PurplePageHome.css'
+import './PurplePage.css'
 
-function PurplePageHome() {
+function PurplePage() {
   return (
  <div className="demo-section">
               <h4 >
@@ -15,4 +15,4 @@ function PurplePageHome() {
   )
 }
 
-export default PurplePageHome
+export default PurplePage

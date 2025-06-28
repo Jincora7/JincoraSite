@@ -125,7 +125,7 @@
 
 import React, { useState } from 'react';
 import './Partner.css';
-
+import PurplePage from "../PurplePage/PurplePage.jsx";
 
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -254,6 +254,8 @@ const Partner = () => {
         </div>
       </section>
     </div>
+    <PurplePage/>
+    
     </>
   );
 };

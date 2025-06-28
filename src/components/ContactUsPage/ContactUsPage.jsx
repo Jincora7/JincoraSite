@@ -4,6 +4,7 @@ import ScrollToTop from '../common/ScrollToTop';
 
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import PurplePage from '../PurplePage/PurplePage.jsx';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -120,6 +121,8 @@ export default function Contact() {
     </div>
   </div>
 </div>
+
+      <PurplePage/>
 
     </>
   );

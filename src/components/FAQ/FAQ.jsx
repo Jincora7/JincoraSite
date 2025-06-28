@@ -4,6 +4,8 @@ import './FAQ.css';
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+import PurplePage from '../PurplePage/PurplePage';
+
 
 
 export default function FAQ() {
@@ -21,6 +23,7 @@ export default function FAQ() {
       }, [location]);
 
   return (
+    <>
     <div id='top-of-FAQ' className="growth-section">
 
 
@@ -89,5 +92,7 @@ export default function FAQ() {
         </div>
       </div>
     </div>
+    <PurplePage/>
+    </>
   );
 }

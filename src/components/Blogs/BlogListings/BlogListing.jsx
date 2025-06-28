@@ -12,6 +12,8 @@ import blog6 from '/BlogDetails/blog-6.jpg';
 import blog7 from '/BlogDetails/blog-7.jpg';
 
 
+import PurplePage from '../../PurplePage/PurplePage';
+
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -87,6 +89,7 @@ const Blog = () => {
       }, [location]);
 
   return (
+    <>
     <div  id='top-of-BlogListing' className="blog-page">
       {/* Hero Section */}
       <section className="blog-hero-section">
@@ -196,6 +199,8 @@ const Blog = () => {
         </div>
       </div>
     </div>
+    <PurplePage/>
+    </>
   );
 };
 
