@@ -1,0 +1,181 @@
+.growth-section {
+    min-height: 100%;
+  /* background: linear-gradient(180deg, #2b0a49, #000); */
+  color: white;
+  padding: 60px 20px;
+ 
+}
+
+
+
+.faq-section {
+  margin-top: 160px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-section h3 {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #ffffff;
+  margin-top: 60px;
+}
+
+.FAQs{
+  font-size: 26px;
+  font-weight: bold;
+  color: #cfc1f8;
+
+
+}
+
+.faq-item {
+  border-bottom: 1px solid #555;
+  padding: 20px 0;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  list-style: none;
+  position: relative;
+  padding-right: 20px;
+}
+
+.faq-item summary::after {
+  content: "▾";
+  position: absolute;
+  right: 0;
+  transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.faq-item p {
+  margin-top: 15px;
+  color: #cfc1f8;
+  font-size: 14px;
+  font-weight: 10;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .growth-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  .faq-section {
+    padding: 0 10px;
+  }
+}
+
+
+
+/* iPhone 14 Pro Max (430px) */
+@media (max-width: 430px) {
+  .growth-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+
+
+  .faq-section {
+  margin-top: 80px;
+
+}
+
+
+  .faq-section h3 {
+    font-size: 20px;
+  }
+  
+
+  .faq-item summary {
+    font-size: 14px;
+  }
+
+  .faq-item p {
+    font-size: 12px;
+  }
+}
+
+/* iPhone XR (414px) */
+@media (max-width: 414px) {
+  .growth-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+
+  .faq-section h3 {
+    font-size: 20px;
+  }
+
+  .faq-item summary {
+    font-size: 14px;
+  }
+
+  .faq-item p {
+    font-size: 12px;
+  }
+}
+
+/* iPhone 12 Pro (390px) */
+@media (max-width: 390px) {
+  .growth-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+
+
+  .faq-section h3 {
+    font-size: 18px;
+  }
+
+  .faq-item summary {
+    font-size: 13.5px;
+  }
+
+  .faq-item p {
+    font-size: 11px;
+  }
+}
+
+/* iPhone SE (375px) */
+@media (max-width: 375px) {
+  .growth-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+
+  .faq-section h3 {
+    font-size: 18px;
+  }
+
+  .faq-item summary {
+    font-size: 13px;
+  }
+
+  .faq-item p {
+    font-size: 11px;
+  }
+}

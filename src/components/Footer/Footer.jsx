@@ -299,6 +299,18 @@ function Footer() {
         }
     };
 
+
+                const scrollToFAQ = () => {
+        if (location.pathname === "/FAQ") {
+            // Already on home, scroll
+            const section = document.getElementById("top-of-FAQ");
+            section?.scrollIntoView({ behavior: "smooth" });
+        } else {
+            // Navigate to home with scroll flag
+            navigate("/FAQ", { state: { scrollTo: "top-of-FAQ" } });
+        }
+    };
+
   return (
       <>
       <ScrollToTop/>
@@ -366,7 +378,8 @@ function Footer() {
                               <h5>Resources</h5>
                               <ul>
                                   <li>Help Guide</li>
-                                  <li>FAQ</li>
+                                  {/* <li>FAQ</li> */}
+                                  <li><Link to="#" onClick={scrollToFAQ}>FAQ</Link></li>
                                   <li>Portfolio</li>
                                   <li><Link to="#" onClick={scrollToPartner} >Partner</Link></li>
                                   <li><Link to="#" onClick={scrollToBlogListing}>BlogListing</Link></li>

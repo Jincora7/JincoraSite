@@ -13,6 +13,7 @@ import Partner from './components/Partner/Partner.jsx'
 import BlogDetails from './components/Blogs/BlogDetails/BlogDetails.jsx'
 import BlogListing from './components/Blogs/BlogListings/BlogListing.jsx'
 import ContactUsPage from './components/ContactUsPage/ContactUsPage.jsx'
+import FAQ from './components/FAQ/FAQ.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,6 +28,8 @@ const router = createBrowserRouter(
       <Route path='/partner' element={<Partner />}/>
       <Route path='/BlogDetails' element={<BlogDetails />}/>
       <Route path='/BlogListing' element={<BlogListing />}/>
+      <Route path='/FAQ' element={<FAQ />}/>
+      
 
       <Route path='/ContactUsPage' element={<ContactUsPage />}/>
 
