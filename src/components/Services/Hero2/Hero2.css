@@ -32,9 +32,9 @@
   margin-top: 100px;
 }
 
-.hero2-right {
+/* .hero2-right { */
   /* flex: 1; */
-}
+/* } */
 
 .hero2-right h1 {
   /* font-size: 2rem; */
@@ -75,6 +75,8 @@
 
 .btn-primary:hover {
   background-color: #692fde;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(127, 63, 255, 0.3);
 }
 
 .btn-outline {
@@ -90,6 +92,9 @@
 
 .btn-outline:hover {
   background-color: #1f003f;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(127, 63, 255, 0.3);
+  /* color: rgb(22, 0, 67); */
 }
 
 @media (max-width: 768px) {

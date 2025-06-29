@@ -63,16 +63,13 @@
   cursor: pointer;
   font-weight: 400;
   font-size: 10px;
-  transition: 0.3s ease;
-  
-  
-  
+  transition: 0.3s ease;  
 }
 
 .growth-btn:hover {
-  background: #a367ff;
   color: #fff;
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(127, 63, 255, 0.3);
 }
 
 .growth-chart {
