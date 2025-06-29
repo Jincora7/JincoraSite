@@ -13,6 +13,7 @@ body {
   height: 100%;
   background-color: #0F0A1C;
   font-family: "Space Grotesk", sans-serif;
+  user-select: none;
 }
 
 html, body {
