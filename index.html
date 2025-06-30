@@ -2,60 +2,50 @@
 <html lang="en">
   <head>
 
-    <!-- Schema Code -->
+    
 
-
+<!-- Schema Code -->
 <script type="application/ld+json">
     {
-        "@context": " https://schema.org ",
-        "@type": "Organization",
-        "name": "{{ shop.name }}",
-        "url": "{{ shop.url }}",
-        "description": "{{ shop.description }}",
-        "telephone": "{{ shop.phone }}",
-        "logo": " https://www.jincora.com/assets/logo-BOVWYQXt.png ",
-        "image": " https://www.jincora.com/assets/logo-BOVWYQXt.png  ",
-        "sameAs": [
-              "{{ settings.social_twitter }}",
-              "{{ settings.social_linkedin}}",
-              "{{ settings.social_facebook }}",
-              "{{ settings.social_pinterest }}",
-              "{{ settings.social_instagram}}",
-              "{{ settings.social_tiktok }}",
-              "{{ settings.social_tumblr }}",
-              "{{ settings.social_snapchat }}",
-              "{{ settings.social_youtube }}",
-              "{{ settings.social_vimeo }}"
+        "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Jincora",
+            "url": "https://www.jincora.com",
+            "description": "Jincora empowers your business with expert web development, SEO, eCommerce websites, and design services to grow your brand and engage more customers online.",
+            "logo": "https://www.jincora.com/assets/logo-BOVWYQXt.png",
+            "image": "https://www.jincora.com/assets/logo-BOVWYQXt.png",
+            "sameAs": [
+              "https://x.com/jincora_tech",
+              "https://www.instagram.com/jincora_techsolutions/",
+              "https://www.facebook.com/people/Jincora/61575059422445/",
+              "https://www.linkedin.com/company/jincora/"
             ],
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "{{ shop.address.street }}",
-            "addressLocality": "{{ shop.address.city }}",
-            "addressRegion": "{{ shop.address.province }}",
-            "postalCode": "{{ shop.address.zip }}",
-            "addressCountry": "{{ localization.country.iso_code }}"
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Danville",
+              "addressRegion": "Virginia",
+              "postalCode": "20450",
+              "addressCountry": "United States"
         }
       }
     </script>
 
 <!-- Code - website Code -->
-
-    <!-- {%- if request.page_type == 'index' -%}
-  {% assign potential_action_target = request.origin | append: routes.search_url | append: "?q={search_term_string}" %}
-  <script type="application/ld+json">
-    {
-      "@context": " http://schema.org ",
-      "@type": "WebSite",
-      "name": {{ shop.name | json }},
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {{ potential_action_target | json }},
-        "query-input": "required name=search_term_string"
-      },
-      "url": {{ request.origin | append: page.url | json }}
-    }
-  </script>
-{%- endif -%} -->
+<script type="application/ld+json">
+              {
+                {
+                  "@context": "https://schema.org",
+                  "@type": "WebSite",
+                  "name": "Jincora",
+                  "url": "https://www.jincora.com",
+                  "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https://www.jincora.com/search?q={search_term_string}",
+                    "query-input": "required name=search_term_string"
+                  }
+                }
+              }
+            </script>
 
 
 
