@@ -185,15 +185,41 @@ export default function Contact() {
     <>
       <ScrollToTop />
 
-            {/* ✅ Helmet section for meta tags */}
       <Helmet>
-        <title>Get in Touch | Jincora’s E-commerce & Shopify Experts</title>
-        <meta
-          name="description"
-          content="Have questions or need a custom ecommerce solution? Contact Jincora’s Shopify experts today for professional support, website design, and development services."
-        />
-        <link rel="canonical" href="https://www.jincora.com/ContactUsPage" />
-      </Helmet>
+  <title>Get in Touch | Jincora’s E-commerce & Shopify Experts</title>
+  <meta
+    name="description"
+    content="Have questions or need a custom ecommerce solution? Contact Jincora’s Shopify experts today for professional support, website design, and development services."
+  />
+  <meta
+    name="keywords"
+    content="contact Jincora, Shopify experts, ecommerce help, website support, web development contact"
+  />
+  <link rel="canonical" href="https://www.jincora.com/ContactUs" />
+
+  {/* JSON-LD Schema for Contact Page */}
+  <script type="application/ld+json">{`
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact Us - Jincora",
+      "url": "https://www.jincora.com/ContactUsPage",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Jincora",
+        "url": "https://www.jincora.com",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-999-999-9999",
+          "contactType": "Customer Support",
+          "areaServed": "US",
+          "availableLanguage": "English"
+        }
+      }
+    }
+  `}</script>
+</Helmet>
+
 
       
 
