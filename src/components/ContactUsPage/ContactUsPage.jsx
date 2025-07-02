@@ -439,3 +439,15 @@ export default function Contact() {
 //     </>
 //   );
 // }
+
+
+
+
+
+
+
+  //   <meta name="description" content="Jincora empowers your business with expert web development, SEO, eCommerce websites, and design services to grow your brand and engage more customers online." />
+	// <meta name="keywords" content="AI chatbots, website development, eCommerce, SEO, social media management, graphic design, business growth, branding." />
+
+
+  // <title>Scale Your E-commerce Business with Jincora Solutions</title>
