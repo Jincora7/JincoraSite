@@ -181,7 +181,14 @@ export default function Contact() {
       }, [location]);
 
 
-            <Helmet>
+
+
+
+  return (
+    <>
+      <ScrollToTop />
+
+                  <Helmet>
   <title>Get in Touch | Jincora’s E-commerce & Shopify Experts</title>
   <meta
     name="description"
@@ -195,11 +202,6 @@ export default function Contact() {
 
 
 </Helmet>
-
-
-  return (
-    <>
-      <ScrollToTop />
 
 
 
@@ -445,9 +447,6 @@ export default function Contact() {
 
 
 
-
-  //   <meta name="description" content="Jincora empowers your business with expert web development, SEO, eCommerce websites, and design services to grow your brand and engage more customers online." />
-	// <meta name="keywords" content="AI chatbots, website development, eCommerce, SEO, social media management, graphic design, business growth, branding." />
 
 
   // <title>Scale Your E-commerce Business with Jincora Solutions</title>
