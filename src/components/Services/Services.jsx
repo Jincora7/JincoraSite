@@ -155,6 +155,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import React from 'react'
+import { Helmet } from 'react-helmet-async';
 
 
 import Hero2 from "./Hero2/Hero2.jsx";
@@ -191,6 +192,22 @@ function Services() {
 
   return (
     <>
+
+
+                  <Helmet>
+                    <title>Home Jincora | Empowering E-commerce Business to Grow</title>
+                    <meta
+                      name="description"
+                      content="Have questions or need a custom ecommerce solution? Contact Jincora’s Shopify experts today for professional support, website design, and development services."
+                    />
+                    <meta
+                      name="keywords"
+                      content="contact Jincora, Shopify experts, ecommerce help, website support, web development contact"
+                    />
+                    
+            
+            
+                  </Helmet>
     <div id="top-of-services">
       <Hero2 />
 
