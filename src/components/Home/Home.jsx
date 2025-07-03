@@ -7,6 +7,8 @@ import ScrollToTop from '../common/ScrollToTop.jsx'
 import StickycardsSections from './Home-Cards/StickycardsSection.jsx'
 import PurplePage from '../PurplePage/PurplePage.jsx'
 
+import { Helmet } from 'react-helmet-async';
+
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import './Home.css';
@@ -27,6 +29,21 @@ function Home() {
 
   return (
     <>
+
+              <Helmet>
+                <title>Home Jincora | Empowering E-commerce Business to Grow</title>
+                <meta
+                  name="description"
+                  content="Have questions or need a custom ecommerce solution? Contact Jincora’s Shopify experts today for professional support, website design, and development services."
+                />
+                <meta
+                  name="keywords"
+                  content="contact Jincora, Shopify experts, ecommerce help, website support, web development contact"
+                />
+                
+        
+        
+              </Helmet>
     <div id="top-of-home" />
     <div className="home-wrapper">
       

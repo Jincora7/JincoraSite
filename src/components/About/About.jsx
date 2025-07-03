@@ -98,6 +98,7 @@
 
 import React from "react";
 import "./About.css";
+import { Helmet } from 'react-helmet-async';
 
 
 
@@ -132,6 +133,21 @@ const SectionLayout = () => {
 
   return (
     <>
+
+          <Helmet>
+            <title>About Jincora | Empowering E-commerce Business to Grow</title>
+            <meta
+              name="description"
+              content="Have questions or need a custom ecommerce solution? Contact Jincora’s Shopify experts today for professional support, website design, and development services."
+            />
+            <meta
+              name="keywords"
+              content="contact Jincora, Shopify experts, ecommerce help, website support, web development contact"
+            />
+            
+    
+    
+          </Helmet>
    
       <div id="top-of-about" className="about-wrapper">
         
