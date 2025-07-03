@@ -170,15 +170,15 @@ export default function Contact() {
   };
 
 
-          const location = useLocation();
+  const location = useLocation();
 
 
-    useEffect(() => {
-        if (location.state?.scrollTo === "top-of-ContactUsPage") {
-          const section = document.getElementById("top-of-ContactUsPage");
-          section?.scrollIntoView({ behavior: "smooth" });
-        }
-      }, [location]);
+  useEffect(() => {
+    if (location.state?.scrollTo === "top-of-ContactUsPage") {
+      const section = document.getElementById("top-of-ContactUsPage");
+      section?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [location]);
 
 
 
@@ -188,104 +188,104 @@ export default function Contact() {
     <>
       <ScrollToTop />
 
-                  <Helmet>
-  <title>Get in Touch | Jincora’s E-commerce & Shopify Experts</title>
-  <meta
-    name="description"
-    content="Have questions or need a custom ecommerce solution? Contact Jincora’s Shopify experts today for professional support, website design, and development services."
-  />
-  <meta
-    name="keywords"
-    content="contact Jincora, Shopify experts, ecommerce help, website support, web development contact"
-  />
-  <link rel="canonical" href="https://www.jincora.com/ContactUsPage" />
+      <Helmet>
+        <title>Get in Touch | Jincora’s E-commerce & Shopify Experts</title>
+        <meta
+          name="description"
+          content="Have questions or need a custom ecommerce solution? Contact Jincora’s Shopify experts today for professional support, website design, and development services."
+        />
+        <meta
+          name="keywords"
+          content="contact Jincora, Shopify experts, ecommerce help, website support, web development contact"
+        />
+        <link rel="canonical" href="https://www.jincora.com/ContactUsPage" />
 
 
-</Helmet>
+      </Helmet>
 
 
 
 
-      
 
-<div  id='top-of-ContactUsPage' className="contactus-fullscreen">
-  <div className="contactus-form-wrapper">
-    <h1 className="contactus-title">Contact Us</h1>
-    <p className="contactus-subtext">
-      Have a Project in Mind? We’d Love to Hear From You
-    </p>
 
-    <div className="contactus-form-area">
-      {submitted ? (
-        <div className="contactus-success-message-wrapper">
-          <p className="contactus-success-message">
-            Thank you for submitting your details. We will contact you shortly.
+      <div id='top-of-ContactUsPage' className="contactus-fullscreen">
+        <div className="contactus-form-wrapper">
+          <h1 className="contactus-title">Contact Us</h1>
+          <p className="contactus-subtext">
+            Have a Project in Mind? We’d Love to Hear From You
           </p>
+
+          <div className="contactus-form-area">
+            {submitted ? (
+              <div className="contactus-success-message-wrapper">
+                <p className="contactus-success-message">
+                  Thank you for submitting your details. We will contact you shortly.
+                </p>
+              </div>
+            ) : (
+              <form className="contactus-form" onSubmit={handleSubmit}>
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_subject" value="New Contact Form Submission" />
+
+                <div className="contactus-form-row">
+                  <div className="contactus-form-col">
+                    <label>Name*</label>
+                    <input
+                      type="text"
+                      name="Name"
+                      className="contactus-input"
+                      placeholder="Enter your name"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div className="contactus-form-row">
+                  <div className="contactus-form-col">
+                    <label>Email Address*</label>
+                    <input
+                      type="email"
+                      name="Email"
+                      className="contactus-input"
+                      placeholder="Enter your email"
+                      required
+                    />
+                  </div>
+                  <div className="contactus-form-col">
+                    <label>Contact Number*</label>
+                    <input
+                      type="text"
+                      name="Contact Number"
+                      className="contactus-input"
+                      placeholder="Enter your number"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div className="contactus-form-row">
+                  <div className="contactus-form-col">
+                    <label>Project Description</label>
+                    <textarea
+                      name="Project Description"
+                      className="contactus-textarea"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+
+                <button className="contactus-button" type="submit">
+                  Submit →
+                </button>
+              </form>
+            )}
+          </div>
         </div>
-      ) : (
-        <form className="contactus-form" onSubmit={handleSubmit}>
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_subject" value="New Contact Form Submission" />
+      </div>
 
-          <div className="contactus-form-row">
-            <div className="contactus-form-col">
-              <label>Name*</label>
-              <input
-                type="text"
-                name="Name"
-                className="contactus-input"
-                placeholder="Enter your name"
-                required
-              />
-            </div>
-          </div>
-
-          <div className="contactus-form-row">
-            <div className="contactus-form-col">
-              <label>Email Address*</label>
-              <input
-                type="email"
-                name="Email"
-                className="contactus-input"
-                placeholder="Enter your email"
-                required
-              />
-            </div>
-            <div className="contactus-form-col">
-              <label>Contact Number*</label>
-              <input
-                type="text"
-                name="Contact Number"
-                className="contactus-input"
-                placeholder="Enter your number"
-                required
-              />
-            </div>
-          </div>
-
-          <div className="contactus-form-row">
-            <div className="contactus-form-col">
-              <label>Project Description</label>
-              <textarea
-                name="Project Description"
-                className="contactus-textarea"
-                placeholder="Message"
-                required
-              ></textarea>
-            </div>
-          </div>
-
-          <button className="contactus-button" type="submit">
-            Submit →
-          </button>
-        </form>
-      )}
-    </div>
-  </div>
-</div>
-
-      <PurplePage/>
+      <PurplePage />
 
     </>
   );
@@ -449,4 +449,4 @@ export default function Contact() {
 
 
 
-  // <title>Scale Your E-commerce Business with Jincora Solutions</title>
+// <title>Scale Your E-commerce Business with Jincora Solutions</title>
