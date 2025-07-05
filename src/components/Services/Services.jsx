@@ -195,10 +195,10 @@ function Services() {
 
 
                   <Helmet>
-                    <title>Home Jincora | Empowering E-commerce Business to Grow</title>
+                    <title>Shopify & Ecommerce Website Design Services | Jincora</title>
                     <meta
                       name="description"
-                      content="Have questions or need a custom ecommerce solution? Contact Jincora’s Shopify experts today for professional support, website design, and development services."
+                      content="Grow your online store with Jincora Shopify services and ecommerce website design. Get tailored solutions to build, scale, and optimize your e-commerce business."
                     />
                     <meta
                       name="keywords"

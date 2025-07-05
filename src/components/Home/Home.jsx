@@ -31,10 +31,10 @@ function Home() {
     <>
 
               <Helmet>
-                <title>Home Jincora | Empowering E-commerce Business to Grow</title>
+                <title>Scale Your E-commerce Business with Jincora Solutions</title>
                 <meta
                   name="description"
-                  content="Have questions or need a custom ecommerce solution? Contact Jincora’s Shopify experts today for professional support, website design, and development services."
+                  content="Jincora empowers your business with expert web development, SEO, eCommerce websites, and design services to grow your brand and engage more customers online."
                 />
                 <meta
                   name="keywords"

@@ -138,7 +138,7 @@ const SectionLayout = () => {
             <title>About Jincora | Empowering E-commerce Business to Grow</title>
             <meta
               name="description"
-              content="Have questions or need a custom ecommerce solution? Contact Jincora’s Shopify experts today for professional support, website design, and development services."
+              content="Explore how Jincora helps e-commerce brands thrive with expert solutions in web design, Shopify, SEO, Migration, and digital growth tailored for online success."
             />
             <meta
               name="keywords"
