@@ -36,8 +36,8 @@
     gap: 40px;
 }
 
-/* Base styling for NavLink */
-.navLink a {
+
+/* .navLink a {
     text-decoration: none;  
     color: white;           
     font-size: 16px;
@@ -45,13 +45,13 @@
     position: relative;    
 }
 
-/* Active link styling with underline */
+
 .navLink a.active-link {
     color: white;         
     font-weight: bold;     
 }
 
-/* The underline for the active link */
+
 .navLink a.active-link::after {
     content: "";
     position: absolute;
@@ -59,9 +59,43 @@
     bottom: -4px;           
     height: 2px;
     width: 100%;            
-    background-color: #007bff; /* Underline color */
+    background-color: #9265c8; 
+} */
+
+.navLink a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
 }
 
+/* Hover underline effect */
+.navLink a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0;
+  background-color: #9265c8;; 
+  transition: width 0.3s ease-in-out;
+}
+
+/* On hover, show the underline */
+.navLink a:hover::after {
+  width: 100%;
+}
+
+/* Active link stays underlined */
+.navLink a.active-link::after {
+  width: 100%;
+
+}
+.navLink a.active-link {
+  font-weight: bold;
+  color: white;
+}
 
 
 
