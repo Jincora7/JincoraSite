@@ -11,8 +11,11 @@ import pillar1 from "/Home/PillarsPage/1.png"
 import pillar2 from "/Home/PillarsPage/2.png"
 import pillar3 from "/Home/PillarsPage/3.png"
 import pillar4 from "/Home/PillarsPage/4.png"
+import { useNavigate } from "react-router-dom"
 
 const PillarsPage = () => {
+
+    const navigate=useNavigate();
 
     return (
         <div className="pillars-wrap">
@@ -35,7 +38,7 @@ const PillarsPage = () => {
                     <PillarsCardComponent image={pillarImage4} heading="Ongoing Support" para="Our team is here post-launch to help with updates, improvements, and expert advice as your business grows." />
                 </div>
 
-                <PrimaryBtn content="Connect with Sales" />
+                <PrimaryBtn onClick={() => navigate("/contact-us")} content="Connect with Sales" />
             </div>
             
             <div className="pillars-card-bottom">

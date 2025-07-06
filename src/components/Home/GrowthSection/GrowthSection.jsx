@@ -17,7 +17,7 @@ export default function GrowthSection() {
             <li>Fast, mobile-ready shopping experience</li>
             <li>Scalable solutions for growing brands</li>
           </ul>
-          <button onClick={() => navigate("/ContactUsPage")} className="growth-btn">Get started →</button>
+          <button onClick={() => navigate("/contact-us")} className="growth-btn">Get started →</button>
         </div>
         <div className="growth-chart">
           <img src={Frame} alt="Growth Process Chart" />
