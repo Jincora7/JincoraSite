@@ -190,5 +190,45 @@
   .plans {
     flex-direction: column;
     align-items: center;
+    /* margin-left: -14px; */
+  
   }
+}
+
+/* @media (max-width: 480px) {
+
+  .plans {
+    margin-left: -14px;
+  }
+} */
+
+
+ @media only screen and (max-width: 414px) {
+
+
+    .plans {
+    margin-left: 0px;
+  }
+}
+
+
+@media only screen and (max-width: 390px) {
+      .plans {
+    margin-left: -6px;
+  }
+  
+} 
+
+ /* @media only screen and (max-width: 430px) {
+        .plans {
+    margin-left: 0px;
+  }
+ 
+}   */
+
+@media only screen and (max-width: 375px) {
+    .plans {
+    margin-left: -14px;
+  }
+ 
 }
