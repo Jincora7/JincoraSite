@@ -30,26 +30,40 @@
     margin-top: 10px;
 }
 
-
 .navLink {
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
+/* Base styling for NavLink */
 .navLink a {
-    text-decoration: none;
-    color: white;
+    text-decoration: none;  
+    color: white;           
     font-size: 16px;
     font-weight: 400;
-    transition: color 0.3s ease;
+    position: relative;    
 }
 
-/* .navLink a:hover,
-.navLink a.active {
-    
-    font-weight: 600;
-} */
+/* Active link styling with underline */
+.navLink a.active-link {
+    color: white;         
+    font-weight: bold;     
+}
+
+/* The underline for the active link */
+.navLink a.active-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;           
+    height: 2px;
+    width: 100%;            
+    background-color: #007bff; /* Underline color */
+}
+
+
+
 
 
 .navLink a:nth-child(2) {
@@ -222,6 +236,7 @@
 }
 
 
+
 @keyframes slideDown {
     0% {
         transform: translateY(-20px);
@@ -232,6 +247,7 @@
         opacity: 1;
     }
 } 
+
 
 
 
@@ -256,6 +272,7 @@
     .search_input {
         font-size: 15px;
     }
+    
 }
 
 
