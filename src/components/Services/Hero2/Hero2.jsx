@@ -23,7 +23,7 @@ function Hero2() {
           </p>
           <div  className="hero2-buttons">
             <button
-            onClick={() => navigate("/ContactUsPage")}
+            onClick={() => navigate("/contact-us")}
              className="btn-primary">Start Your Project →</button>
             <button
               onClick={() => {

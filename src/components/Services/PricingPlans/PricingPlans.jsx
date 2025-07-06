@@ -115,7 +115,7 @@ export default function PricingPlans() {
     </ul>
   </div>
   <div className="spacer"></div>
-  <button onClick={() => navigate("/ContactUsPage")} className="subscribe-btn">Subscribe now →</button>
+  <button onClick={() => navigate("/contact-us")} className="subscribe-btn">Subscribe now →</button>
 </div>
 
         ))}
