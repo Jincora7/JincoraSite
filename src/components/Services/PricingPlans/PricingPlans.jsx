@@ -1,5 +1,6 @@
 import React from "react";
 import "./PricingPlans.css";
+import { useNavigate } from "react-router-dom";
 
 const plans = [
   {
@@ -69,6 +70,7 @@ const plans = [
 ];
 
 export default function PricingPlans() {
+  const navigate=useNavigate();
   return (
     <div className="pricing-section">
       <h2>Affordable Packages Tailored for You</h2>
@@ -113,7 +115,7 @@ export default function PricingPlans() {
     </ul>
   </div>
   <div className="spacer"></div>
-  <button className="subscribe-btn">Subscribe now →</button>
+  <button onClick={() => navigate("/ContactUsPage")} className="subscribe-btn">Subscribe now →</button>
 </div>
 
         ))}

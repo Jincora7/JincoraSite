@@ -1,8 +1,10 @@
 import React from 'react';
 import './Hero2.css';
 import Hero2img from '/Service/Hero2img.png'
+import { useNavigate } from 'react-router-dom';
 
 function Hero2() {
+  const navigate=useNavigate();
   return (
     <section className="hero2-container">
       <div className="hero2-content">
@@ -19,9 +21,15 @@ function Hero2() {
             Seamless eCommerce growth powered by tailored strategies
             and proven expertise.
           </p>
-          <div className="hero2-buttons">
-            <button className="btn-primary">Start Your Project →</button>
-            <button className="btn-outline">Talk to an Expert →</button>
+          <div  className="hero2-buttons">
+            <button
+            onClick={() => navigate("/ContactUsPage")}
+             className="btn-primary">Start Your Project →</button>
+            <button
+              onClick={() => {
+                window.open("https://calendly.com/admin-jincora/30min");
+              }}
+              className="btn-outline">Talk to an Expert →</button>
           </div>
         </div>
       </div>

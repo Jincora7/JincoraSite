@@ -24,14 +24,14 @@ const router = createBrowserRouter(
       <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
       <Route path='/privacy-policy' element={<Policy />} />
       <Route path='/about' element={<About />} />
-      <Route path='/ContactHome' element={<ContactHome />}/>
+      <Route path='/contact-home' element={<ContactHome />}/>
       <Route path='/partner' element={<Partner />}/>
-      <Route path='/BlogDetails' element={<BlogDetails />}/>
-      <Route path='/BlogListing' element={<BlogListing />}/>
-      <Route path='/FAQ' element={<FAQ />}/>
+      <Route path='/blog-details' element={<BlogDetails />}/>
+      <Route path='/blog-listing' element={<BlogListing />}/>
+      <Route path='/faq' element={<FAQ />}/>
       
 
-      <Route path='/ContactUsPage' element={<ContactUsPage />}/>
+      <Route path='/contact-us' element={<ContactUsPage />}/>
 
 
       

@@ -96,7 +96,7 @@ function Navbar() {
                 </NavLink>
 
                 <NavLink
-                    to="/ContactUsPage"
+                    to="/contact-us"
                     onClick={scrollToContact}
                     className={({ isActive }) => (isActive ? "active-link" : "")}
                 >
@@ -178,7 +178,7 @@ function Navbar() {
                     </button>
 
                     <NavLink
-                        to="/ContactUsPage"
+                        to="/contact-us"
                         onClick={() => {
                             setMenuOpen(false);
                             scrollToContact();
