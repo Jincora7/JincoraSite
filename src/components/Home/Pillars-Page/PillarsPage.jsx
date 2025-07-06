@@ -40,7 +40,7 @@ const PillarsPage = () => {
 
                 <PrimaryBtn onClick={() => navigate("/contact-us")} content="Connect with Sales" />
             </div>
-            
+            <div className="full-card">
             <div className="pillars-card-bottom">
                 <div className="pillars-card-btm-left">
                     <h3>Innovation Powered By Purpose</h3>
@@ -72,6 +72,7 @@ const PillarsPage = () => {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
 
         </div>
