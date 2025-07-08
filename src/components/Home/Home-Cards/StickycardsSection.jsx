@@ -34,7 +34,7 @@ const StickycardsSections = () => {
                 scrollTrigger: {
                     trigger: el,
                     start: 'top top',
-                    end: '+=70%',
+                    end: '90%',
                     scrub: true,
                 },
             }).to(el, {
