@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://www.jincora.com/</loc>
+  </url>
+
+  <url>
+    <loc>https://www.jincora.com/services</loc>
+  </url>
+
+  <url>
+    <loc>https://www.jincora.com/contact-us</loc>
+  </url>
+
+  <url>
+    <loc>https://www.jincora.com/about</loc>
+  </url>
+
+  <url>
+    <loc>https://www.jincora.com/faq</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.jincora.com/partner</loc>
+  </url>
+
+  <url>
+    <loc>https://www.jincora.com/terms-and-conditions</loc>
+  </url>
+
+  <url>
+    <loc>https://www.jincora.com/privacy-policy</loc>
+  </url>
+
+  <url>
+    <loc>https://www.jincora.com/blog-listing</loc>
+  </url>
+
+  <!-- Add more URLs from your domain below as needed -->
+
+</urlset>
