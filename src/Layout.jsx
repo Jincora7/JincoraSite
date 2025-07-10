@@ -9,7 +9,7 @@ function Layout() {
   return (
     <div className="main">
       {/* Video Background */}
-      {/* <video
+      <video
         className="background-video"
         autoPlay
         loop
@@ -18,7 +18,8 @@ function Layout() {
       >
         <source src="\18458403-hd_1920_1080_24fps.mp4" type="video/mp4" />
         
-      </video> */}
+        
+      </video>
 
       {/* Layout content */}
       <div className="content">
