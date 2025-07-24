@@ -13,14 +13,14 @@
 .partner-hero {
   padding: 120px 40px 80px;
   text-align: center;
-  background-color: #2C0E4A;
+  /* background-color: #2C0E4A; */
 }
 
 .partner-hero-content h1 {
   font-size: 48px;
   font-weight: 600;
   margin-bottom: 20px;
-  background: linear-gradient(45deg, #fff, #a855f7);
+  /* background: linear-gradient(45deg, #fff, #a855f7); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -37,7 +37,7 @@
 /* Partners Section */
 .partner-partners-section {
   padding: 60px 40px;
-  background-color: rgba(20, 10, 36, 1);
+  /* background-color: rgba(20, 10, 36, 1); */
 }
 
 .partner-filter-tabs {
@@ -133,6 +133,64 @@
 .partner-load-more-btn:hover {
   transform: translateY(-2px);
 }
+
+
+
+.affiliate-hero {
+  padding: 100px 0 60px 0;
+  /* background: linear-gradient(180deg, #2c0e4a 60%, #271052 100%); */
+  text-align: center;
+}
+
+.affiliate-label {
+  color: #a78bfa;
+  font-size: 16px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.affiliate-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.affiliate-desc {
+  font-size: 18px;
+  color: #d7d7ff;
+  max-width: 650px;
+  margin: 0 auto 32px auto;
+  line-height: 1.5;
+}
+
+.affiliate-btn {
+  display: inline-block;
+  padding: 16px 38px;
+  /* background: linear-gradient(90deg, #8b5cf6, #a855f7 80%); */
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 16px #8b5cf639;
+  text-decoration: none;
+  transition: filter 0.2s, transform 0.2s;
+}
+.affiliate-btn:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .affiliate-title { font-size: 32px; }
+  .affiliate-hero { padding: 60px 0 30px 0; }
+}
+
 
 /* Form Section */
 .partner-form-section {
