@@ -137,7 +137,7 @@
 
 
 .affiliate-hero {
-  padding: 100px 0 60px 0;
+  padding: 60px 0 60px 0;
   /* background: linear-gradient(180deg, #2c0e4a 60%, #271052 100%); */
   text-align: center;
 }
@@ -161,7 +161,7 @@
 .affiliate-desc {
   font-size: 18px;
   color: #d7d7ff;
-  max-width: 650px;
+  max-width: 850px;
   margin: 0 auto 32px auto;
   line-height: 1.5;
 }
