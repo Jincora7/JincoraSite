@@ -1,0 +1,93 @@
+.partners-card-para {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 0.01em;
+}
+
+.partner-card-component p , h3{
+   padding: 10px;
+}
+
+.partners-card-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 76px;
+}
+.partner-card-component {
+  background: linear-gradient(132deg, #322164 60%, #20124a 100%);
+  border-radius: 18px;
+  box-shadow: 0 14px 50px rgba(60, 20, 120, 0.15);
+  /* width: 120%;  <-- REMOVE THIS */
+  /* width: 1100px; <-- REMOVE THIS */
+  max-width: 420px;        /* Try 480px~520px for wider, adjust as needed */
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.partner-card-component img {
+  width: 100%;              /* Card image always fills card width */
+  aspect-ratio: 2 / 1.2;    /* Nice natural card ratio (try aspect-ratio: 2 / 1.1 for less height) */
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 0;
+  border-bottom: 2px solid #5125b7;
+  background: #18082c;
+  margin: 0;                /* No auto margin! */
+}
+
+
+.partner-card-component {
+  background: linear-gradient(132deg, #322164 60%, #20124a 100%);
+  border-radius: 18px;
+  box-shadow: 0 14px 50px rgba(60, 20, 120, 0.15);
+  max-width: 500px;     /* Increase this value for more width */
+  min-height: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.partner-card-component img {
+  width: 100%;
+  height: 181px;        
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 0;
+  border-bottom: 2px solid #5125b7;
+  background: #18082c;
+  margin: 0;
+}
+
+
+
+
+@media (max-width: 430px) {
+  .partners-card-para {
+    font-size: 17px;
+    margin-bottom: 20px;
+    padding: 0 12px;
+  }
+  .partners-card-wrap {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  .partner-card-component {
+    max-width: 90%;
+    width: 100%;
+    min-height: unset;
+  }
+}

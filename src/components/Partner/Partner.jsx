@@ -127,6 +127,16 @@ import React, { useState } from 'react';
 import './Partner.css';
 import PurplePage from "../PurplePage/PurplePage.jsx";
 
+
+import PartnerCardComponent from './PartnerCardComponent/PartnerCardComponent.jsx';
+
+
+import PillarsCardComponent from "../Home/Pillars-Page/PillarsCardComponent/PillarsCardComponent.jsx";
+import servicelist1 from '/Service/service-list-1.png'
+import servicelist2 from '/Service/service-list-2.png'
+import servicelist3 from '/Service/service-list-3.png'
+import servicelist4 from '/Service/service-list-4.png'
+
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -226,13 +236,38 @@ const Partner = () => {
                   </a>
               </section>
 
+
+
+                  {/* <div className="partners-wrap">
+                <div className="partners-card"> */}
+<h3 className="partners-card-para">
+  Why Jincora Is Your Store’s Trusted Growth Partner
+</h3>
+
+<div className="partners-card-wrap">
+  <PartnerCardComponent
+    image={servicelist1}
+    heading="Affiliate Partners"
+    para="Promote Jincora services and earn commission for every successful referral. Perfect for influencers, bloggers, agencies, and marketers."
+  />
+  <PartnerCardComponent
+    image={servicelist2}
+    heading="Strategic Partners"
+    para="Collaborate with Jincora on projects or as a service provider. Ideal for developers, agencies, and eCommerce consultants."
+  />
+</div>
+
+
+
+
+
+
               {/* Form Section */}
               <section className="partner-form-section">
                   <div className="partner-form-container">
-                      <h2>Join a Trusted Network of eCommerce Professionals</h2>
+                      <h2>Apply to Become a Jincora Affiliate</h2>
                       <p className="partner-subtitle">
-                          Join Forces with Jincora — Experts in Scalable Shopify
-                          & WooCommerce Solutions
+                          Start earning today. Join our affiliate program and get up to 50% commission on recurring plans and 10% on one-time projects. Once approved, you'll receive your referral link, tracking access, and promotional resources to help you succeed.
                       </p>
 
                       <form

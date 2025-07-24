@@ -161,7 +161,7 @@
 .affiliate-desc {
   font-size: 18px;
   color: #d7d7ff;
-  max-width: 850px;
+  max-width: 1000px;
   margin: 0 auto 32px auto;
   line-height: 1.5;
 }
@@ -185,6 +185,9 @@
   transform: translateY(-2px) scale(1.02);
 }
 
+
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .affiliate-title { font-size: 32px; }
@@ -195,7 +198,7 @@
 /* Form Section */
 .partner-form-section {
   padding: 80px 40px;
-  background: #0f0f23;
+  /* background: #0f0f23; */
 }
 
 .partner-form-container {
