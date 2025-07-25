@@ -15,6 +15,8 @@ import BlogListing from './components/Blogs/BlogListings/BlogListing.jsx'
 import ContactUsPage from './components/ContactUsPage/ContactUsPage.jsx'
 import FAQ from './components/FAQ/FAQ.jsx'
 
+import AffiliateAgreement from './components/Partner/AffiliateProgramAgreement/AffiliateProgramAgreement.jsx';
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
@@ -29,6 +31,8 @@ const router = createBrowserRouter(
       <Route path='/blog-details' element={<BlogDetails />}/>
       <Route path='/blog-listing' element={<BlogListing />}/>
       <Route path='/faq' element={<FAQ />}/>
+
+      <Route path="/affiliate-agreement" element={<AffiliateAgreement />} />
       
 
       <Route path='/contact-us' element={<ContactUsPage />}/>

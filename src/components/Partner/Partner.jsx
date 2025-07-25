@@ -126,9 +126,11 @@
 import React, { useState } from 'react';
 import './Partner.css';
 import PurplePage from "../PurplePage/PurplePage.jsx";
+import { Link } from "react-router-dom";
 
 
 import PartnerCardComponent from './PartnerCardComponent/PartnerCardComponent.jsx';
+import AffiliateAgreement from './AffiliateProgramAgreement/AffiliateProgramAgreement.jsx';
 
 
 import PillarsCardComponent from "../Home/Pillars-Page/PillarsCardComponent/PillarsCardComponent.jsx";
@@ -162,6 +164,17 @@ const Partner = () => {
           section?.scrollIntoView({ behavior: "smooth" });
         }
       }, [location]);
+
+
+
+const [showAffiliatePolicy, setShowAffiliatePolicy] = useState(false);
+
+// Example handler
+const handleOpenAffiliatePolicy = (e) => {
+  e.preventDefault();
+  setShowAffiliatePolicy(true);
+};
+const handleCloseAffiliatePolicy = () => setShowAffiliatePolicy(false);
 
 
 
@@ -236,38 +249,35 @@ const Partner = () => {
                   </a>
               </section>
 
-
-
-                  {/* <div className="partners-wrap">
+              {/* <div className="partners-wrap">
                 <div className="partners-card"> */}
-<h3 className="partners-card-para">
-  Why Jincora Is Your Store’s Trusted Growth Partner
-</h3>
+              <h3 className="partners-card-para">
+                  Why Jincora Is Your Store’s Trusted Growth Partner
+              </h3>
 
-<div className="partners-card-wrap">
-  <PartnerCardComponent
-    image={servicelist1}
-    heading="Affiliate Partners"
-    para="Promote Jincora services and earn commission for every successful referral. Perfect for influencers, bloggers, agencies, and marketers."
-  />
-  <PartnerCardComponent
-    image={servicelist2}
-    heading="Strategic Partners"
-    para="Collaborate with Jincora on projects or as a service provider. Ideal for developers, agencies, and eCommerce consultants."
-  />
-</div>
-
-
-
-
-
+              <div className="partners-card-wrap">
+                  <PartnerCardComponent
+                      image={servicelist1}
+                      heading="Affiliate Partners"
+                      para="Promote Jincora services and earn commission for every successful referral. Perfect for influencers, bloggers, agencies, and marketers."
+                  />
+                  <PartnerCardComponent
+                      image={servicelist2}
+                      heading="Strategic Partners"
+                      para="Collaborate with Jincora on projects or as a service provider. Ideal for developers, agencies, and eCommerce consultants."
+                  />
+              </div>
 
               {/* Form Section */}
               <section className="partner-form-section">
                   <div className="partner-form-container">
                       <h2>Apply to Become a Jincora Affiliate</h2>
                       <p className="partner-subtitle">
-                          Start earning today. Join our affiliate program and get up to 50% commission on recurring plans and 10% on one-time projects. Once approved, you'll receive your referral link, tracking access, and promotional resources to help you succeed.
+                          Start earning today. Join our affiliate program and
+                          get up to 50% commission on recurring plans and 10% on
+                          one-time projects. Once approved, you'll receive your
+                          referral link, tracking access, and promotional
+                          resources to help you succeed.
                       </p>
 
                       <form
@@ -308,7 +318,7 @@ const Partner = () => {
                               </div>
                               <div className="partner-form-group">
                                   <label htmlFor="partner-type">
-                                      Partner Type*
+                                      Affiliate Type*
                                   </label>
                                   <select id="partner-type" required>
                                       <option value="">-- Select --</option>
@@ -340,7 +350,17 @@ const Partner = () => {
                           <div className="partner-checkbox-group">
                               <input type="checkbox" id="privacy" required />
                               <label htmlFor="privacy">
-                                  I agree to <a href="#">Partner Policy</a>
+                                  I agree to{" "}
+                                  <Link
+                                      to="/affiliate-agreement"
+                                      target="_blank"
+                                      style={{
+                                          color: "#8855f7",
+                                          textDecoration: "none",
+                                      }}
+                                  >
+                                      Affiliate Partner Policy
+                                  </Link>
                               </label>
                           </div>
 
