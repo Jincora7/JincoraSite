@@ -126,7 +126,9 @@
 import React, { useState } from 'react';
 import './Partner.css';
 import PurplePage from "../PurplePage/PurplePage.jsx";
-import { Link } from "react-router-dom";
+
+import { Link, NavLink } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 
 import PartnerCardComponent from './PartnerCardComponent/PartnerCardComponent.jsx';
@@ -140,9 +142,19 @@ import servicelist3 from '/Service/service-list-3.png'
 import servicelist4 from '/Service/service-list-4.png'
 
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+
+
+
 
 const Partner = () => {
+
+
+
+      
+    
+
+
+
   const [activeFilter, setActiveFilter] = useState('All');
 
   const handleFilterClick = (filter) => {
@@ -156,6 +168,7 @@ const Partner = () => {
 
 
       const location = useLocation();
+      const navigate = useNavigate();
 
 
     useEffect(() => {
@@ -167,16 +180,17 @@ const Partner = () => {
 
 
 
-const [showAffiliatePolicy, setShowAffiliatePolicy] = useState(false);
 
-// Example handler
-const handleOpenAffiliatePolicy = (e) => {
-  e.preventDefault();
-  setShowAffiliatePolicy(true);
-};
-const handleCloseAffiliatePolicy = () => setShowAffiliatePolicy(false);
-
-
+    const scrollToAffiliatePolicy = () => {
+        if (location.pathname === "/affiliate-agreement") {
+            // Already on home, scroll
+            const section = document.getElementById("top-of-affiliate-agreement");
+            section?.scrollIntoView({ behavior: "smooth" });
+        } else {
+            // Navigate to home with scroll flag
+            navigate("/affiliate-agreement", { state: { scrollTo: "top-of-affiliate-agreement" } });
+        }
+    };
 
 
   return (
@@ -349,19 +363,17 @@ const handleCloseAffiliatePolicy = () => setShowAffiliatePolicy(false);
 
                           <div className="partner-checkbox-group">
                               <input type="checkbox" id="privacy" required />
-                              <label htmlFor="privacy">
+                              
                                   I agree to{" "}
                                   <Link
-                                      to="/affiliate-agreement"
-                                      target="_blank"
-                                      style={{
-                                          color: "#8855f7",
-                                          textDecoration: "none",
-                                      }}
+                                      to="#"
+                                      onClick={scrollToAffiliatePolicy}
                                   >
                                       Affiliate Partner Policy
                                   </Link>
-                              </label>
+                       
+
+                                                             
                           </div>
 
                           <button type="submit" className="partner-submit-btn">
