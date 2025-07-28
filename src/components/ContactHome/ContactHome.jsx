@@ -97,7 +97,7 @@
 
 import React, { useState } from 'react';
 import './ContactHome.css';
-import contactpage from '/Home/ContactUs/contactpage.png';
+// import contactpage from '/Home/ContactUs/contactpage.png';
 import ScrollToTop from '../common/ScrollToTop';
 import PurplePage from '../PurplePage/PurplePage';
 
@@ -131,7 +131,7 @@ export default function Contact() {
         <div className="contact-wrapper">
           {/* Left Side */}
           <div className="contact-left">
-            <img src={contactpage} alt="Support Agent" className="contact-image" />
+            <img src="/Home/ContactUs/contactpage.png" alt="Support Agent" className="contact-image" />
           </div>
 
           {/* Right Side */}

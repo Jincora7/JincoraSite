@@ -162,10 +162,10 @@ import Hero2 from "./Hero2/Hero2.jsx";
 
 import PricingPlans from "./PricingPlans/PricingPlans.jsx";
 import PillarsCardComponent from "../Home/Pillars-Page/PillarsCardComponent/PillarsCardComponent.jsx";
-import servicelist1 from '/Service/service-list-1.png'
-import servicelist2 from '/Service/service-list-2.png'
-import servicelist3 from '/Service/service-list-3.png'
-import servicelist4 from '/Service/service-list-4.png'
+// import servicelist1 from '/Service/service-list-1.png'
+// import servicelist2 from '/Service/service-list-2.png'
+// import servicelist3 from '/Service/service-list-3.png'
+// import servicelist4 from '/Service/service-list-4.png'
 import PrimaryBtn from '../../reusableComponents/PrimaryBtn/PrimaryBtn'
 import IgniteGrowth from "./IgniteGrowth/IgniteGrowth.jsx";
 import PurplePage from "../PurplePage/PurplePage.jsx";
@@ -218,13 +218,13 @@ function Services() {
                 </h3>
 
                 <div className="pillars-card-wrap">
-                    <PillarsCardComponent image={servicelist1} heading="Custom Shopify Development" para="We build tailored, conversion-focused Shopify stores that align with your brand and business goals." />
+                    <PillarsCardComponent image="/Service/service-list-1.png" heading="Custom Shopify Development" para="We build tailored, conversion-focused Shopify stores that align with your brand and business goals." />
 
-                    <PillarsCardComponent image={servicelist2} heading="Platform Migration Services" para="Seamlessly move from WooCommerce, Magento, or legacy platforms to Shopify — with zero downtime or data loss." />
+                    <PillarsCardComponent image="/Service/service-list-2.png" heading="Platform Migration Services" para="Seamlessly move from WooCommerce, Magento, or legacy platforms to Shopify — with zero downtime or data loss." />
 
-                    <PillarsCardComponent image={servicelist3} heading="Performance Optimization" para="From speed tuning to UX enhancements, we improve your store’s performance to drive sales and retention." />
+                    <PillarsCardComponent image="/Service/service-list-3.png" heading="Performance Optimization" para="From speed tuning to UX enhancements, we improve your store’s performance to drive sales and retention." />
 
-                    <PillarsCardComponent image={servicelist4} heading="Ongoing Support & Scaling" para="We don’t just launch — we help you grow. Get continuous support, feature upgrades, and strategic scaling." />
+                    <PillarsCardComponent image="/Service/service-list-4.png" heading="Ongoing Support & Scaling" para="We don’t just launch — we help you grow. Get continuous support, feature upgrades, and strategic scaling." />
                 </div>
 
                

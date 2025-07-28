@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero2.css';
-import Hero2img from '/Service/Hero2img.png'
+// import Hero2img from '/Service/Hero2img.png'
 import { useNavigate } from 'react-router-dom';
 
 function Hero2() {
@@ -9,7 +9,7 @@ function Hero2() {
     <section className="hero2-container">
       <div className="hero2-content">
         <div className="hero2-left">
-          <img src={Hero2img} alt="E-commerce Illustration" />
+          <img src="/Service/Hero2img.png" alt="E-commerce Illustration" />
         </div>
         <div className="hero2-right">
           <h1>

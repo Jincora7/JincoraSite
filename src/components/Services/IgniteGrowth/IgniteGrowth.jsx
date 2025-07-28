@@ -1,12 +1,12 @@
 import React from 'react';
 import './IgniteGrowth.css';
-import IgniteGrowthImg from '/Service/IgniteGrowthImg.png' // You should extract the image from your screenshot or replace with your own
+// import IgniteGrowthImg from '/Service/IgniteGrowthImg.png' 
 
 const IgniteGrowth = () => {
   return (
     <div className="ignite-section">
       <div className="left-content">
-        <img src={IgniteGrowthImg} alt="Man with Laptop" className="main-image" />
+        <img src="/Service/IgniteGrowthImg.png" alt="Man with Laptop" className="main-image" />
 
 
       </div>
