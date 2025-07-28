@@ -7,77 +7,94 @@
   letter-spacing: 0.01em;
 }
 
-.partner-card-component p , h3{
-   padding: 10px;
+
+.partners-card-para {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 0.01em;
 }
+
+/* Partner card main container */
+.partner-card-component {
+  background: #1a0b2e;
+  border-radius: 10px;
+  box-shadow: 0 14px 50px rgba(60, 20, 120, 0.15);
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.partner-card-component img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  background: #18082c;
+  border: none;
+  margin: 0;
+}
+
+.partner-card-component h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  padding: 18px 20px 6px;
+}
+
+.partner-card-component p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #ccc;
+  margin: 0;
+  padding: 0 20px 20px;
+}
+
+/* ---------- RESPONSIVE WRAPPER ---------- */
 
 .partners-card-wrap {
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 76px;
-}
-.partner-card-component {
-  background: linear-gradient(132deg, #322164 60%, #20124a 100%);
-  border-radius: 18px;
-  box-shadow: 0 14px 50px rgba(60, 20, 120, 0.15);
-  /* width: 120%;  <-- REMOVE THIS */
-  /* width: 1100px; <-- REMOVE THIS */
-  max-width: 420px;        /* Try 480px~520px for wider, adjust as needed */
-  min-height: 220px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 0 24px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
 }
 
-.partner-card-component img {
-  width: 100%;              /* Card image always fills card width */
-  aspect-ratio: 2 / 1.2;    /* Nice natural card ratio (try aspect-ratio: 2 / 1.1 for less height) */
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  border-radius: 0;
-  border-bottom: 2px solid #5125b7;
-  background: #18082c;
-  margin: 0;                /* No auto margin! */
+@media (min-width:1025px) and (max-width:1400px){
+  .partners-card-wrap{
+    gap: 20px;
+  }
 }
 
-
-.partner-card-component {
-  background: linear-gradient(132deg, #322164 60%, #20124a 100%);
-  border-radius: 18px;
-  box-shadow: 0 14px 50px rgba(60, 20, 120, 0.15);
-  max-width: 500px;     /* Increase this value for more width */
-  min-height: 320px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
+/* Tablet layout (row, responsive) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .partners-card-wrap {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+  }
 }
 
-.partner-card-component img {
-  width: 100%;
-  height: 181px;        
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  border-radius: 0;
-  border-bottom: 2px solid #5125b7;
-  background: #18082c;
-  margin: 0;
-}
-
-
-
-
-@media (max-width: 430px) {
+/* Mobile layout (column) */
+@media (max-width: 599px) {
   .partners-card-para {
     font-size: 17px;
     margin-bottom: 20px;
     padding: 0 12px;
   }
+
   .partners-card-wrap {
     flex-direction: column;
     gap: 20px;
@@ -85,9 +102,23 @@
     max-width: 95%;
     margin: 0 auto;
   }
+
   .partner-card-component {
-    max-width: 90%;
+    max-width: 95%;
     width: 100%;
-    min-height: unset;
+  }
+
+  .partner-card-component img {
+    height: 220px; /* Reduce image height */
+  }
+
+  .partner-card-component h3 {
+    font-size: 18px;
+    padding: 14px 16px 6px;
+  }
+
+  .partner-card-component p {
+    font-size: 14px;
+    padding: 0 16px 16px;
   }
 }

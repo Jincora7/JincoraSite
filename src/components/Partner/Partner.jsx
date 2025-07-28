@@ -15,7 +15,7 @@
 
 //   return (
 //     <div className="partner-page">
-    
+
 
 //       {/* Hero Section */}
 //       <section className="hero">
@@ -111,9 +111,9 @@
 //         </div>
 //       </section>
 
-     
 
-      
+
+
 //     </div>
 //   );
 // };
@@ -150,33 +150,33 @@ const Partner = () => {
 
 
 
-      
-    
 
 
 
-  const [activeFilter, setActiveFilter] = useState('All');
-
-  const handleFilterClick = (filter) => {
-    setActiveFilter(filter);
-  };
-
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    alert('Form submitted successfully!');
-  };
 
 
-      const location = useLocation();
-      const navigate = useNavigate();
+    const [activeFilter, setActiveFilter] = useState('All');
+
+    const handleFilterClick = (filter) => {
+        setActiveFilter(filter);
+    };
+
+    const handleFormSubmit = (e) => {
+        e.preventDefault();
+        alert('Form submitted successfully!');
+    };
+
+
+    const location = useLocation();
+    const navigate = useNavigate();
 
 
     useEffect(() => {
         if (location.state?.scrollTo === "top-of-partner") {
-          const section = document.getElementById("top-of-partner");
-          section?.scrollIntoView({ behavior: "smooth" });
+            const section = document.getElementById("top-of-partner");
+            section?.scrollIntoView({ behavior: "smooth" });
         }
-      }, [location]);
+    }, [location]);
 
 
 
@@ -193,12 +193,12 @@ const Partner = () => {
     };
 
 
-  return (
-      <>
-          <div id="top-of-partner"></div>
-          <div className="partner-page">
-              {/* Hero Section */}
-              {/* <section className="partner-hero">
+    return (
+        <>
+            <div id="top-of-partner"></div>
+            <div className="partner-page">
+                {/* Hero Section */}
+                {/* <section className="partner-hero">
                   <div className="partner-hero-content">
                       <p
                           style={{
@@ -214,9 +214,9 @@ const Partner = () => {
                   </div>
               </section> */}
 
-              {/* Partners Section */}
-              <section className="partner-partners-section">
-                  {/* <div className="partner-filter-tabs">
+                {/* Partners Section */}
+                <section className="partner-partners-section">
+                    {/* <div className="partner-filter-tabs">
           {['All', 'App Partners', 'Shopify Partner', 'WordPress Partners'].map((filter) => (
             <button
               key={filter}
@@ -228,7 +228,7 @@ const Partner = () => {
           ))}
         </div> */}
 
-                  {/* <div className="partner-grid">
+                    {/* <div className="partner-grid">
           {Array.from({ length: 11 }, (_, index) => (
             <div key={index} className="partner-card">
               <div className="partner-icon">Demo</div>
@@ -237,155 +237,155 @@ const Partner = () => {
             </div>
           ))}
         </div> */}
-                  {/* 
+                    {/* 
         <div className="partner-load-more">
           <button className="partner-load-more-btn">Load More →</button>
         </div> */}
-              </section>
+                </section>
 
-              <section className="affiliate-hero">
-                  <div className="affiliate-label">Partners</div>
-                  <h1 className="affiliate-title">
-                      Join the Jincora Affiliate Program and
-                      <br />
-                      Earn Up to 50% Commission
-                  </h1>
-                  <p className="affiliate-desc">
-                      Turn your network into income. As a Jincora Affiliate, you
-                      can earn up to 50% recurring commission by referring
-                      clients to our expert eCommerce services — including
-                      Shopify development, SEO, platform migrations, and more.
-                      Whether you’re a marketer, creator, or consultant, we’ll
-                      equip you with everything you need to promote and earn.
-                  </p>
-                  <a href="#" className="affiliate-btn">
-                      Apply as Affiliate&nbsp;→
-                  </a>
-              </section>
+                <section className="affiliate-hero">
+                    <div className="affiliate-label">Partners</div>
+                    <h1 className="affiliate-title">
+                        Join the Jincora Affiliate Program and
+                        <br />
+                        Earn Up to 50% Commission
+                    </h1>
+                    <p className="affiliate-desc">
+                        Turn your network into income. As a Jincora Affiliate, you
+                        can earn up to 50% recurring commission by referring
+                        clients to our expert eCommerce services — including
+                        Shopify development, SEO, platform migrations, and more.
+                        Whether you’re a marketer, creator, or consultant, we’ll
+                        equip you with everything you need to promote and earn.
+                    </p>
+                    <a href="#" className="affiliate-btn">
+                        Apply as Affiliate&nbsp;→
+                    </a>
+                </section>
 
-              {/* <div className="partners-wrap">
+                {/* <div className="partners-wrap">
                 <div className="partners-card"> */}
-              <h3 className="partners-card-para">
-                  Why Jincora Is Your Store’s Trusted Growth Partner
-              </h3>
+                <h3 className="partners-card-para">
+                    Why Jincora Is Your Store’s Trusted Growth Partner
+                </h3>
 
-              <div className="partners-card-wrap">
-                  <PartnerCardComponent
-                      image={servicelist1}
-                      heading="Affiliate Partners"
-                      para="Promote Jincora services and earn commission for every successful referral. Perfect for influencers, bloggers, agencies, and marketers."
-                  />
-                  <PartnerCardComponent
-                      image={servicelist2}
-                      heading="Strategic Partners"
-                      para="Collaborate with Jincora on projects or as a service provider. Ideal for developers, agencies, and eCommerce consultants."
-                  />
-              </div>
+                <div className="partners-card-wrap">
+                    <PartnerCardComponent
+                        image={servicelist1}
+                        heading="Affiliate Partners"
+                        para="Promote Jincora services and earn commission for every successful referral. Perfect for influencers, bloggers, agencies, and marketers."
+                    />
+                    <PartnerCardComponent
+                        image={servicelist2}
+                        heading="Strategic Partners"
+                        para="Collaborate with Jincora on projects or as a service provider. Ideal for developers, agencies, and eCommerce consultants."
+                    />
+                </div>
 
-              {/* Form Section */}
-              <section className="partner-form-section">
-                  <div className="partner-form-container">
-                      <h2>Apply to Become a Jincora Affiliate</h2>
-                      <p className="partner-subtitle">
-                          Start earning today. Join our affiliate program and
-                          get up to 50% commission on recurring plans and 10% on
-                          one-time projects. Once approved, you'll receive your
-                          referral link, tracking access, and promotional
-                          resources to help you succeed.
-                      </p>
+                {/* Form Section */}
+                <section className="partner-form-section">
+                    <div className="partner-form-container">
+                        <h2>Apply to Become a Jincora Affiliate</h2>
+                        <p className="partner-subtitle">
+                            Start earning today. Join our affiliate program and
+                            get up to 50% commission on recurring plans and 10% on
+                            one-time projects. Once approved, you'll receive your
+                            referral link, tracking access, and promotional
+                            resources to help you succeed.
+                        </p>
 
-                      <form
-                          className="partner-form"
-                          onSubmit={handleFormSubmit}
-                      >
-                          <div className="partner-form-group">
-                              <label htmlFor="name">Name*</label>
-                              <input
-                                  type="text"
-                                  id="name"
-                                  placeholder="Enter your name"
-                                  required
-                              />
-                          </div>
+                        <form
+                            className="partner-form"
+                            onSubmit={handleFormSubmit}
+                        >
+                            <div className="partner-form-group">
+                                <label htmlFor="name">Name*</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    placeholder="Enter your name"
+                                    required
+                                />
+                            </div>
 
-                          <div className="partner-form-group">
-                              <label htmlFor="email">Email Address*</label>
-                              <input
-                                  type="email"
-                                  id="email"
-                                  placeholder="Enter your email address"
-                                  required
-                              />
-                          </div>
+                            <div className="partner-form-group">
+                                <label htmlFor="email">Email Address*</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    placeholder="Enter your email address"
+                                    required
+                                />
+                            </div>
 
-                          <div className="partner-form-row">
-                              <div className="partner-form-group">
-                                  <label htmlFor="country">Country*</label>
-                                  <select id="country" required>
-                                      <option value="">-- Select --</option>
-                                      <option value="us">United States</option>
-                                      <option value="uk">United Kingdom</option>
-                                      <option value="ca">Canada</option>
-                                      <option value="au">Australia</option>
-                                      <option value="in">India</option>
-                                  </select>
-                              </div>
-                              <div className="partner-form-group">
-                                  <label htmlFor="partner-type">
-                                      Affiliate Type*
-                                  </label>
-                                  <select id="partner-type" required>
-                                      <option value="">-- Select --</option>
-                                      <option value="shopify">
-                                          Shopify Partner
-                                      </option>
-                                      <option value="woocommerce">
-                                          WooCommerce Partner
-                                      </option>
-                                      <option value="app">App Partner</option>
-                                      <option value="agency">
-                                          Agency Partner
-                                      </option>
-                                  </select>
-                              </div>
-                          </div>
+                            <div className="partner-form-row">
+                                <div className="partner-form-group">
+                                    <label htmlFor="country">Country*</label>
+                                    <select id="country" required>
+                                        <option value="">-- Select --</option>
+                                        <option value="us">United States</option>
+                                        <option value="uk">United Kingdom</option>
+                                        <option value="ca">Canada</option>
+                                        <option value="au">Australia</option>
+                                        <option value="in">India</option>
+                                    </select>
+                                </div>
+                                <div className="partner-form-group">
+                                    <label htmlFor="partner-type">
+                                        Affiliate Type*
+                                    </label>
+                                    <select id="partner-type" required>
+                                        <option value="">-- Select --</option>
+                                        <option value="shopify">
+                                            Shopify Partner
+                                        </option>
+                                        <option value="woocommerce">
+                                            WooCommerce Partner
+                                        </option>
+                                        <option value="app">App Partner</option>
+                                        <option value="agency">
+                                            Agency Partner
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
 
-                          <div className="partner-form-group">
-                              <label htmlFor="organization">
-                                  Organization Name
-                              </label>
-                              <input
-                                  type="text"
-                                  id="organization"
-                                  placeholder="Enter your organization name"
-                              />
-                          </div>
+                            <div className="partner-form-group">
+                                <label htmlFor="organization">
+                                    Organization Name
+                                </label>
+                                <input
+                                    type="text"
+                                    id="organization"
+                                    placeholder="Enter your organization name"
+                                />
+                            </div>
 
-                          <div className="partner-checkbox-group">
-                              <input type="checkbox" id="privacy" required />
-                              
-                                  I agree to{" "}
-                                  <Link
-                                      to="#"
-                                      onClick={scrollToAffiliatePolicy}
-                                  >
-                                      Affiliate Partner Policy
-                                  </Link>
-                       
+                            <div className="partner-checkbox-group">
+                                <input type="checkbox" id="privacy" required />
 
-                                                             
-                          </div>
+                                I agree to{" "}
+                                <Link
+                                    to="#"
+                                    onClick={scrollToAffiliatePolicy}
+                                >
+                                    Affiliate Partner Policy
+                                </Link>
 
-                          <button type="submit" className="partner-submit-btn">
-                              Sign Up →
-                          </button>
-                      </form>
-                  </div>
-              </section>
-          </div>
-          <PurplePage />
-      </>
-  );
+
+
+                            </div>
+
+                            <button type="submit" className="partner-submit-btn">
+                                Sign Up →
+                            </button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <PurplePage />
+        </>
+    );
 };
 
 export default Partner;
