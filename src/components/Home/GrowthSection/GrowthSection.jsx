@@ -1,6 +1,6 @@
 import React from 'react';
 import './GrowthSection.css';
-import Frame from '/Home/GrowthSection/Frame.png'; // Replace with your actual image
+// import Frame from '/Home/GrowthSection/Frame.png';
 import { useNavigate } from 'react-router-dom';
 
 export default function GrowthSection() {
@@ -20,7 +20,7 @@ export default function GrowthSection() {
           <button onClick={() => navigate("/contact-us")} className="growth-btn">Get started →</button>
         </div>
         <div className="growth-chart">
-          <img src={Frame} alt="Growth Process Chart" />
+          <img src="/Home/GrowthSection/Frame.png" alt="Growth Process Chart" />
         </div>
       </div>
 
