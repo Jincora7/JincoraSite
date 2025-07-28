@@ -1,7 +1,7 @@
 import "./HeroSection.css"
 
 import React from 'react'
-import bulb from "/Home/Hero/bulb.png"
+// import bulb from "/Home/Hero/bulb.png"
 // import maskGrp from "/Home/Hero/mask-grp.png"
 
 const HeroSection = () => {
