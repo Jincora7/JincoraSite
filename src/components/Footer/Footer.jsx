@@ -224,6 +224,8 @@ import { FaPinterest, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { useLocation, useNavigate } from 'react-router-dom';
 
+import BlogDetails from '../Blogs/BlogDetails/BlogDetails';
+
 import logo from "../../assets/logo.png";
 import ScrollToTop from '../common/ScrollToTop';
 import "./Footer.css";
@@ -383,7 +385,7 @@ function Footer() {
                                     <li>Portfolio</li>
                                     <li><Link to="#" onClick={scrollToPartner} >Partner</Link></li>
                                     <li><Link to="#" onClick={scrollToBlogListing}>Blog</Link></li>
-                                    {/* <li><Link to="/BlogDetails">BlogDetails</Link></li> */}
+                                    <li><Link to="/blog-details">BlogDetails</Link></li>
                                 </ul>
                             </div>
 
