@@ -1,5 +1,5 @@
-export const blogData = [
-    {
+export const blogData = {
+    2025001:{
         id: 1,
         mainHeading:
             "How Shopify CMS Helped Small Businesses Grow Fast and Sell More Online",
@@ -19,11 +19,11 @@ export const blogData = [
         para5: `Small businesses grow, and Shopify grows with them. Whether you’re handling 10 orders a month or 1,000, Shopify’s infrastructure supports your scaling needs. Plans are affordable, starting low and increasing as your requirements grow. At Jincora, we’ve helped businesses migrate smoothly from basic Shopify plans to Shopify Plus as their revenue exploded. Shopify’s 24/7 customer support ensures you’re never stuck when issues arise. Live chat, email, and phone support are available anytime. Plus, the Shopify Help Center, forums, and video tutorials provide DIY solutions for quick fixes. Our agency often partners with Shopify merchants for long-term maintenance, SEO optimization, and conversion rate improvements as they scale. With global payment options, multi-currency support, and advanced reporting tools, Shopify CMS stays reliable at every growth stage. For small business owners dreaming of long-term online success, Shopify remains our number one recommendation.
         For support, contact Jincora IT Solution today at www.jincora.com.`,
     },
-    {
+    2025002:{
         id: 2,
         mainHeading: "Shopify Email Marketing Strategies That Boost Sales Fast",
         tags: ["Best practices", "How to", "Industry experts"],
-        blogDate: "August 29, 2024",
+        blogDate: "August 27, 2024",
         mainPara:
             "Running an online business wasn't always as profitable as it is today. Back when we started Jincora IT Solution, we worked with Shopify store owners who struggled with low email open rates, poor cart recovery and missed sales opportunities. Many were overwhelmed by the idea of setting up effective email marketing campaigns from scratch. That's when we discovered our secret weapon—Shopify email marketing automation. Over the years, as a Shopify expert agency, we've helped countless brands build powerful email campaigns that convert browsers into buyers using proven strategies. Shopify makes it possible for even non-technical business owners to launch email marketing, recover abandoned carts, and scale sales—all from a single dashboard. From automated welcome series to SMS marketing integration, Shopify removes complexity and adds results. If you've ever dreamed of turning your email list into a revenue powerhouse but don't know where to start, this story is for you. Let's explore how Shopify email marketing can make your customer retention smooth and successful.",
         head1: "Why Shopify Email Marketing Works Better Than Social Media",
@@ -38,12 +38,12 @@ export const blogData = [
         para5: `Small businesses grow, and Shopify email marketing grows with them. Whether you're sending 100 emails a month or 100,000, Shopify's infrastructure supports your scaling needs. Plans are affordable, starting low and increasing as your requirements grow. At Jincora, we've helped businesses scale from basic email campaigns to advanced automation sequences as their revenue exploded. Shopify's built-in analytics ensure you're never guessing about campaign performance. Open rates, click-through rates, and conversion tracking are available anytime. Plus, the Shopify Help Center, forums, and video tutorials provide DIY solutions for email optimization. Our agency often partners with Shopify merchants for long-term email marketing, customer segmentation, and conversion rate improvements as they scale. With advanced reporting tools, A/B testing capabilities, and integration options, Shopify email marketing stays reliable at every growth stage. For small business owners dreaming of long-term customer relationships, Shopify email marketing remains our number one recommendation.
         For support, contact Jincora IT Solution today at www.jincora.com.`,
     },
-    {
+    2025003:{
         id: 3,
         mainHeading:
             "Boost Your Shopify Store Sales with a Custom Ecommerce App in 2025",
         tags: ["Best practices", "How to", "Industry experts"],
-        blogDate: "August 29, 2024",
+        blogDate: "August 20, 2024",
         mainPara:
             "Running an online business wasn't always as competitive as it is today. Back when we started Jincora IT Solution, we worked with Shopify store owners who struggled with limited functionality, poor user experience, and stagnant sales. Many were overwhelmed by the idea of building custom solutions that could differentiate their stores from competitors. That's when we discovered our secret weapon—custom Shopify app development. Over the years, as a Shopify expert agency, we've helped countless brands build powerful custom apps that transform their online stores into sales machines. Custom Shopify app development makes it possible for businesses to create unique functionality, streamline operations, and boost conversions—all tailored to their specific needs. From personalized product recommendations to advanced inventory management, custom apps remove limitations and add competitive advantages. If you've ever dreamed of taking your Shopify store to the next level but don't know where to start, this story is for you. Let's explore how custom Shopify app development can make your eCommerce success inevitable.",
         head1: "Why Custom Shopify App Development Outperforms Generic Solutions",
@@ -58,12 +58,12 @@ export const blogData = [
         para5: `Smart businesses invest in custom Shopify app development because it grows with them. Whether you're processing 100 orders a month or 10,000, custom apps are built to handle your scaling needs without performance degradation. Development costs are typically recovered within 6-12 months through increased efficiency and sales. At Jincora, we've helped businesses create custom apps that saved thousands in monthly App Store fees while providing superior functionality. Custom apps ensure you're never limited by third-party app restrictions or sudden price increases. Complete ownership means you control updates, features, and integrations based on your business needs. Plus, custom apps can be designed to integrate with your existing systems, creating seamless workflows that save time and reduce errors. Our agency often partners with growing businesses for long-term custom app development, feature enhancement, and system integration as they scale. With unlimited customization possibilities, performance optimization, and no ongoing subscription fees, custom Shopify app development provides the foundation for sustainable long-term growth. For business owners serious about maximizing their Shopify store potential, custom app development remains our top recommendation for achieving lasting competitive advantages.
         For support, contact Jincora IT Solution today at www.jincora.com.`,
     },
-    {
+    2025004:{
         id: 4,
         mainHeading:
             "How UI/UX Design is Shaping Successful E-commerce Stores in 2025",
         tags: ["Best practices", "How to", "Industry experts"],
-        blogDate: "August 29, 2024",
+        blogDate: "August 15, 2024",
         mainPara: `Back when we launched Jincora IT Solution, many small online business owners had the same complaint—"Our website looks outdated and doesn’t convert." Even with quality products, their poor user experience held them back from generating sales. That’s when we doubled down on UI/UX design for eCommerce websites—and we haven’t looked back since.
         In 2025, UI/UX design is no longer optional—it's what separates high-performing online stores from the rest. From mobile-first navigation to smart product layouts, optimizing your Shopify store's design leads to better conversion rates, lower bounce rates, and higher customer retention.
         Let’s explore how great UI/UX is shaping successful e-commerce stores in 2025 and why it should be your top priority.`,
@@ -93,11 +93,11 @@ export const blogData = [
         👉 Let us help you build a store that looks great, feels amazing, and sells even better.
         For support, contact Jincora IT Solution today at www.jincora.com.`,
     },
-    {
+    2025005:{
         id: 5,
         mainHeading: "Top Reasons to Choose Custom Web Development Over Templates in 2025",
         tags: ["Best practices", "How to", "Industry experts"],
-        blogDate: "August 29, 2024",
+        blogDate: "August 10, 2024",
         mainPara: `When we first started Jincora IT Solution, most of our clients came to us with websites built using generic templates. While these templates looked decent at first glance, they had major limitations—slow load times, weak branding, poor SEO structure, and minimal flexibility. Many small business owners didn’t even realize how much revenue they were leaving on the table.
         That’s when we began shifting our clients to custom web development, and the difference was night and day. In 2025, with more competition online than ever, choosing custom website development isn’t a luxury—it’s a smart investment in long-term success.
         If you’re weighing the choice between pre-made templates and a custom-built site, this post will show you why custom development delivers superior results across the board.`,
@@ -126,4 +126,4 @@ export const blogData = [
         At Jincora IT Solution, we specialize in building high-performing custom websites that look great, work fast, and convert visitors into customers. Whether you're rebranding, launching, or scaling, our developers and designers work hand-in-hand to deliver a truly customized experience.
         Ready to upgrade from templates? Contact Jincora IT Solution at www.jincora.com and let’s build something extraordinary.`,
     },
-];
+};

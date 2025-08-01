@@ -28,7 +28,6 @@ const router = createBrowserRouter(
       <Route path='/about' element={<About />} />
       <Route path='/contact-home' element={<ContactHome />}/>
       <Route path='/partner' element={<Partner />}/>
-      <Route path='/blog-details' element={<BlogDetails />}/>
       <Route path='/blog-listing' element={<BlogListing />}/>
       <Route path='/faq' element={<FAQ />}/>
 
@@ -37,6 +36,7 @@ const router = createBrowserRouter(
 
       <Route path='/contact-us' element={<ContactUsPage />}/>
 
+      <Route path='/blog-listing/:blogId' element={<BlogDetails />}/>
 
       
 
