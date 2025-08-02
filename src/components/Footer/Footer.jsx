@@ -384,8 +384,7 @@ function Footer() {
                                     <li><Link to="#" onClick={scrollToFAQ}>FAQ</Link></li>
                                     <li>Portfolio</li>
                                     <li><Link to="#" onClick={scrollToPartner} >Partner</Link></li>
-                                    <li><Link to="#" onClick={scrollToBlogListing}>Blog</Link></li>
-                                    <li><Link to="/blog-details">BlogDetails</Link></li>
+                                    <li><Link to="#" onClick={scrollToBlogListing}>Blogs</Link></li>
                                 </ul>
                             </div>
 
@@ -394,7 +393,6 @@ function Footer() {
                                 <h5>Support</h5>
                                 <ul>
                                     <li> <Link to="#" onClick={scrollToContactUsPage}>Contact Us</Link></li>
-                                    <li>Email Us</li>
                                     <li>
                                         <Link to="/about">About Us</Link>
                                     </li>
