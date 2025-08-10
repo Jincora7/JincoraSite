@@ -53,7 +53,7 @@
     z-index: 1;
     max-width: 550px;
     color: white;
-    flex: 1 1 50%; /* Flexible width for responsiveness */
+    flex: 1 1 50%; 
     display: flex;
     flex-direction: column;
     justify-content: center;

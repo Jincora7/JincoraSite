@@ -6,33 +6,40 @@ const Loader = ({ onFinish }) => {
   const text = "JINCORA";
 
   useEffect(() => {
-    const totalTime = text.length * 300; // animation time for letters
-    const minDisplayTime = totalTime; // ensure full word shows at least once
+    const letterTime = text.length * 300; // time for all letters to appear
+    const underlineDelay = 500; // time for underline animation
 
-    // Start fade out after full word is shown
+    // Start fade-out after underline finishes
+    const totalTime = letterTime + underlineDelay;
+
     const fadeTimer = setTimeout(() => {
       setFadeOut(true);
-      // Give fade animation time to complete before calling onFinish
       setTimeout(() => {
         onFinish();
       }, 800); // match fade animation duration
-    }, minDisplayTime);
+    }, totalTime);
 
     return () => clearTimeout(fadeTimer);
   }, []);
 
   return (
     <div className={`loader-wrapper ${fadeOut ? "fade-out" : ""}`}>
-      <div className="loader-text">
-        {text.split("").map((letter, index) => (
-          <span
-            key={index}
-            style={{ animationDelay: `${index * 0.3}s` }}
-            className="letter"
-          >
-            {letter}
-          </span>
-        ))}
+      <div className="loader-text-container">
+        <div className="loader-text">
+          {text.split("").map((letter, index) => (
+            <span
+              key={index}
+              style={{ animationDelay: `${index * 0.3}s` }}
+              className="letter"
+            >
+              {letter}
+            </span>
+          ))}
+        </div>
+        <div
+          className="underline"
+          style={{ animationDelay: `${text.length * 0.3}s` }}
+        ></div>
       </div>
     </div>
   );

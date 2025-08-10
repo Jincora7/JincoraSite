@@ -17,12 +17,19 @@
   pointer-events: none;
 }
 
+.loader-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .loader-text {
   display: flex;
   gap: 5px;
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: 5px;
+  position: relative;
 }
 
 .letter {
@@ -38,6 +45,22 @@
   }
 }
 
+/* Underline animation */
+.underline {
+  margin-top: 8px;
+  height: 3px;
+  width: 0%;
+  background-color: white;
+  animation: underlineExpand 0.5s ease forwards;
+}
+
+@keyframes underlineExpand {
+  to {
+    width: 100%;
+  }
+}
+
+/* Responsive styles */
 @media (max-width: 768px) {
   .loader-text {
     font-size: 2rem;
