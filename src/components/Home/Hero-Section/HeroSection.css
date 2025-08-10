@@ -1,16 +1,58 @@
 .hero-section-wrap {
+    position: relative;
     width: 100%;
+    height: 100vh; /* Full screen height */
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex: 1;
+    justify-content: space-between;
     padding: 0 20px;
-    /* margin-top: 5rem; */
+    overflow: hidden;
+}
+
+.hero-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; /* Behind content */
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Animated gradient overlay */
+.hero-video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.7)
+    );
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease-in-out infinite;
+    z-index: -1; /* Between video & content */
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .hero-section-left {
-    margin-top: 5rem;
+    position: relative;
+    z-index: 1; /* Above video & overlay */
+    max-width: 550px;
+    color: white; /* Text visible over video */
 }
 
 .hero-left-content-heading {
@@ -19,6 +61,7 @@
 
 .hero-section-left-content h1 {
     font-size: 1.5rem;
+    margin: 0;
 }
 
 .hero-section-left-content p {
@@ -38,38 +81,27 @@
 }
 
 .hero-section-right {
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
 .hero-section-right-image {
-    width: 120%;
+    width: 100%;
     max-width: 580px;
     height: auto;
-    margin-bottom: 0;
     object-fit: cover;
     object-position: center;
-    margin-top: 55px;
 }
 
-
-
-@media (min-width:768px) {
+/* Desktop styles */
+@media (min-width: 768px) {
     .hero-section-wrap {
         flex-direction: row;
-        height: auto;
         gap: 10rem;
         padding: 0 2rem;
-    }
-
-    .hero-section-left {
-        margin-top: 0;
-    }
-
-    .hero-section-left-content {
-        width: 550px;
-        max-width: 550px;
     }
 
     .hero-section-left-content p {
@@ -79,25 +111,11 @@
     .hero-section-left-content h1 {
         font-size: 3rem;
     }
-
-
 }
 
-
+/* Mobile styles */
 @media (max-width: 480px) {
-        /* .hero-section-wrap {
-            margin-top: 3rem;
-
-
- 
-    } */
-
-    .hero-section-right-image{
-         margin-top: 40px;
+    .hero-section-right-image {
+        margin-top: 40px;
     }
-
 }
-
-
-
-

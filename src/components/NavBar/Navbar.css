@@ -1,118 +1,91 @@
+/* Base wrapper style (transparent over hero video) */
 .wrapper {
-
     width: 100%;
     height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 80px;
+    
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
-    flex-wrap: nowrap; /* Important: prevent wrapping */
-    gap: 20px; /* Add some gap for spacing */
-   
-
-
-
-
+    flex-wrap: nowrap;
+    gap: 20px;
+    background: transparent; /* transparent at top over hero */
+    transition: background-color 0.5s ease, 
+                box-shadow 0.5s ease, 
+                backdrop-filter 0.5s ease; /* smoother fade */
 }
 
+/* Solid background after scroll */
+.wrapper.scrolled {
+    background-color: transparent; 
+    backdrop-filter: blur(6px); /* glassy look over content */
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+}
 
-
-
-
+/* Logo */
 .wrapper img {
     width: 120px;
     height: auto;
-    padding:5px;
+    padding: 5px;
     margin-top: 10px;
 }
 
+/* Links */
 .navLink {
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
-
-/* .navLink a {
-    text-decoration: none;  
-    color: white;           
+.navLink a {
+    text-decoration: none;
+    color: white;
     font-size: 16px;
     font-weight: 400;
-    position: relative;    
+    position: relative;
 }
 
-
-.navLink a.active-link {
-    color: white;         
-    font-weight: bold;     
-}
-
-
-.navLink a.active-link::after {
+/* Hover underline */
+.navLink a::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -4px;           
+    bottom: -4px;
     height: 2px;
-    width: 100%;            
-    background-color: #9265c8; 
-} */
-
-.navLink a {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
+    width: 0;
+    background-color: #9265c8;
+    transition: width 0.3s ease-in-out;
 }
 
-/* Hover underline effect */
-.navLink a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  height: 2px;
-  width: 0;
-  background-color: #9265c8;; 
-  transition: width 0.3s ease-in-out;
-}
-
-/* On hover, show the underline */
 .navLink a:hover::after {
-  width: 100%;
+    width: 100%;
 }
 
-/* Active link stays underlined */
 .navLink a.active-link::after {
-  width: 100%;
-
+    width: 100%;
 }
+
 .navLink a.active-link {
-  font-weight: bold;
-  color: white;
+    font-weight: bold;
+    color: white;
 }
-
-
-
 
 .navLink a:nth-child(2) {
-    
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
+/* Buttons */
 .calendly-button {
-    /* background-color: #4f46e5; */
     background: transparent;
     color: white;
     padding: 1px 1px;
-    /* margin-left: 5px; */
     border: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -120,14 +93,7 @@
     transition: background 0.3s ease;
 }
 
-/* .responsive-nav .calendly-button {
-    margin: 10px 0;
-    width: 100%;
-    text-align: center;
-} */
-
 .calendly-button-box {
-    /* background-color: #4f46e5; */
     background: transparent;
     color: white;
     padding: 5px 15px;
@@ -137,29 +103,16 @@
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s ease;
-
-
-
-
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 400;
-    transition: color 0.3s ease;
 }
 
-
-
+/* Search bar */
 .search {
     display: flex;
     align-items: center;
     gap: 10px;
     flex-shrink: 1;
-    min-width: 0; 
+    min-width: 0;
 }
-
-
-
 
 .container {
     position: relative;
@@ -180,14 +133,6 @@
     flex-shrink: 1;
 }
 
-
-* {
-    box-sizing: border-box;
-    min-width: 0;
-}
-
-
-
 .search_input {
     flex: 1;
     height: 100%;
@@ -199,7 +144,6 @@
     font-size: 16px;
     min-width: 0;
 }
-
 
 .search_input::placeholder {
     color: rgba(255, 255, 255, 0.7);
@@ -214,20 +158,15 @@
     font-size: 1.5rem;
 }
 
-
+/* Mobile responsive nav */
 .responsive-nav {
     position: absolute;
     top: 70px;
     left: 0;
     width: 100%;
-    background: #00000075;
-
-
-        background: rgba(0, 0, 0, 0.4); /* translucent dark */
-    backdrop-filter: blur(10px);   /* blur effect */
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
-
-  
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -236,16 +175,6 @@
     z-index: 100;
     animation: slideDown 0.3s ease forwards;
 }
-
-
-
-
-
-
-
-
-
-
 
 .responsive-nav a {
     color: white;
@@ -257,11 +186,8 @@
 
 .responsive-nav a:hover,
 .responsive-nav a.active {
-    
     font-weight: 600;
 }
-
-
 
 .menu-icons {
     display: none;
@@ -269,81 +195,29 @@
     cursor: pointer;
 }
 
-
-
 @keyframes slideDown {
-    0% {
-        transform: translateY(-20px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-} 
-
-
-
-
-
-@media (max-width: 1024px) {
-    .wrapper {
-        padding: 0 40px;
-    }
-
-    .navLink {
-        display: none;
-    }
-
-    .menu-icons {
-        display: block;
-    }
-
-    .mainbox {
-        max-width: 180px;
-    }
-
-    .search_input {
-        font-size: 15px;
-    }
-    
+    0% { transform: translateY(-20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
 }
 
+/* Media Queries */
+@media (max-width: 1024px) {
+    .wrapper { padding: 0 40px; }
+    .navLink { display: none; }
+    .menu-icons { display: block; }
+    .mainbox { max-width: 180px; }
+    .search_input { font-size: 15px; }
+}
 
 @media (max-width: 600px) {
-    .wrapper {
-        padding: 0 20px;
-        height: 70px;
-    }
-
-    .wrapper img {
-        width: 120px;
-    }
-
-    .mainbox {
-        max-width: 140px;
-        height: 35px;
-    }
-
-    .search_input {
-        font-size: 14px;
-    }
-
-    .search_icon {
-        font-size: 1.3rem;
-    }
+    .wrapper { padding: 0 20px; height: 70px; }
+    .wrapper img { width: 120px; }
+    .mainbox { max-width: 140px; height: 35px; }
+    .search_input { font-size: 14px; }
+    .search_icon { font-size: 1.3rem; }
 }
 
-
 @media (max-width: 400px) {
-    .mainbox {
-        max-width: 120px;
-    }
-
-    .search_input {
-        font-size: 13px;
-    }
-}  
-
-
-
+    .mainbox { max-width: 120px; }
+    .search_input { font-size: 13px; }
+}

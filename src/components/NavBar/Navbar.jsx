@@ -1,19 +1,25 @@
 import React, { useState, useEffect } from "react";
 import logo from "../../assets/logo.png";
-import { FaAngleDown } from "react-icons/fa6";
 import { FiMenu } from "react-icons/fi";
-import { NavLink, Link } from "react-router-dom";
 import { RxCross2 } from "react-icons/rx";
-import PrimaryBtn from "../../reusableComponents/PrimaryBtn/PrimaryBtn";
-import { useNavigate, useLocation } from "react-router-dom"; 
+import { NavLink, Link, useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
-    const [searchOpen, setSearchOpen] = useState(false);
-    const [inputBox, setInputBox] = useState("");
+    const [scrolled, setScrolled] = useState(false);
     const navigate = useNavigate();
     const location = useLocation();
+
+    // Detect scroll for background change
+    useEffect(() => {
+        const handleScroll = () => {
+            const heroHeight = window.innerHeight;
+            setScrolled(window.scrollY > heroHeight - 60);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     const scrollToHome = () => {
         if (location.pathname === "/") {
@@ -40,77 +46,37 @@ function Navbar() {
         }
     };
 
-    const [activeSection, setActiveSection] = useState("");
-    useEffect(() => {
-        const handleScroll = () => {
-            const sections = document.querySelectorAll("section[id]");
-            const scrollY = window.pageYOffset;
-
-            sections.forEach((section) => {
-                const sectionTop = section.offsetTop - 60;
-                const sectionHeight = section.offsetHeight;
-                const sectionId = section.getAttribute("id");
-
-                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                    setActiveSection(sectionId);
-                }
-            });
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth > 1024) {
                 setMenuOpen(false);
             }
         };
-
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
     return (
-        <div id="Navbar" className="wrapper">
+        <div id="Navbar" className={`wrapper ${scrolled ? "scrolled" : ""}`}>
             <Link to="/" onClick={scrollToHome}>
-                <img src={logo} alt="Jincora" />
+                <img src={logo} alt="Jincora" className="nav-logo" />
             </Link>
 
             <div className="navLink">
-                <NavLink
-                    to="/"
-                    onClick={scrollToHome}
-                    className={({ isActive }) => (isActive ? "active-link" : "")}
-                >
+                <NavLink to="/" onClick={scrollToHome}>
                     Home
                 </NavLink>
-
-                <NavLink
-                    to="/services"
-                    onClick={scrollToServices}
-                    className={({ isActive }) => (isActive ? "active-link" : "")}
-                >
+                <NavLink to="/services" onClick={scrollToServices}>
                     Services
                 </NavLink>
-
-                <NavLink
-                    to="/contact-us"
-                    onClick={scrollToContact}
-                    className={({ isActive }) => (isActive ? "active-link" : "")}
-                >
+                <NavLink to="/contact-us" onClick={scrollToContact}>
                     Contact Us
                 </NavLink>
-
                 <NavLink
                     to="/about"
                     onClick={() => {
-                        navigate("/about", {
-                            state: { scrollToTop: true },
-                        });
+                        navigate("/about", { state: { scrollToTop: true } });
                     }}
-                    className={({ isActive }) => (isActive ? "active-link" : "")}
                 >
                     About Us
                 </NavLink>
@@ -120,24 +86,21 @@ function Navbar() {
                 <button
                     className="primary-btn"
                     onClick={() =>
-                        window.open("https://calendly.com/admin-jincora/30min", "_blank")
+                        window.open(
+                            "https://calendly.com/admin-jincora/30min",
+                            "_blank"
+                        )
                     }
                 >
                     Book a Call
                 </button>
 
                 {!menuOpen ? (
-                    <span
-                        className="menu-icons"
-                        onClick={() => setMenuOpen(true)}
-                    >
+                    <span className="menu-icons" onClick={() => setMenuOpen(true)}>
                         <FiMenu size={24} />
                     </span>
                 ) : (
-                    <span
-                        className="menu-icons"
-                        onClick={() => setMenuOpen(false)}
-                    >
+                    <span className="menu-icons" onClick={() => setMenuOpen(false)}>
                         <RxCross2 size={24} />
                     </span>
                 )}
@@ -151,22 +114,18 @@ function Navbar() {
                             setMenuOpen(false);
                             scrollToHome();
                         }}
-                        className={({ isActive }) => (isActive ? "active-link" : "")}
                     >
                         Home
                     </NavLink>
-
                     <NavLink
                         to="/services"
                         onClick={() => {
                             setMenuOpen(false);
                             scrollToServices();
                         }}
-                        className={({ isActive }) => (isActive ? "active-link" : "")}
                     >
                         Services
                     </NavLink>
-
                     <button
                         className="calendly-button-box"
                         onClick={() => {
@@ -176,27 +135,21 @@ function Navbar() {
                     >
                         Book a Call
                     </button>
-
                     <NavLink
                         to="/contact-us"
                         onClick={() => {
                             setMenuOpen(false);
                             scrollToContact();
                         }}
-                        className={({ isActive }) => (isActive ? "active-link" : "")}
                     >
                         Contact Us
                     </NavLink>
-
                     <NavLink
                         to="/about"
                         onClick={() => {
                             setMenuOpen(false);
-                            navigate("/about", {
-                                state: { scrollToTop: true },
-                            });
+                            navigate("/about", { state: { scrollToTop: true } });
                         }}
-                        className={({ isActive }) => (isActive ? "active-link" : "")}
                     >
                         About Us
                     </NavLink>
