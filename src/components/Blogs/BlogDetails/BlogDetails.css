@@ -208,17 +208,26 @@ body {
   transform: scale(1.02);
 }
 
-.blogpage-sidebar {
+/* .blogpage-sidebar {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 20px;
   position: sticky;
   top: 20px;
+} */
+
+.blogpage-sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 30px;
 }
 
+
 .blogpage-sidebar-title {
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 14px;
   font-weight: 600;
   color: #d1d1d1;
@@ -395,6 +404,180 @@ body {
   color: #aaa;
   margin-top: 6px;
 }
+
+.blogpage-chat-form-wrapper {
+  margin-top: 22px;
+}
+
+/* .chat-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #18171c;
+  padding: 24px 18px 18px 18px;
+  border-radius: 14px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.18);
+}
+
+.chat-form-title {
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.chat-form-input,
+.chat-form-textarea {
+  padding: 12px 14px;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  background: #262529;
+  color: #f9f9f9;
+  outline: none;
+  margin-bottom: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  resize: none;
+}
+
+.chat-form-input::placeholder,
+.chat-form-textarea::placeholder {
+  color: #bdbcc3;
+  opacity: 1;
+}
+
+.chat-form-textarea {
+  min-height: 62px;
+  max-height: 160px;
+}
+
+.chat-form-submit {
+  padding: 11px 0;
+  background-color: #51a7ff;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: background 0.19s;
+}
+
+.chat-form-submit:hover {
+  background-color: #3790e0;
+} */
+
+
+
+
+.chat-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: transparent; /* Remove solid dark background */
+  padding: 0; /* No box padding like contact theme */
+}
+
+.chat-form-title {
+  font-size: 14px; /* Bigger title like contact form */
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #fff;
+}
+
+.chat-form-subtext {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #cfc1f8;
+  text-align: center;
+}
+
+.chat-form-input,
+.chat-form-textarea {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #c29cff;
+  padding: 12px 16px;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Rounded pill inputs */
+.chat-form-input {
+  border-radius: 25px;
+}
+
+.chat-form-textarea {
+  border-radius: 15px;
+  resize: none;
+  min-height: 120px;
+}
+
+/* Hover/focus purple glow */
+.chat-form-input:hover,
+.chat-form-input:focus,
+.chat-form-textarea:hover,
+.chat-form-textarea:focus {
+  border-color: #a367ff;
+}
+
+/* Purple button styling */
+.chat-form-submit {
+  background-color: #c29cff;
+  color: #000;
+  font-weight: 600;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  margin-top: 5px;
+  align-self: flex-start;
+}
+
+.chat-form-submit:hover {
+  background-color: #a367ff;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+
+/* for stick form  */
+
+.blogpage-chat-form-wrapper {
+  position: sticky;
+  top: 80px; /* Adjust based on your header height */
+  z-index: 2;
+}
+
+
+.blogpage-sidebar {
+  position: sticky;
+  top: 80px; /* Adjust based on header height */
+}
+
+
+
+
+
+
+
+/* Responsive for chat form */
+@media (max-width: 480px) {
+  .chat-form {
+    padding: 16px 8px;
+  }
+}
+
+
+
 
 
 /* RESPONSIVE */

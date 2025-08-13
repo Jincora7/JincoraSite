@@ -20,7 +20,7 @@ const Blog = () => {
     {
       id: 2025001,
       title: "How Shopify CMS Helped Small Businesses Grow Fast and Sell More Online",
-      date: "August 29, 2024",
+      date: "April 29, 2025",
       image: blog3,
       tags: ["Best practices", "How to", "Industry experts"],
       blogUrl: "2025001"
@@ -29,7 +29,7 @@ const Blog = () => {
     {
       id: 2025002,
       title: "Shopify Email Marketing Strategies That Boost Sales Fast",
-      date: "August 27, 2024",
+      date: "April 27, 2025",
       image: blog1,
       tags: ["UX Trends", "Conversion", "Conversion Optimization"],
       blogUrl: "2025002"
@@ -37,7 +37,7 @@ const Blog = () => {
     {
       id: 2025003,
       title: "Boost Your Shopify Store Sales with a Custom Ecommerce App in 2025",
-      date: "August 20, 2024",
+      date: "April 20, 2025",
       image: blog2,
       tags: ["Ecommerce App", "Ecommerce", "Shopify Setup"],
       blogUrl: "2025003"
@@ -45,7 +45,7 @@ const Blog = () => {
     {
       id: 2025004,
       title: "How UI/UX Design is Shaping Successful E-commerce Stores in 2025",
-      date: "August 15, 2024",
+      date: "April 15, 2025",
       image: blog4,
       tags: ["Ecommerce ", "Shopify Setup", "Custom Ecommerce"],
       blogUrl: "2025004"
@@ -53,7 +53,7 @@ const Blog = () => {
     {
       id: 2025005,
       title: "Top Reasons to Choose Custom Web Development Over Templates in 2025",
-      date: "August 10, 2024",
+      date: "April 10, 2025",
       image: blog7,
       tags: ["CMS Platforms", "Ecommerce", "Shopify Setup"],
       blogUrl: "2025005"

@@ -216,16 +216,24 @@ const BlogDetails = () => {
               <i className="fab fa-instagram"></i>
               <i className="fab fa-x-twitter"></i>
             </div>
-            <p className="letter">Newsletter</p>
-            <div className="blogpage-newsletter-wrapper">
-              <input className="blogpage-newsletter-input" type="email" placeholder="Email" />
-              <i className="fas fa-arrow-right newsletter-arrow-icon"></i>
-            </div>
+           
+
+<div className="blogpage-chat-form-wrapper">
+  <form className="chat-form">
+    <h3 className="chat-form-title">Let's Chat</h3>
+    <input className="chat-form-input" type="text" placeholder="Full Name" required />
+    <input className="chat-form-input" type="email" placeholder="Email Address" required />
+    <input className="chat-form-input" type="tel" placeholder="Phone Number" required />
+    <textarea className="chat-form-textarea" placeholder="Your Message" required></textarea>
+    <button className="chat-form-submit" type="submit">Submit</button>
+  </form>
+</div>
+
 
           </div>
         </div>
 
-        <div className="blogpage-image-cta-section">
+        {/* <div className="blogpage-image-cta-section">
           <img src={BlogDetailsImg2} alt="Performance" className="blogpage-content-image" />
         <div className="blogpage-cta-box">
           <h3>
@@ -238,17 +246,17 @@ const BlogDetails = () => {
           </p>
         </div>
 
-        </div>
+        </div> */}
 
 
-        <div className="blogpage-main-content blogpage-followup-section">
+        {/* <div className="blogpage-main-content blogpage-followup-section">
           <h2 className="blogpage-section-heading">Quick Fixes, Big Impact</h2>
           <p className="blogpage-section-text">  
           You don’t need a full redesign to improve performance. Simple tweaks like enabling lazy loading,
           removing unused apps, and using performance-tested themes can make a noticeable difference.
           These small changes add up, reducing friction in the buying process and helping customers complete their purchases with ease.
           </p>
-        </div>
+        </div> */}
 
        
 
@@ -269,7 +277,7 @@ const BlogDetails = () => {
                     : "Why Your Shopify Store Needs a Custom Design in 2025"}
                 </p>
                 <div className="blogpage-publish-date">
-                  {index === 0 ? "September 27, 2024" : "September 6, 2024"}
+                  {index === 0 ? "April 27, 2025" : "April 6, 2025"}
                 </div>
               </div>
             </div>
@@ -282,3 +290,8 @@ const BlogDetails = () => {
 };
 
 export default BlogDetails;
+
+// ---------------------------------------new 
+
+
+
