@@ -286,7 +286,7 @@
 } */
 
 .sort-dropdown {
-  min-width: 160px;
+  min-width: max-content;
   padding: 0.5rem 2rem 0.5rem 1rem;;
   background: transparent;
   border: 1px solid rgba(139, 92, 246, 0.5);

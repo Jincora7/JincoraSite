@@ -153,8 +153,8 @@ const Blog = () => {
                 <h2>Explore the blog</h2>
                 <select className="sort-dropdown">
                   <option value="latest">Sort By: Latest</option>
-                  <option value="oldest">Oldest</option>
-                  <option value="popular">Most Popular</option>
+                  <option value="oldest">Sort By: Oldest</option>
+                  <option value="popular">Sort By: Most Popular</option>
                 </select>
               </div>
 
