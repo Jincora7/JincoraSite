@@ -10,55 +10,58 @@ import blog7 from '/BlogDetails/blog-7.jpg';
 
 import PurplePage from '../../PurplePage/PurplePage';
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { sideBarData } from '../BlogData/sideBar.js';
 
 const Blog = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const blogsPerPage = 4;
   const navigate= useNavigate();
 
-  const sidebarPosts = [
-    {
-      id: 2025001,
-      title: "How Shopify CMS Helped Small Businesses Grow Fast and Sell More Online",
-      date: "April 29, 2025",
-      image: blog3,
-      tags: ["Best practices", "How to", "Industry experts"],
-      blogUrl: "2025001"
+  // const sidebarPosts = [
+  //   {
+  //     id: 2025001,
+  //     title: "How Shopify CMS Helped Small Businesses Grow Fast and Sell More Online",
+  //     date: "April 29, 2025",
+  //     image: blog3,
+  //     tags: ["Best practices", "How to", "Industry experts"],
+  //     blogUrl: "2025001"
 
-    },
-    {
-      id: 2025002,
-      title: "Shopify Email Marketing Strategies That Boost Sales Fast",
-      date: "April 27, 2025",
-      image: blog1,
-      tags: ["UX Trends", "Conversion", "Conversion Optimization"],
-      blogUrl: "2025002"
-    },
-    {
-      id: 2025003,
-      title: "Boost Your Shopify Store Sales with a Custom Ecommerce App in 2025",
-      date: "April 20, 2025",
-      image: blog2,
-      tags: ["Ecommerce App", "Ecommerce", "Shopify Setup"],
-      blogUrl: "2025003"
-    },
-    {
-      id: 2025004,
-      title: "How UI/UX Design is Shaping Successful E-commerce Stores in 2025",
-      date: "April 15, 2025",
-      image: blog4,
-      tags: ["Ecommerce ", "Shopify Setup", "Custom Ecommerce"],
-      blogUrl: "2025004"
-    },
-    {
-      id: 2025005,
-      title: "Top Reasons to Choose Custom Web Development Over Templates in 2025",
-      date: "April 10, 2025",
-      image: blog7,
-      tags: ["CMS Platforms", "Ecommerce", "Shopify Setup"],
-      blogUrl: "2025005"
-    }
-  ];
+  //   },
+  //   {
+  //     id: 2025002,
+  //     title: "Shopify Email Marketing Strategies That Boost Sales Fast",
+  //     date: "April 27, 2025",
+  //     image: blog1,
+  //     tags: ["UX Trends", "Conversion", "Conversion Optimization"],
+  //     blogUrl: "2025002"
+  //   },
+  //   {
+  //     id: 2025003,
+  //     title: "Boost Your Shopify Store Sales with a Custom Ecommerce App in 2025",
+  //     date: "April 20, 2025",
+  //     image: blog2,
+  //     tags: ["Ecommerce App", "Ecommerce", "Shopify Setup"],
+  //     blogUrl: "2025003"
+  //   },
+  //   {
+  //     id: 2025004,
+  //     title: "How UI/UX Design is Shaping Successful E-commerce Stores in 2025",
+  //     date: "April 15, 2025",
+  //     image: blog4,
+  //     tags: ["Ecommerce ", "Shopify Setup", "Custom Ecommerce"],
+  //     blogUrl: "2025004"
+  //   },
+  //   {
+  //     id: 2025005,
+  //     title: "Top Reasons to Choose Custom Web Development Over Templates in 2025",
+  //     date: "April 10, 2025",
+  //     image: blog7,
+  //     tags: ["CMS Platforms", "Ecommerce", "Shopify Setup"],
+  //     blogUrl: "2025005"
+  //   }
+  // ];
+
+  const sidebarPosts = sideBarData;
 
   const totalPages = Math.ceil(sidebarPosts.length / blogsPerPage);
 
@@ -129,13 +132,13 @@ const Blog = () => {
               <div className="sidebar-section latest-blogs">
                 <h3>Latest Blogs</h3>
                 <div className="latest-posts">
-                  {sidebarPosts.slice(0, 6).map((post) => (
-                    <Link to={post.blogUrl}>
+                  {sidebarPosts.slice(0, 6).map((post,index) => (
+                    <Link key={index} to={post.blogUrl}>
                       <div key={post.id} className="latest-post">
-                        <img src={post.image} alt={post.title} />
+                        <img src={post.blogImage} alt={post.mainHeading} />
                         <div className="latest-post-content">
-                          <h4>{post.title}</h4>
-                          <span className="date">{post.date}</span>
+                          <h4>{post.mainHeading}</h4>
+                          <span className="date">{post.blogDate}</span>
                         </div>
                       </div>
                     </Link>
@@ -156,11 +159,11 @@ const Blog = () => {
               </div>
 
               <div className="blog-grid">
-                {currentBlogs.map((post) => (
-                  <Link to={post.blogUrl}>
+                {currentBlogs.map((post,index) => (
+                  <Link key={index} to={post.blogUrl}>
                     <article key={post.id} className="blog-card">
                       <div className="blog-image">
-                        <img src={post.image} alt={post.title} />
+                        <img src={post.blogImage} alt={post.mainHeading} />
                       </div>
                       <div className="blog-content">
                         <div className="blog-tags">
@@ -168,9 +171,9 @@ const Blog = () => {
                             <span key={index} className="tag">{tag}</span>
                           ))}
                         </div>
-                        <h4>{post.title}</h4>
+                        <h4>{post.mainHeading}</h4>
                         <div className="blog-meta">
-                          <span className="blog-date">{post.date}</span>
+                          <span className="blog-date">{post.blogDate}</span>
                         </div>
                       </div>
                     </article>

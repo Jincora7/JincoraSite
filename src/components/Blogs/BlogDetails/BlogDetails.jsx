@@ -149,7 +149,7 @@ const BlogDetails = () => {
 
   return (
     <div className="blogpage-wrapper">
-      <img src={BlogDetailsImg1} alt="Hero" className="blogpage-hero-img" />
+      <img src={dets.blogImage} alt="Hero" className="blogpage-hero-img" />
 
       <div className="blogpage-content">
         <h1 className="blogpage-main-title">

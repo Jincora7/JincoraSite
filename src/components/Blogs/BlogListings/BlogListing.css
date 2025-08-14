@@ -230,8 +230,8 @@
 
 .latest-post img {
   width: 60px;
-  height: 45px;
-  border-radius: 8px;
+  aspect-ratio: 16/9;
+  border-radius: 2px;
   object-fit: cover;
   flex-shrink: 0;
 }
@@ -268,7 +268,7 @@
    margin-top: -10px
 }
 
-.sort-dropdown {
+/* .sort-dropdown {
   background: transparent;
   border: 1px solid rgba(139, 92, 246, 0.5);
   color: #8b5cf6;
@@ -278,6 +278,35 @@
   cursor: pointer;
   outline: none;
    margin-top: -10px
+}
+
+.sort-dropdown option {
+  background: #1a0a2e;
+  color: white;
+} */
+
+.sort-dropdown {
+  min-width: 160px;
+  padding: 0.5rem 2rem 0.5rem 1rem;;
+  background: transparent;
+  border: 1px solid rgba(139, 92, 246, 0.5);
+  color: #8b5cf6;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  margin-top: -10px;
+  
+  /* Remove default arrow */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  /* Custom arrow */
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%238b5cf6' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  background-size: 1rem;
 }
 
 .sort-dropdown option {
@@ -313,7 +342,8 @@
 }
 
 .blog-image {
-  height: 200px;
+  /* height: 200px; */
+  aspect-ratio: 16/9;
   overflow: hidden;
 }
 

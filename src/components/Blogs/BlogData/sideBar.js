@@ -1,5 +1,5 @@
-export const blogData = {
-    2025001:{
+export const sideBarData = [
+    {
         id: 1,
         blogUrl: "2025001",
         blogImage:"/BlogDetails/blog-3.jpg",
@@ -21,7 +21,7 @@ export const blogData = {
         para5: `Small businesses grow, and Shopify grows with them. Whether you’re handling 10 orders a month or 1,000, Shopify’s infrastructure supports your scaling needs. Plans are affordable, starting low and increasing as your requirements grow. At Jincora, we’ve helped businesses migrate smoothly from basic Shopify plans to Shopify Plus as their revenue exploded. Shopify’s 24/7 customer support ensures you’re never stuck when issues arise. Live chat, email, and phone support are available anytime. Plus, the Shopify Help Center, forums, and video tutorials provide DIY solutions for quick fixes. Our agency often partners with Shopify merchants for long-term maintenance, SEO optimization, and conversion rate improvements as they scale. With global payment options, multi-currency support, and advanced reporting tools, Shopify CMS stays reliable at every growth stage. For small business owners dreaming of long-term online success, Shopify remains our number one recommendation.
         For support, contact Jincora IT Solution today at www.jincora.com.`,
     },
-    2025002:{
+    {
         id: 2,
         blogUrl: "2025002",
         blogImage:"/BlogDetails/blog-6.jpg",
@@ -42,7 +42,7 @@ export const blogData = {
         para5: `Small businesses grow, and Shopify email marketing grows with them. Whether you're sending 100 emails a month or 100,000, Shopify's infrastructure supports your scaling needs. Plans are affordable, starting low and increasing as your requirements grow. At Jincora, we've helped businesses scale from basic email campaigns to advanced automation sequences as their revenue exploded. Shopify's built-in analytics ensure you're never guessing about campaign performance. Open rates, click-through rates, and conversion tracking are available anytime. Plus, the Shopify Help Center, forums, and video tutorials provide DIY solutions for email optimization. Our agency often partners with Shopify merchants for long-term email marketing, customer segmentation, and conversion rate improvements as they scale. With advanced reporting tools, A/B testing capabilities, and integration options, Shopify email marketing stays reliable at every growth stage. For small business owners dreaming of long-term customer relationships, Shopify email marketing remains our number one recommendation.
         For support, contact Jincora IT Solution today at www.jincora.com.`,
     },
-    2025003:{
+    {
         id: 3,
         blogUrl: "2025003",
         blogImage:"/BlogDetails/blog-4.jpg",
@@ -64,7 +64,7 @@ export const blogData = {
         para5: `Smart businesses invest in custom Shopify app development because it grows with them. Whether you're processing 100 orders a month or 10,000, custom apps are built to handle your scaling needs without performance degradation. Development costs are typically recovered within 6-12 months through increased efficiency and sales. At Jincora, we've helped businesses create custom apps that saved thousands in monthly App Store fees while providing superior functionality. Custom apps ensure you're never limited by third-party app restrictions or sudden price increases. Complete ownership means you control updates, features, and integrations based on your business needs. Plus, custom apps can be designed to integrate with your existing systems, creating seamless workflows that save time and reduce errors. Our agency often partners with growing businesses for long-term custom app development, feature enhancement, and system integration as they scale. With unlimited customization possibilities, performance optimization, and no ongoing subscription fees, custom Shopify app development provides the foundation for sustainable long-term growth. For business owners serious about maximizing their Shopify store potential, custom app development remains our top recommendation for achieving lasting competitive advantages.
         For support, contact Jincora IT Solution today at www.jincora.com.`,
     },
-    2025004:{
+    {
         id: 4,
         blogUrl: "2025004",
         blogImage:"/BlogDetails/blog-1.jpg",
@@ -101,7 +101,7 @@ export const blogData = {
         👉 Let us help you build a store that looks great, feels amazing, and sells even better.
         For support, contact Jincora IT Solution today at www.jincora.com.`,
     },
-    2025005:{
+    {
         id: 5,
         blogUrl: "2025005",
         blogImage:"/BlogDetails/blog-7.jpg",
@@ -136,4 +136,4 @@ export const blogData = {
         At Jincora IT Solution, we specialize in building high-performing custom websites that look great, work fast, and convert visitors into customers. Whether you're rebranding, launching, or scaling, our developers and designers work hand-in-hand to deliver a truly customized experience.
         Ready to upgrade from templates? Contact Jincora IT Solution at www.jincora.com and let’s build something extraordinary.`,
     },
-};
+];
