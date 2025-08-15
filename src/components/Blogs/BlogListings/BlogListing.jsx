@@ -15,7 +15,7 @@ import { sideBarData } from '../BlogData/sideBar.js';
 const Blog = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const blogsPerPage = 4;
-  const navigate= useNavigate();
+  const navigate = useNavigate();
 
   // const sidebarPosts = [
   //   {
@@ -61,7 +61,29 @@ const Blog = () => {
   //   }
   // ];
 
+  // Side bar component logic 
   const sidebarPosts = sideBarData;
+
+  const [searchTerm, setSearchTerm] = useState("");
+
+  // Filter posts based on heading OR any paragraph containing search term
+  const filteredPosts = sideBarData.filter((post) => {
+    const term = searchTerm.toLowerCase();
+
+    // Combine all text fields to search in
+    const combinedText = `
+      ${post.mainHeading} 
+      ${post.mainPara} 
+      ${post.para1 || ""} 
+      ${post.para2 || ""} 
+      ${post.para3 || ""} 
+      ${post.para4 || ""} 
+      ${post.para5 || ""}
+    `.toLowerCase();
+
+    return combinedText.includes(term);
+  });
+
 
   const totalPages = Math.ceil(sidebarPosts.length / blogsPerPage);
 
@@ -119,22 +141,30 @@ const Blog = () => {
           <div className="content-wrapper">
             {/* Left Sidebar */}
             <aside className="sidebar">
+              {/* Search bar */}
               <div className="search-bar">
-                <input type="text" placeholder="Search for anything..." />
+                <input
+                  type="text"
+                  placeholder="Search for anything..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                />
                 <span className="search-icon">🔍</span>
               </div>
 
+              {/* Store promo */}
               <div className="sidebar-section prep-store">
                 <h3>Prep Your Store for <br />Peak Sales</h3>
                 <p>Unlock Up to 50% Off on Yearly Plans Join Today and Save Big!</p>
               </div>
 
+              {/* Latest blogs */}
               <div className="sidebar-section latest-blogs">
                 <h3>Latest Blogs</h3>
                 <div className="latest-posts">
-                  {sidebarPosts.slice(0, 6).map((post,index) => (
-                    <Link key={index} to={post.blogUrl}>
-                      <div key={post.id} className="latest-post">
+                  {filteredPosts.slice(0, 6).map((post, index) => (
+                    <Link key={post.id} to={post.blogUrl}>
+                      <div className="latest-post">
                         <img src={post.blogImage} alt={post.mainHeading} />
                         <div className="latest-post-content">
                           <h4>{post.mainHeading}</h4>
@@ -143,6 +173,9 @@ const Blog = () => {
                       </div>
                     </Link>
                   ))}
+                  {filteredPosts.length === 0 && (
+                    <p style={{ padding: "10px", color: "#888" }}>No results found</p>
+                  )}
                 </div>
               </div>
             </aside>
@@ -159,7 +192,7 @@ const Blog = () => {
               </div>
 
               <div className="blog-grid">
-                {currentBlogs.map((post,index) => (
+                {currentBlogs.map((post, index) => (
                   <Link key={index} to={post.blogUrl}>
                     <article key={post.id} className="blog-card">
                       <div className="blog-image">
