@@ -85,7 +85,7 @@ const Blog = () => {
   });
 
 
-  const totalPages = Math.ceil(sidebarPosts.length / blogsPerPage);
+  const totalPages = Math.ceil(filteredPosts.length / blogsPerPage);
 
   const goToPage = (index) => {
     if (index >= 0 && index < totalPages) {
@@ -102,7 +102,7 @@ const Blog = () => {
     }
   }, [location]);
 
-  const currentBlogs = sidebarPosts.slice(
+  const currentBlogs = filteredPosts.slice(
     currentPage * blogsPerPage,
     (currentPage + 1) * blogsPerPage
   );
@@ -162,7 +162,7 @@ const Blog = () => {
               <div className="sidebar-section latest-blogs">
                 <h3>Latest Blogs</h3>
                 <div className="latest-posts">
-                  {filteredPosts.slice(0, 6).map((post, index) => (
+                  {sideBarData.map((post, index) => (
                     <Link key={post.id} to={post.blogUrl}>
                       <div className="latest-post">
                         <img src={post.blogImage} alt={post.mainHeading} />
@@ -172,10 +172,8 @@ const Blog = () => {
                         </div>
                       </div>
                     </Link>
-                  ))}
-                  {filteredPosts.length === 0 && (
-                    <p style={{ padding: "10px", color: "#888" }}>No results found</p>
-                  )}
+                  ))
+                  }
                 </div>
               </div>
             </aside>
@@ -192,26 +190,30 @@ const Blog = () => {
               </div>
 
               <div className="blog-grid">
-                {currentBlogs.map((post, index) => (
-                  <Link key={index} to={post.blogUrl}>
-                    <article key={post.id} className="blog-card">
-                      <div className="blog-image">
-                        <img src={post.blogImage} alt={post.mainHeading} />
-                      </div>
-                      <div className="blog-content">
-                        <div className="blog-tags">
-                          {post.tags?.map((tag, index) => (
-                            <span key={index} className="tag">{tag}</span>
-                          ))}
+                {currentBlogs.length > 0 ? (
+                  currentBlogs.map((post) => (
+                    <Link key={post.id} to={post.blogUrl}>
+                      <article className="blog-card">
+                        <div className="blog-image">
+                          <img src={post.blogImage} alt={post.mainHeading} />
                         </div>
-                        <h4>{post.mainHeading}</h4>
-                        <div className="blog-meta">
-                          <span className="blog-date">{post.blogDate}</span>
+                        <div className="blog-content">
+                          <div className="blog-tags">
+                            {post.tags?.map((tag, index) => (
+                              <span key={index} className="tag">{tag}</span>
+                            ))}
+                          </div>
+                          <h4>{post.mainHeading}</h4>
+                          <div className="blog-meta">
+                            <span className="blog-date">{post.blogDate}</span>
+                          </div>
                         </div>
-                      </div>
-                    </article>
-                  </Link>
-                ))}
+                      </article>
+                    </Link>
+                  ))
+                ) : (
+                  <p style={{ padding: "20px", color: "#888" }}>No results found</p>
+                )}
               </div>
 
               {/* Pagination */}
